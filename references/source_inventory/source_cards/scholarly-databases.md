@@ -23,9 +23,9 @@ Databases and APIs are discovery/state infrastructure. They do not define writin
 - Local API documentation snapshots now exist for the retrieved database/API rows under `../../canonical_sources/`; use `source_manifest.jsonl` `local_documents` entries to locate them.
 - DBLP, ACL Anthology, ACL ARR/ACLPUB, arXiv, and ACM DL are cross-family related sources mentioned for CS/NLP discovery; use their own source rows/cards before treating them as evidence.
 - EQUATOR PRISMA is included here only as a registry/update locator. Use primary PRISMA rows for method or reporting evidence.
-- Some local API Markdown files are short entry-point captures, especially selected CORE and Scite API docs. Treat those rows as locators unless a richer local document or current official source is consulted.
+- Some local API Markdown files are short entry-point captures, especially selected CORE and Scite API docs. ClinicalTrials.gov now has a local OpenAPI v2 snapshot and live version endpoint capture, but human docs remain partially SPA-rendered and should be live-checked before automation.
 - Bulk snapshots, data dumps, and commercial data products are not mirrored locally.
 - Rate-limit and license checks are not encoded as executable validators.
 - Full text is source-specific and usually not guaranteed by metadata APIs.
 
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-05

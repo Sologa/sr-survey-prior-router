@@ -17,12 +17,12 @@ Local corpus path: `docs/agent_capability_packs/sr-survey-prior-router/reference
 - `raw/`: downloaded HTML, PDF, DOCX, and other raw files.
 - `md/`: Markdown conversions for downloaded readable documents.
 - `download_manifest.jsonl`: source ID, URL, final URL, checksum, local raw path, Markdown path, conversion status, and failures.
-- `source_inventory/local_corpus_index.md` and `.json`: source-level lazy-load index; 65 source IDs, 201 Markdown paths, with primary entry points capped for initial selection. One local capture, `state_of_art_review_2022`, is flagged `bad_capture` because the Markdown contains only a browser-check page.
-- `corpus_index/document_index.jsonl`: 201 document locator rows.
+- `source_inventory/local_corpus_index.md` and `.json`: source-level lazy-load index; 65 source IDs, 203 Markdown paths, with primary entry points capped for initial selection. The former `state_of_art_review_2022` bad capture was repaired on 2026-05-05, and `clinicaltrials_api` now includes an official OpenAPI v2 snapshot plus a live version endpoint capture.
+- `corpus_index/document_index.jsonl`: 203 document locator rows.
 - `corpus_index/section_index_manifest.jsonl` plus `corpus_index/sections/by_source/<source_id>.jsonl`: split section/page locator indexes for selected sources only. The split by-source files are local/rebuildable backing locators and may be absent from a public GitHub checkout.
 - `source_inventory/source_cards_v2/`: per-source derivative cards with canonical paths, support types, and fallback locators for public review. There is now one v2 card for each of the 65 `source_manifest.jsonl` source IDs.
-- Current verified count after the 2026-05-04 augmentation plus subagent completion pass: 201 raw files and 201 Markdown files.
-- `source_manifest.jsonl` now has local raw/Markdown documents for 63 of 65 source rows. The rows without local documents are `press` and `cacm_author_guidelines`, both blocked by official-site 403 responses from this environment. Of the 63 with local files, `state_of_art_review_2022` is not evidence-usable because the captured PMC page is a reCAPTCHA/browser-check response.
+- Current verified count after the 2026-05-04 augmentation plus 2026-05-05 live recapture pass: 203 raw files and 203 Markdown files.
+- `source_manifest.jsonl` now has local raw/Markdown documents for 63 of 65 source rows. The rows without local documents are `press` and `cacm_author_guidelines`; both were browser-live checked on 2026-05-05, but simple local scripted fetches still returned Cloudflare/403-style blocks and no tracked local canonical content exists for their source claims.
 - PRISMA 2020 now includes the PRISMA site pages, checklist PDFs/DOCX, expanded checklist PDF, abstract checklist PDF/DOCX, flow diagram DOCX files, PLOS statement PDF, PLOS statement HTML, and PMC/BMJ printable full-text HTML for the statement and explanation/elaboration papers.
 - Nickerson taxonomy method now has a publisher PDF from Springer converted to Markdown because the OPUS Augsburg mirror timed out from this environment.
 - Previously skipped API/database rows now have official documentation snapshots where practical, including OpenAlex snapshot docs, Semantic Scholar API docs/OpenAPI JSON, CORE API docs, Lens API docs/swagger YAML, Dimensions DSL/API docs, Scite API docs/OpenAPI JSON, OpenCitations docs, and IEEE Xplore API docs. Bulk datasets and commercial data products were not mirrored.
@@ -33,8 +33,8 @@ Local corpus path: `docs/agent_capability_packs/sr-survey-prior-router/reference
 ### Strong Seed Coverage
 
 - SR reporting and conduct authorities: PRISMA 2020, PRISMA extensions, PRISMA-S, PRISMA-P, PRISMA-ScR, Cochrane Handbook, MECIR, JBI Manual, Campbell Standards.
-- SR certainty, appraisal, bias, and search QA with local evidence: GRADE, GRADE Handbook, CERQual, AMSTAR 2, ROBIS, RoB 2, ROBINS-I. PRESS remains a candidate search-QA authority, but it is blocked locally and cannot be treated as local canonical evidence.
-- Survey/scoping/narrative/synthesis methods: JBI scoping/narrative guidance, SWiM, ENTREQ, RAMESES, Cochrane Handbook chapters 9 and 12, SANRA, and narrative synthesis guidance. `state_of_art_review_2022` is present as a source row but its local capture is a browser-check page, so it is not currently usable as local method evidence.
+- SR certainty, appraisal, bias, and search QA with local evidence: GRADE, GRADE Handbook, CERQual, AMSTAR 2, ROBIS, RoB 2, ROBINS-I. PRESS remains a candidate search-QA authority; browser-live access found current official locators, but the pack still lacks local PRESS Markdown and cannot use PRESS content as local canonical evidence.
+- Survey/scoping/narrative/synthesis methods: JBI scoping/narrative guidance, SWiM, ENTREQ, RAMESES, Cochrane Handbook chapters 9 and 12, SANRA, state-of-the-art review methodology, and narrative synthesis guidance.
 - Survey taxonomy and organization: Nickerson taxonomy method and Kundisch taxonomy update.
 - NLP/speech/CS exemplar and metadata sources: ACL Anthology, TACL, Computational Linguistics, ISCA Archive, DBLP, Crossref, OpenAlex, arXiv.
 - Backing databases/APIs and registry locators: PubMed/NCBI E-utilities, Europe PMC, ClinicalTrials.gov, WHO ICTRP, PROSPERO, EQUATOR PRISMA, OpenCitations, Semantic Scholar, CORE, Lens, Dimensions, Scite, ACM DL, IEEE Xplore.
@@ -48,8 +48,8 @@ Local corpus path: `docs/agent_capability_packs/sr-survey-prior-router/reference
 ### Not Covered Or Still Blocked
 
 - Exhaustive local mirrors of broad APIs, commercial databases, or bulk snapshots.
-- Blocked official pages that returned 403 from this environment, especially CDA-AMC PRESS and CACM author guideline pages.
-- Bad local captures, especially `state_of_art_review_2022`, whose current local Markdown contains only a PMC browser-check page rather than article content.
+- Browser-live but locally uncaptured official pages, especially CDA-AMC PRESS and CACM/ACM author guidance. These need browser/manual or access-approved capture before local evidence use.
+- ClinicalTrials.gov human docs remain SPA-rendered/partial in simple captures; use the local OpenAPI v2 and version endpoint snapshots for API-schema/currentness locators, with live verification before automation.
 - MIT Press canonical pages for TACL and Computational Linguistics returned 403, but official TransACL and Computational Linguistics OJS/style-file alternatives are locally captured.
 - Direct BMJ PDF endpoints for PRISMA 2020 statement and explanation/elaboration returned 403 after repeated attempts; equivalent/open full-text local fallbacks are captured from PRISMA/PLOS/PMC where available.
 - Domain-specific NLP/speech taxonomy exemplars and worked paper-to-taxonomy ledgers.
@@ -83,6 +83,6 @@ Before this pack is described as knowledge-heavy for a route, require:
 
 ## Recommended First Priority
 
-For `sr_writing_prior`, source-card-v2 coverage now includes PRISMA 2020, PRISMA extensions, PRISMA-S, PRISMA-P, Cochrane Handbook, MECIR, JBI Manual, Campbell Standards, GRADE/CERQual, AMSTAR 2, ROBIS, RoB 2, ROBINS-I, PROSPERO, EQUATOR PRISMA, registry/API locators, and blocked PRESS status. PRESS remains blocked local evidence until browser/manual or access-approved retrieval succeeds.
+For `sr_writing_prior`, source-card-v2 coverage now includes PRISMA 2020, PRISMA extensions, PRISMA-S, PRISMA-P, Cochrane Handbook, MECIR, JBI Manual, Campbell Standards, GRADE/CERQual, AMSTAR 2, ROBIS, RoB 2, ROBINS-I, PROSPERO, EQUATOR PRISMA, registry/API locators, and browser-live/no-local-content PRESS status. PRESS remains unavailable as local evidence until browser/manual or access-approved retrieval is stored.
 
-For `survey_writing_prior`, source-card-v2 coverage now includes PRISMA-ScR, JBI Manual, Cochrane chapters 9 and 12, SWiM, ENTREQ, RAMESES, SANRA, York narrative synthesis guidance, narrative-review writing guidance, Nickerson taxonomy method, Kundisch taxonomy update, venue/exemplar cards, and scholarly-database/API cards. Do not use `state_of_art_review_2022` until the article body is recaptured.
+For `survey_writing_prior`, source-card-v2 coverage now includes PRISMA-ScR, JBI Manual, Cochrane chapters 9 and 12, SWiM, ENTREQ, RAMESES, SANRA, state-of-the-art review methodology, York narrative synthesis guidance, narrative-review writing guidance, Nickerson taxonomy method, Kundisch taxonomy update, venue/exemplar cards, and scholarly-database/API cards. Use `state_of_art_review_2022` only for scoped SotA review methodology claims.

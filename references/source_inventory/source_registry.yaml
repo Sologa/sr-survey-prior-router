@@ -72,7 +72,7 @@ families:
     not_for: Substituting for full SR conduct or paper writing guidance.
     bundle_policy: prefer canonical_sources/md for downloaded authorities; document blocked PRESS/CDA-AMC retrieval separately.
     per_source_caveats:
-      press: Candidate search-strategy peer-review authority, but no local canonical Markdown/raw content is currently available.
+      press: Browser-live official PRESS locators were verified on 2026-05-05, but no local canonical Markdown/raw content is currently available and scripted fetch still returns 403.
     source_card_ref: source_cards/sr-method-authorities.md
 
   survey_writing_methods:
@@ -102,8 +102,8 @@ families:
     not_for: Claiming one universal official survey-writing standard exists.
     bundle_policy: use as a layered prior; keep method sources separate from venue norms; prefer canonical_sources/md where available.
     per_source_caveats:
-      state_of_art_review_2022: Local raw/Markdown capture is a PMC browser-check page only; do not use as method evidence until the article body is recaptured.
-      cacm_author_guidelines: Blocked locally; use only as a candidate venue source until official content is captured.
+      state_of_art_review_2022: Article body recaptured from PMC on 2026-05-05; use only for scoped state-of-the-art review methodology claims.
+      cacm_author_guidelines: CACM-specific page remains no-local-content; official CACM/ACM fallback pages were browser-live verified but need local/browser-assisted capture before evidence use.
       acm_dl: Local source is an ACM DL user-guide/publisher-corpus document, not a review-method or CACM author-guideline substitute.
     source_card_ref: source_cards/survey-writing-methods.md
 
@@ -111,7 +111,7 @@ families:
     authority_type: exemplar_corpus_and_venue_norms
     coverage_state: seed_partial_with_local_documents
     canonicality: official_venue_or_field_database
-    freshness_signal: checked_2026-05-04
+    freshness_signal: checked_2026-05-05
     source_ids:
       - acl_anthology
       - acl_anthology_github
@@ -158,6 +158,7 @@ families:
     bundle_policy: prefer canonical_sources/md for downloaded API docs; do not mirror bulk datasets or commercial data products without explicit license/access approval.
     per_source_caveats:
       equator_prisma: Registry locator and update monitor only; use primary PRISMA rows for method or reporting evidence.
+      clinicaltrials_api: Human docs are partially SPA-rendered; use the local OpenAPI v2 and version endpoint captures as API-schema/currentness locators, with live checks before automation.
       core_api: Mixed local capture depth; selected API entry-point stubs are locator-only until a richer local or current official document supports the claim.
       scite_api: Mixed local capture depth; selected API docs are entry-point stubs and Scite remains a licensed/commercial enrichment source.
     source_card_ref: source_cards/scholarly-databases.md

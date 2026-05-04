@@ -22,10 +22,10 @@ Do not collapse reporting, conduct, appraisal, bias, search QA, and registry sou
 ## Gaps
 
 - Local raw and Markdown snapshots now exist for retrieved authorities under `../../canonical_sources/`; use `source_manifest.jsonl` `local_documents` entries to locate them.
-- PRESS remains blocked from this environment by CDA-AMC/CADTH 403 responses and needs browser/manual retrieval or an access-approved route.
+- PRESS official hub/detail/E&E locators were browser-live verified on 2026-05-05, but the pack still has no local canonical PRESS Markdown and scripted fetch remains blocked; it needs browser/manual retrieval or an access-approved route.
 - EQUATOR PRISMA is locally captured as a registry record and linked PRISMA materials; use it as a locator/update monitor, not as a substitute for primary PRISMA method text.
 - Direct BMJ PDF endpoints for PRISMA 2020 returned 403; PRISMA/PLOS/PMC full-text alternatives are locally captured for statement and explanation/elaboration coverage.
 - Individual source cards still need page/section locators.
 - Review-type-specific branches need more examples before broad automation.
 
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-05

@@ -7,84 +7,84 @@ canonical_paths:
   - references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md
 canonical_urls:
   - https://pmc.ncbi.nlm.nih.gov/articles/PMC9582072/
-authority_level: bad_capture_do_not_use
-version_or_access_date: "2022 article target; local corpus fetched 2026-05-04 but captured only a PMC browser-check page"
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC9582072/?report=xml
+authority_level: peer_reviewed_method_paper
+version_or_access_date: "2022 article; article body recaptured from PMC on 2026-05-05"
 applies_to:
-  - documenting that the local capture is unusable as article evidence
-  - routing source-audit tasks to recapture or independently verify the article body
-  - preventing unsupported state-of-art review method claims from this local file
+  - state-of-the-art review methodology
+  - survey-writing prior when the task explicitly asks for SotA review framing
+  - source-audit examples of repaired bad captures
 not_for:
-  - article-body claims about a six-step approach
-  - state-of-art review methodology claims
-  - quoting or paraphrasing the target article
-  - final evidence support until the article body is recaptured and validated
+  - systematic review conduct
+  - scoping-review reporting
+  - generic narrative-review rules
+  - claims that every literature review should follow the SotA six-stage method
 route_relevance:
   - survey_writing_prior
   - evidence_grounding
   - source_audit
   - synthesis_writing
-freshness_risk: high because the local file is not the article body; live PMC or another access-approved source must be checked before any method claim.
-reuse_or_license_risk: unknown for article body in local corpus because the available local file is a browser-check capture, not usable article content.
-qa_status: bad_capture_browser_check_only_do_not_use_for_method_claims
+freshness_risk: low for the 2022 article text; recapture route may need browser/OAI/BioC fallback if PMC landing HTML is challenge-gated.
+reuse_or_license_risk: PMC page states CC BY 4.0; verify third-party material separately.
+qa_status: article_body_recaptured_2026_05_05
 last_reviewed: "2026-05-05"
 ```
 
 ## Key points
 
 ```yaml
-- claim: The local canonical Markdown for `state_of_art_review_2022` is a PMC browser-check capture, not article body text.
+- claim: The local canonical Markdown now contains article body text rather than only a browser-check page.
   supporting_canonical_paths:
     - references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md
   support_type: direct
-  verification_note: The file contains only a browser-check notice after the title and source URL.
-  quote_or_locator: references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md:1-10; section_id=state_of_art_review_2022__canonical_pmc9582072__s0001_state_of_the_art_literature_review_methodology_a_six_step_approach_for_knowledge
-- claim: The source should not be used locally for article-body claims about state-of-art review methodology.
+  verification_note: The recaptured file includes citation metadata, abstract, methods, results, SotA methodology, discussion, and references.
+  quote_or_locator: canonical_pmc9582072.md:1-27 and 75-137
+- claim: The article is a peer-reviewed method paper for state-of-the-art reviews, not a universal survey or SR method.
   supporting_canonical_paths:
     - references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md
-  support_type: unsupported
-  verification_note: The title exists in the local capture, but the article text needed to support method claims is absent.
-  quote_or_locator: references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md:6-10; section_id=state_of_art_review_2022__canonical_pmc9582072__s0001_state_of_the_art_literature_review_methodology_a_six_step_approach_for_knowledge
-- claim: Any claim that the article provides a specific six-step state-of-art review method is unsupported by the current local Markdown capture.
+  support_type: direct
+  verification_note: The abstract and discussion frame the paper as a SotA review methodology and contrast it with systematic, scoping, and critical reviews.
+  quote_or_locator: canonical_pmc9582072.md:20-27 and 133-137
+- claim: The paper uses both title wording "six-step" and body wording "six-stage"; preserve that distinction.
   supporting_canonical_paths:
     - references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md
-  support_type: unsupported
-  verification_note: The title mentions a six-step approach, but the captured body is missing; do not infer the steps.
-  quote_or_locator: references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md:1-10; section_id=state_of_art_review_2022__canonical_pmc9582072__s0001_state_of_the_art_literature_review_methodology_a_six_step_approach_for_knowledge
-- claim: The only safe operational use of this local source is source-audit routing: recapture or verify the article body through an approved route before use.
+  support_type: direct
+  verification_note: The title uses six-step language, while the methodology table and section use six-stage language.
+  quote_or_locator: canonical_pmc9582072.md:1-12 and 75-116
+- claim: The six-stage process covers initial question and field, timeframe, revised questions, search strategy, analyses, and reflexivity.
   supporting_canonical_paths:
     - references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md
-  support_type: indirect
-  verification_note: This is inferred from the absence of article body text and the browser-check notice in the capture.
-  quote_or_locator: references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md:6-10; section_id=state_of_art_review_2022__canonical_pmc9582072__s0001_state_of_the_art_literature_review_methodology_a_six_step_approach_for_knowledge
+  support_type: direct
+  verification_note: The recaptured methodology table and following subsections list the six stages and descriptions.
+  quote_or_locator: canonical_pmc9582072.md:82-132
 ```
 
 ## Operational rules
 
-- Do not cite this local Markdown for state-of-art review methodology.
-- Use this card to block unsupported use and to route the source to recapture/validation work.
-- If a task needs this source, first obtain an article-body capture from PMC or another access-approved source, then create a revised card from the validated text.
-- Do not make claims about the article's six steps from the title alone.
+- Use this source only when a task explicitly concerns state-of-the-art reviews or when comparing review types.
+- Preserve the article's subjectivist/relativist framing and do not convert it into an objectivist systematic-review checklist.
+- For final claims, open the canonical Markdown and cite the relevant article span.
+- If the PMC landing page is challenge-gated, use the recaptured local Markdown or an approved PMC OAI/BioC route.
 
 ## Common misuses
 
-- Treating the source title as evidence for the method content.
-- Quoting the browser-check page as if it were the article.
-- Using manifest metadata or the bad capture to populate methodology rules.
-- Collapsing this source into generic narrative-review guidance without article-body verification.
+- Treating SotA review methodology as a default survey-writing method.
+- Collapsing the six-stage SotA method into PRISMA, scoping-review, or narrative-review guidance.
+- Saying the article has only a bad local capture; that was true before the 2026-05-05 recapture and is now superseded.
+- Ignoring the six-step title versus six-stage body terminology.
 
 ## Evidence limits
 
-The local canonical file supports only the fact that the capture is unusable browser-check content. It does not support article-body, method, framework, step, recommendation, or conclusion claims.
+The source supports claims about SotA review methodology and its article-specific scope. It does not define SR conduct, PRISMA reporting, database search interfaces, citation graph APIs, or venue submission rules.
 
 ## Verification paths
 
+- Article Markdown: `references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md`.
 - Source row: `references/source_inventory/source_manifest.jsonl` with `source_id=state_of_art_review_2022`.
-- Download row: `references/canonical_sources/download_manifest.jsonl` with `source_id=state_of_art_review_2022`.
-- Document locator: `references/corpus_index/document_index.jsonl` with `source_id=state_of_art_review_2022`, status `bad_capture`.
-- Section locator: `references/corpus_index/sections/by_source/state_of_art_review_2022.jsonl`.
+- Document locator: `references/corpus_index/document_index.jsonl` with `source_id=state_of_art_review_2022`.
+- Optional local section locator: `references/corpus_index/sections/by_source/state_of_art_review_2022.jsonl`.
 
 ## Unresolved gaps
 
-- Article body has not been captured locally.
-- License/reuse terms for the article body need verification after recapture.
-- No methodology claims should be added until the recaptured text is validated.
+- The raw PMC landing HTML may remain challenge-gated; future refreshes should prefer approved PMC OAI/BioC or browser-assisted capture.
+- Supplementary DOCX was identified but not added as a tracked Markdown source in this pass.

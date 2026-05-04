@@ -33,7 +33,7 @@ The current repo already shows the need for distillation:
 2. `references/canonical_sources/md/` provides valuable converted canonical text, but quality varies by source.
 3. Clean item-level checklists exist for PRISMA 2020, PRISMA-S/TARCiS, PRISMA-ScR, AMSTAR 2, SWiM, and several API docs.
 4. Some sources are noisy but usable, including JBI, GRADE, Nature, Crossref, PubMed, and Semantic Scholar pages with navigation/footer/cookie artifacts.
-5. Some sources are not usable as evidence until repaired, including `state_of_art_review_2022`; some are blocked or unavailable, including `press` and `cacm_author_guidelines`.
+5. Some sources are browser-live but not locally captured, including `press` and `cacm_author_guidelines`; `state_of_art_review_2022` was repaired on 2026-05-05 and can now support scoped SotA-review method claims.
 6. The public repo tracks the portable locator surface, including `corpus_index/document_index.jsonl` and `corpus_index/section_index_manifest.jsonl`. The split `corpus_index/sections/by_source/<source_id>.jsonl` files may exist locally as generated backing data but are excluded from the normal GitHub review surface, so source cards must include fallback canonical paths and line/section locators.
 
 ## 4. Canonical-vs-Derivative Policy

@@ -9,16 +9,18 @@ Markdown conversions under `md/` are tracked in the GitHub draft so reviewers an
 
 Do not use this directory as the first route entrypoint. Start with `../route-source-index.yaml`, `../source_inventory/local_corpus_index.*`, and `../corpus_index/` to choose source IDs, documents, and line/page locators. Open `md/<source_id>/...` or `raw/<source_id>/...` only after that selection.
 
-- raw files present: 201
+- raw files present: 203
 - PDF raw files present: 56
 - DOCX raw files present: 13
-- Markdown files present: 201
-- download/skip/failure attempt records: 245
+- Markdown files present: 203
+- download/skip/failure attempt records: 247
 - skipped records retained for non-mirrored bulk/commercial sources: 10
 
 See `download_manifest.jsonl` for row-level paths, checksums, and remaining blocked URLs.
 
-## Remaining Blocked or Partial URLs
+## Remaining Script-Blocked or Browser-Only URLs
+
+The 2026-05-05 live recapture pass repaired `state_of_art_review_2022` and added ClinicalTrials.gov OpenAPI/version captures. PRESS and CACM/ACM author pages were browser-live checked, but local scripted fetch still returned 403-style blocks, so those rows remain no-local-content until browser/manual or access-approved capture is stored.
 
 - `press` `canonical`: https://www.cda-amc.ca/press-peer-review-electronic-search-strategies (HTTPError('403 Client Error: Forbidden for url: https://www.cda-amc.ca/press-peer-review-electronic-search-strategies'))
 - `cacm_author_guidelines` `canonical`: https://cacm.acm.org/author-guidelines (HTTPError('403 Client Error: Forbidden for url: https://cacm.acm.org/author-guidelines'))

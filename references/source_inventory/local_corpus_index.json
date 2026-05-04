@@ -158,7 +158,10 @@
     "primary_md_paths": [],
     "all_md_paths": [],
     "conversion_types": [],
-    "status": "blocked"
+    "status": "blocked",
+    "content_quality": "browser_live_fallback_verified_but_no_local_content",
+    "evidence_use": "live_locator_only_until_local_capture",
+    "notes": "CACM-specific author-guidelines page remains blocked for local capture; official CACM/ACM fallback pages were browser-live verified on 2026-05-05 but are not tracked local evidence."
   },
   "campbell_standards": {
     "family": "sr_reporting_and_conduct",
@@ -184,21 +187,29 @@
     "family": "scholarly_databases_and_apis",
     "title": "ClinicalTrials.gov API",
     "authority_class": "registry_database",
-    "canonical_url": "https://clinicaltrials.gov/data-about-studies/learn-about-api",
-    "local_docs_count": 1,
-    "md_docs_count": 1,
-    "raw_docs_count": 1,
+    "canonical_url": "https://clinicaltrials.gov/data-api/api",
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
     "blocked_attempts_count": 0,
     "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/official_openapi_v2.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/official_version_v2.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/canonical_learn-about-api.md"
     ],
     "all_md_paths": [
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/canonical_learn-about-api.md"
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/canonical_learn-about-api.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/official_openapi_v2.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/official_version_v2.md"
     ],
     "conversion_types": [
-      "html_to_markdown"
+      "html_to_markdown",
+      "json_to_markdown_wrapper",
+      "yaml_to_markdown_wrapper"
     ],
-    "status": "available"
+    "status": "partial",
+    "content_quality": "partial_human_docs_plus_official_openapi_and_live_version",
+    "evidence_use": "api_schema_and_registry_locator_only"
   },
   "cochrane_ch09": {
     "family": "survey_writing_methods",
@@ -1086,8 +1097,9 @@
     "all_md_paths": [],
     "conversion_types": [],
     "status": "blocked",
-    "evidence_use": "candidate_only_until_recaptured",
-    "notes": "Blocked locally by CDA-AMC/CADTH 403 responses after 6 attempts; no local Markdown/raw support for claims."
+    "evidence_use": "live_locator_only_until_local_capture",
+    "notes": "Browser-live official PRESS hub/detail/E&E URLs verified on 2026-05-05, but local scripted fetch remains 403-blocked and no local Markdown/raw content is tracked.",
+    "content_quality": "browser_live_verified_but_no_local_content"
   },
   "prisma_2020": {
     "family": "sr_reporting_and_conduct",
@@ -1488,12 +1500,12 @@
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md"
     ],
     "conversion_types": [
-      "html_to_markdown"
+      "pmc_html_to_text_markdown"
     ],
-    "status": "bad_capture",
-    "content_quality": "browser_check_only",
-    "evidence_use": "not_supported",
-    "notes": "Local raw/Markdown capture is a PMC reCAPTCHA/browser-check page only; not usable as method evidence until article body is recaptured."
+    "status": "available",
+    "content_quality": "article_body_recaptured",
+    "evidence_use": "method_evidence_with_scope",
+    "notes": "Article body recaptured from PMC on 2026-05-05; usable for scoped state-of-the-art review methodology claims."
   },
   "swim": {
     "family": "survey_writing_methods",

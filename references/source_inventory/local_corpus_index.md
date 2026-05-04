@@ -1,6 +1,6 @@
 # Local Corpus Lazy-load Index
 
-Generated: 2026-05-03T19:07:48+00:00
+Generated: 2026-05-05T00:00:00+00:00
 
 Scope: path-level index for sr-survey-prior-router canonical sources.
 This file lists local Markdown entry points only; it intentionally does not include full-text content.
@@ -34,7 +34,7 @@ Status rules: available = local Markdown/raw with no blocked attempts; partial =
 
 | source_id | status | docs md/raw | blocked | primary md path |
 | --- | --- | ---: | ---: | --- |
-| clinicaltrials_api | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/canonical_learn-about-api.md |
+| clinicaltrials_api | partial | 3 (3/3) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/official_openapi_v2.md |
 | cochrane_library | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_library/canonical_cochrane-library.md |
 | core_api | partial | 3 (3/3) | 1 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/core_api/canonical_services_api_api.md |
 | crossref_api | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/crossref_api/canonical_rest-api.md |
@@ -99,14 +99,15 @@ Status rules: available = local Markdown/raw with no blocked attempts; partial =
 | rameses_meta_narrative | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rameses_meta_narrative/canonical_rameses-publication-standards-meta-narrative-reviews.md |
 | rameses_realist | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rameses_realist/canonical_rameses-publication-standards-realist-syntheses.md |
 | sanra | available | 2 (2/2) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/sanra/canonical_s41073-019-0064-8.md |
-| state_of_art_review_2022 | bad_capture | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md |
+| state_of_art_review_2022 | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md |
 | swim | available | 3 (3/3) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/swim/canonical_synthesis-without-meta-analysis-swim-in-systematic-reviews-reporting-guideline.md |
 
 Notes:
 
-- `state_of_art_review_2022` currently captures only a PMC browser-check page, so it is a locator for a missing source, not local method evidence.
-- `state_of_art_review_2022` is locator only; do not use it as method evidence until the real article body is recaptured.
-- `press` is blocked locally after six CDA-AMC/CADTH 403 attempts and has no local Markdown/raw support for claims.
+- `state_of_art_review_2022` was repaired on 2026-05-05; the local Markdown now contains the PMC article body and can support scoped SotA-review methodology claims.
+- `clinicaltrials_api` now includes the official OpenAPI v2 snapshot plus the live version endpoint capture; the old learn-about-API HTML remains only a sparse locator.
+- `press` is browser-live verified after the 2026-05-05 check, but local scripted fetches still hit CDA-AMC/CADTH 403 and no local Markdown/raw support exists for PRESS content claims.
+- `cacm_author_guidelines` has browser-live fallback pages, but the CACM-specific target and local scripted capture remain blocked/no-local-content.
 - `equator_prisma` is listed under scholarly databases/APIs as a registry/update locator; use `prisma_2020` or related primary PRISMA rows for method or reporting evidence.
 - `core_api` has `conversion_depth=mixed_full_and_entry_stub`; use richer local docs or current official sources before making detailed API capability claims from stub captures.
 - `scite_api` has `conversion_depth=mixed_entry_stub_and_openapi`; use OpenAPI/current licensed docs rather than short entry-point stubs for detailed API capability claims.
