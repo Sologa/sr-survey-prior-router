@@ -8,7 +8,9 @@ This staged pack now contains a seed source inventory under `source_inventory/` 
 - `source_inventory/source_manifest.jsonl`: row-level source inventory with URLs, authority class, scope, not-for boundary, fit, and validation status.
 - `source_inventory/source_registry.yaml`: curated grouped registry for router use.
 - `source_inventory/source_cards/*.md`: compressed family-level source cards for fast bootstrapping.
+- `source_inventory/source_cards_v2/*.md`: per-source derivative cards with claim-level locators; these guide canonical source selection but are not canonical evidence.
 - `source_inventory/local_corpus_index.md` and `.json`: source-level lazy-load index for local Markdown/raw availability.
+- `distillation-plan.md`: derivative plan for adding compact, provenance-preserving source cards, route notes, and claim ledgers without replacing canonical Markdown.
 - `route-source-index.yaml`: route-to-source bridge with priority source IDs, source-card defaults, and first-load limits.
 - `corpus_index/document_index.jsonl`: document-level locator index for the local Markdown corpus.
 - `corpus_index/section_index_manifest.jsonl`: source-level manifest for split section indexes.
@@ -27,14 +29,15 @@ Treat these as seed inventory and local-corpus artifacts. For important claims, 
 
 `canonical_sources/md/` is the tracked, reviewable Markdown corpus for local model reading. `canonical_sources/raw/` is the local raw backing corpus and may be distributed separately through a large-file channel if needed. Neither directory is the normal route boot surface: agents should reach canonical text through `route-source-index.yaml`, `source_inventory/local_corpus_index.*`, `corpus_index/document_index.jsonl`, and the selected `corpus_index/sections/by_source/<source_id>.jsonl` file.
 
-For GitHub-facing review or future publication of this pack, keep the portable surface bounded: router docs, registries, source cards, coverage reports, source-level/document-level indexes, `corpus_index/section_index_manifest.jsonl`, `canonical_sources/README.md`, `canonical_sources/download_manifest.jsonl`, and the Markdown corpus under `canonical_sources/md/`. The raw corpus and split `corpus_index/sections/by_source/` locators are generated/local backing data and should not be treated as ordinary PR review material unless a maintainer explicitly chooses Git LFS, release assets, object storage, or another large-file channel.
+For GitHub-facing review or future publication of this pack, keep the portable surface bounded: router docs, registries, source cards, source cards v2, coverage reports, source-level/document-level indexes, `corpus_index/section_index_manifest.jsonl`, `canonical_sources/README.md`, `canonical_sources/download_manifest.jsonl`, and the Markdown corpus under `canonical_sources/md/`. The raw corpus and split `corpus_index/sections/by_source/` locators are generated/local backing data and should not be treated as ordinary PR review material unless a maintainer explicitly chooses Git LFS, release assets, object storage, or another large-file channel. If a public checkout lacks split section locators, use `document_index.jsonl`, `source_cards_v2/<source_id>.md`, and targeted search within the selected canonical Markdown file.
 
 ## Suggested Artifact Types
 
 - `source_manifest.jsonl`: row-level inventory of source files, URLs, docs, papers, guidelines, and tool pages.
 - `source_registry.yaml`: curated authority map with source role, version/date, scope, load mode, and QA gate.
 - `taxonomy.yaml`: domain taxonomy for concepts, review types, source roles, and synthesis dimensions.
-- `source_cards/*.md` or `source_cards/*.yaml`: compressed per-source cards for fast bootstrapping.
+- `source_cards/*.md` or `source_cards/*.yaml`: compressed family-level cards for fast bootstrapping.
+- `source_cards_v2/*.md`: one-card-per-source derivative briefings with canonical paths, support types, route relevance, and evidence limits.
 - `document_index.jsonl` and split `sections/by_source/<source_id>.jsonl`: locator indexes for lazy fulltext access.
 - `graphify-out/`: optional rebuildable graph navigation output, kept local and locator-only unless a maintainer explicitly chooses a durable distribution channel.
 - `claim_ledger.jsonl`: claim-to-source ledger for synthesized writing and audits.

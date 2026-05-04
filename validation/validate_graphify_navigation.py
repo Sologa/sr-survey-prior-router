@@ -28,6 +28,8 @@ FORBIDDEN_GRAPH_OUTPUT_PATTERNS = [
     "upstream_repo/",
 ]
 
+IGNORED_METADATA_DIRS = {".git", ".omx"}
+
 REQUIRED_PHRASES = {
     "SKILL.md": [
         "references/graphify-navigation.md",
@@ -105,7 +107,7 @@ def main() -> int:
     generated_metadata = sorted(
         str(path.relative_to(ROOT))
         for path in ROOT.rglob("._*")
-        if ".git" not in path.relative_to(ROOT).parts
+        if not (IGNORED_METADATA_DIRS & set(path.relative_to(ROOT).parts))
     )
     if generated_metadata:
         errors.append(f"pack contains macOS metadata files: {generated_metadata}")

@@ -14,11 +14,13 @@ defaults:
     - source_inventory/source_registry.yaml
     - source_inventory/local_corpus_index.md
     - source_inventory/local_corpus_index.json
+    - source_inventory/source_cards_v2/<source_id>.md
     - corpus_index/document_index.jsonl
     - corpus_index/section_index_manifest.jsonl
     - corpus_index/sections/by_source/<source_id>.jsonl
   fulltext_rule: open canonical_sources/md/<source_id>/<file>.md only after a selected source_id and document/section locator are known.
   canonical_verification: important claims require the selected canonical Markdown/raw source, not only an index row or source card.
+  public_checkout_fallback: split sections/by_source files are local/rebuildable locator dumps and may be absent from the public GitHub review surface; when absent, use document_index plus source_cards_v2 locators and targeted search in selected canonical Markdown.
   optional_navigation_backends:
     graphify:
       contract: graphify-navigation.md

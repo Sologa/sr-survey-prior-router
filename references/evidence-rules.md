@@ -43,4 +43,4 @@ SR and survey writing should label claim origin when the distinction matters:
 - PROSPERO is a registry, not a methodology authority.
 - EQUATOR PRISMA is a registry/update locator; use primary PRISMA source rows for PRISMA method or reporting claims.
 - RevMan, Covidence, Rayyan, ASReview, EPPI-Reviewer, DistillerSR, and SRDR+ are workflow/tool sources, not methodology truth sources.
-- Source cards, corpus indexes, compiled wiki pages, RAG snippets, and previous chat summaries are derivative aids; verify important claims against canonical sources.
+- Source cards, source cards v2, corpus indexes, compiled wiki pages, RAG snippets, and previous chat summaries are derivative aids; verify important claims against canonical sources.

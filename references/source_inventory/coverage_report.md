@@ -19,7 +19,8 @@ Local corpus path: `docs/agent_capability_packs/sr-survey-prior-router/reference
 - `download_manifest.jsonl`: source ID, URL, final URL, checksum, local raw path, Markdown path, conversion status, and failures.
 - `source_inventory/local_corpus_index.md` and `.json`: source-level lazy-load index; 65 source IDs, 201 Markdown paths, with primary entry points capped for initial selection. One local capture, `state_of_art_review_2022`, is flagged `bad_capture` because the Markdown contains only a browser-check page.
 - `corpus_index/document_index.jsonl`: 201 document locator rows.
-- `corpus_index/section_index_manifest.jsonl` plus `corpus_index/sections/by_source/<source_id>.jsonl`: split section/page locator indexes for selected sources only.
+- `corpus_index/section_index_manifest.jsonl` plus `corpus_index/sections/by_source/<source_id>.jsonl`: split section/page locator indexes for selected sources only. The split by-source files are local/rebuildable backing locators and may be absent from a public GitHub checkout.
+- `source_inventory/source_cards_v2/`: per-source derivative cards with canonical paths, support types, and fallback locators for public review.
 - Current verified count after the 2026-05-04 augmentation plus subagent completion pass: 201 raw files and 201 Markdown files.
 - `source_manifest.jsonl` now has local raw/Markdown documents for 63 of 65 source rows. The rows without local documents are `press` and `cacm_author_guidelines`, both blocked by official-site 403 responses from this environment. Of the 63 with local files, `state_of_art_review_2022` is not evidence-usable because the captured PMC page is a reCAPTCHA/browser-check response.
 - PRISMA 2020 now includes the PRISMA site pages, checklist PDFs/DOCX, expanded checklist PDF, abstract checklist PDF/DOCX, flow diagram DOCX files, PLOS statement PDF, PLOS statement HTML, and PMC/BMJ printable full-text HTML for the statement and explanation/elaboration papers.
@@ -70,10 +71,10 @@ Before this pack is described as knowledge-heavy for a route, require:
 1. `source_manifest.jsonl` rows for the route's canonical sources are validated.
 2. Local `canonical_sources/md/<source_id>/` files are checked first when available.
 3. `source_registry.yaml` assigns authority class, scope, not-for boundary, freshness, and load mode.
-4. At least one source card exists for each claimed source family.
+4. At least one source card exists for each claimed source family; for claim-level reuse, prefer a passing `source_cards_v2/<source_id>.md` card for the specific source.
 5. Retrieval or manual lookup can produce evidence packets with source ID, URL/path, section or locator, support type, and freshness.
 6. Coverage gaps remain visible in the answer rather than hidden by synthesis prose.
-7. Agents use the lazy-load indexes before opening canonical Markdown, and do not bulk-load `canonical_sources/md/` as route context.
+7. Agents use the lazy-load indexes before opening canonical Markdown, fall back to source-card-v2 locators when split section indexes are absent, and do not bulk-load `canonical_sources/md/` as route context.
 
 ## Validation
 

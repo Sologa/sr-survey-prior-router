@@ -4,7 +4,7 @@ This file is the main knowledge-navigation index. Route definitions live here; c
 
 Each route should define: `route_id`, `trigger_terms`, `do_not_use_when`, `missing_context_signals`, `reference_files`, `lookup_surfaces`, `answer_guidance`, `risk_flags`, and `optional_notes`.
 
-`reference_files` are relative to this `references/` directory. `optional_notes` are relative to the skill root and are background material, not required execution steps. When a route needs local full-document evidence, use `route-source-index.yaml` first and then the lazy indexes named there; do not open `canonical_sources/md/` directly from this registry. When graphify is available, use `graphify-navigation.md` only after route selection and treat graph results as locators, not evidence.
+`reference_files` are relative to this `references/` directory. `optional_notes` are relative to the skill root and are background material, not required execution steps. When a route needs local full-document evidence, use `route-source-index.yaml` first and then the lazy indexes named there; do not open `canonical_sources/md/` directly from this registry. Lookup surfaces that name `corpus_index/sections/by_source/<source_id>.jsonl` mean "use when available locally"; in a public checkout without split section locators, fall back to `corpus_index/document_index.jsonl`, `source_inventory/source_cards_v2/<source_id>.md`, and targeted search inside selected canonical Markdown. When graphify is available, use `graphify-navigation.md` only after route selection and treat graph results as locators, not evidence.
 
 ## Routes
 
