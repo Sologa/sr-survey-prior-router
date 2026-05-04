@@ -1,8 +1,9 @@
-# Local full-document backing corpus.
-# Keep these out of normal GitHub PR/review surfaces unless a maintainer chooses
-# a large-file channel such as Git LFS, release assets, or object storage.
+# Local raw backing corpus.
+# Keep raw source captures out of normal GitHub PR/review surfaces unless a
+# maintainer chooses a large-file channel such as Git LFS, release assets, or
+# object storage. Markdown conversions under canonical_sources/md/ are tracked
+# for reviewable source access.
 /references/canonical_sources/raw/
-/references/canonical_sources/md/
 
 # Large split section locators are local/rebuildable backing data. Keep the
 # manifest in GitHub review, but exclude per-source locator dumps by default.

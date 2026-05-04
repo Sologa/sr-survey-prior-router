@@ -5,7 +5,7 @@ Generated first by `temp_artifact/20260504_research_prior_canonical_sources/down
 Augmented by `temp_artifact/20260504_research_prior_canonical_sources/augment_prisma_docx_and_blockers.py` and scoped subagent logs.
 
 This directory stores local raw and Markdown copies of official/source-inventory documents where retrieval succeeded.
-These files are for local reading and evidence location; licensing and source-specific reuse restrictions still apply.
+Markdown conversions under `md/` are tracked in the GitHub draft so reviewers and agents can inspect canonical text without a separate corpus download. Raw captures under `raw/` remain local by default and may be distributed separately through Git LFS, release assets, object storage, or another large-file channel if needed. Licensing and source-specific reuse restrictions still apply.
 
 Do not use this directory as the first route entrypoint. Start with `../route-source-index.yaml`, `../source_inventory/local_corpus_index.*`, and `../corpus_index/` to choose source IDs, documents, and line/page locators. Open `md/<source_id>/...` or `raw/<source_id>/...` only after that selection.
 

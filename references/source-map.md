@@ -25,9 +25,9 @@ Treat these as seed inventory and local-corpus artifacts. For important claims, 
 
 ## Local Corpus Boundary
 
-`canonical_sources/raw/` and `canonical_sources/md/` are the complete local backing corpus, not the normal route boot surface. Agents should reach them through `route-source-index.yaml`, `source_inventory/local_corpus_index.*`, `corpus_index/document_index.jsonl`, and the selected `corpus_index/sections/by_source/<source_id>.jsonl` file.
+`canonical_sources/md/` is the tracked, reviewable Markdown corpus for local model reading. `canonical_sources/raw/` is the local raw backing corpus and may be distributed separately through a large-file channel if needed. Neither directory is the normal route boot surface: agents should reach canonical text through `route-source-index.yaml`, `source_inventory/local_corpus_index.*`, `corpus_index/document_index.jsonl`, and the selected `corpus_index/sections/by_source/<source_id>.jsonl` file.
 
-For GitHub-facing review or future publication of this pack, keep the portable surface small: router docs, registries, source cards, coverage reports, source-level/document-level indexes, `corpus_index/section_index_manifest.jsonl`, `canonical_sources/README.md`, and `canonical_sources/download_manifest.jsonl`. The raw/Markdown corpus and split `corpus_index/sections/by_source/` locators are generated/local backing data and should not be treated as ordinary PR review material unless a maintainer explicitly chooses Git LFS, release assets, object storage, or another large-file channel.
+For GitHub-facing review or future publication of this pack, keep the portable surface bounded: router docs, registries, source cards, coverage reports, source-level/document-level indexes, `corpus_index/section_index_manifest.jsonl`, `canonical_sources/README.md`, `canonical_sources/download_manifest.jsonl`, and the Markdown corpus under `canonical_sources/md/`. The raw corpus and split `corpus_index/sections/by_source/` locators are generated/local backing data and should not be treated as ordinary PR review material unless a maintainer explicitly chooses Git LFS, release assets, object storage, or another large-file channel.
 
 ## Suggested Artifact Types
 
