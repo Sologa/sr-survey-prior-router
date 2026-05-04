@@ -151,17 +151,26 @@
     "title": "CACM author guidelines",
     "authority_class": "venue_guidance",
     "canonical_url": "https://cacm.acm.org/author-guidelines",
-    "local_docs_count": 0,
-    "md_docs_count": 0,
-    "raw_docs_count": 0,
+    "local_docs_count": 4,
+    "md_docs_count": 4,
+    "raw_docs_count": 4,
     "blocked_attempts_count": 5,
-    "primary_md_paths": [],
-    "all_md_paths": [],
-    "conversion_types": [],
-    "status": "blocked",
-    "content_quality": "browser_live_fallback_verified_but_no_local_content",
-    "evidence_use": "live_locator_only_until_local_capture",
-    "notes": "CACM-specific author-guidelines page remains blocked for local capture; official CACM/ACM fallback pages were browser-live verified on 2026-05-05 but are not tracked local evidence."
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_cacm_overview.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_acm_submissions.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_acm_information_for_authors.md"
+    ],
+    "conversion_types": [
+      "manual_browser_pdf_to_markdown"
+    ],
+    "status": "partial",
+    "content_quality": "manual_browser_pdf_capture_with_navigation_noise",
+    "evidence_use": "venue_guidance_with_scope",
+    "notes": "Manual browser PDF captures exist for CACM author guidelines, CACM overview, ACM submissions, and ACM information-for-authors pages; scripted fetch attempts remain 403-blocked. Use only for venue/publisher guidance."
   },
   "campbell_standards": {
     "family": "sr_reporting_and_conduct",
@@ -1089,17 +1098,25 @@
     "title": "PRESS Peer Review of Electronic Search Strategies",
     "authority_class": "methodology_guideline",
     "canonical_url": "https://www.cda-amc.ca/press-peer-review-electronic-search-strategies",
-    "local_docs_count": 0,
-    "md_docs_count": 0,
-    "raw_docs_count": 0,
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
     "blocked_attempts_count": 6,
-    "primary_md_paths": [],
-    "all_md_paths": [],
-    "conversion_types": [],
-    "status": "blocked",
-    "evidence_use": "live_locator_only_until_local_capture",
-    "notes": "Browser-live official PRESS hub/detail/E&E URLs verified on 2026-05-05, but local scripted fetch remains 403-blocked and no local Markdown/raw content is tracked.",
-    "content_quality": "browser_live_verified_but_no_local_content"
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/press/manual_browser_pdf_hub_page.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/press/manual_browser_pdf_ee_detail_page.md"
+    ],
+    "conversion_types": [
+      "manual_browser_pdf_to_markdown"
+    ],
+    "status": "partial",
+    "evidence_use": "search_strategy_qa_method_evidence_with_scope",
+    "notes": "Manual browser PDF captures exist for the official PRESS hub, E&E detail page, and 79-page E&E PDF; scripted fetch attempts remain 403-blocked. Use the E&E PDF for search-strategy peer-review evidence with scope.",
+    "content_quality": "manual_browser_pdf_capture_with_navigation_noise"
   },
   "prisma_2020": {
     "family": "sr_reporting_and_conduct",

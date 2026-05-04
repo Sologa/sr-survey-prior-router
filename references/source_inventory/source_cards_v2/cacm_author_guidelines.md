@@ -3,82 +3,90 @@
 ```yaml
 source_id: cacm_author_guidelines
 source_family: survey_writing_methods
-canonical_paths: []
+canonical_paths:
+  - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md
+  - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_cacm_overview.md
+  - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_acm_submissions.md
+  - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_acm_information_for_authors.md
 canonical_urls:
   - https://cacm.acm.org/author-guidelines
   - https://authors.acm.org/magazines/cacm
   - https://www.acm.org/publications/authors/submissions
   - https://www.acm.org/publications/authors/information-for-authors
-authority_level: blocked_inventory_target
-version_or_access_date: "browser-live check 2026-05-05; local scripted fetch blocked"
+authority_level: venue_guidance
+version_or_access_date: "manual browser PDF captures checked 2026-05-05; scripted fetch blocked"
 applies_to:
-  - future CACM venue-author-guideline capture
-  - browser-live fallback verification of CACM/ACM author pages
-  - source-audit tracking for blocked local evidence
+  - CACM article audience, scope, and submission expectations
+  - ACM publisher authoring workflow and policy navigation
+  - venue-specific survey/review article positioning when targeting CACM
 not_for:
-  - current local evidence-backed CACM author-guideline claims
   - systematic review or survey methodology
+  - universal computing survey-writing rules
   - substituting ACM DL user-guide content for CACM author rules
-  - venue advice without live or locally captured official content
+  - venue advice without checking current official pages when requirements may have changed
 route_relevance:
   - survey_writing_prior
   - source_audit
-freshness_risk: high because the CACM-specific target remains blocked and browser-live fallback pages can change.
-reuse_or_license_risk: ACM/CACM pages are publisher materials; no open license was observed for guidance pages in the 2026-05-05 live check.
-qa_status: browser_live_fallback_verified_scripted_fetch_blocked_no_local_content
+freshness_risk: high; CACM/ACM author pages can change and simple scripted capture still fails with Cloudflare/403.
+reuse_or_license_risk: ACM/CACM publisher materials; no open license observed for guidance pages. Prefer short quotations and verify rights before public reuse.
+qa_status: manual_browser_pdf_capture_available_scripted_fetch_blocked
 last_reviewed: "2026-05-05"
 ```
 
 ## Key points
 
 ```yaml
-- claim: The CACM-specific author-guidelines page remains blocked for usable local capture.
+- claim: The CACM-specific author-guidelines page is now locally captured from a manual browser PDF download.
   supporting_canonical_paths:
-    - references/source_inventory/source_manifest.jsonl
-    - references/canonical_sources/download_manifest.jsonl
-  support_type: blocked
-  verification_note: The manifest and failed download rows record no local canonical Markdown for the CACM-specific page.
-  quote_or_locator: source_manifest.jsonl row with source_id=cacm_author_guidelines; download_manifest rows with source_id=cacm_author_guidelines
-- claim: Browser-live access found official CACM/ACM fallback pages, but those are not tracked local canonical evidence.
+    - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md
+  support_type: direct
+  verification_note: The capture contains the CACM author-guidelines text and should be preferred over ACM-wide fallback pages for CACM-specific venue guidance.
+  quote_or_locator: manual_browser_pdf_author_guidelines.md:1-45
+- claim: CACM/ACM author pages are venue or publisher guidance, not survey-methodology authority.
   supporting_canonical_paths:
-    - references/source_inventory/source_manifest.jsonl
-  support_type: blocked
-  verification_note: The manifest records browser_verified_urls for the ACM Authors Gateway and ACM author pages.
-  quote_or_locator: source_manifest.jsonl row with browser_verified_urls
-- claim: CACM and ACM author pages are venue or publisher guidance, not survey-methodology authority.
+    - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md
+    - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_cacm_overview.md
+    - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_acm_submissions.md
+  support_type: direct
+  verification_note: The captures describe CACM readership, article mechanics, author workflow, templates, and submission/policy navigation.
+  quote_or_locator: canonical Markdown headers and captured PDF text sections
+- claim: ACM-wide submissions and information-for-authors captures are supporting publisher context, not replacements for CACM-specific instructions.
   supporting_canonical_paths:
-    - references/source_inventory/source_manifest.jsonl
-  support_type: blocked
-  verification_note: The inventory class is venue guidance and the source remains no-local-content.
-  quote_or_locator: source_manifest.jsonl row with authority_class=venue_guidance and not_for boundary
+    - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_acm_submissions.md
+    - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_acm_information_for_authors.md
+  support_type: direct
+  verification_note: Use these for ACM workflow/policy context while keeping CACM-specific claims anchored to the author-guidelines capture.
+  quote_or_locator: manual_browser_pdf_acm_submissions.md:1-35; manual_browser_pdf_acm_information_for_authors.md:1-35
 ```
 
 ## Operational rules
 
-- Treat this as a blocked/no-local-content source placeholder.
-- Use browser-live official pages only for current CACM venue guidance after explicit verification.
-- Do not cite this card for CACM style, article type, submission, or author-policy claims.
-- Keep CACM author guidance separate from `acm_dl`, which is a publisher corpus/search-interface source.
+- Use `manual_browser_pdf_author_guidelines.md` first for CACM-specific audience, article type, and submission guidance.
+- Use ACM submissions and information-for-authors captures only for publisher-level workflow or policy context.
+- Do not treat CACM/ACM author pages as cross-domain survey-methodology standards.
+- Live-verify current official pages before exact venue-submission advice because these pages can change.
 
 ## Common misuses
 
-- Filling the CACM gap with ACM DL user-guide text.
-- Treating ACM-wide author pages as survey methodology.
-- Treating a browser-live fallback summary as local canonical evidence.
-- Applying CACM venue expectations to ACM journals, proceedings, or magazines without specific official evidence.
+- Filling CACM guidance gaps with ACM DL user-guide text.
+- Treating ACM-wide author pages as CACM-specific rules.
+- Treating venue advice as evidence-synthesis methodology.
+- Copying large ACM/CACM text into public materials without checking reuse rights.
 
 ## Evidence limits
 
-There is no tracked local canonical Markdown evidence for CACM author guidelines. The card supports only blocked-source routing, browser-live fallback locator status, and the boundary that CACM/ACM pages are venue/publisher guidance.
+The local captures are browser print PDFs and include navigation/cookie artifacts. They are usable for source grounding, but not clean publisher XML/HTML captures. ACM/CACM reuse rights remain more restrictive than open-access method papers, so prefer short excerpts and current official links in public-facing outputs.
 
 ## Verification paths
 
 - Source row: `references/source_inventory/source_manifest.jsonl` with `source_id=cacm_author_guidelines`.
-- Failed scripted download rows: `references/canonical_sources/download_manifest.jsonl` with `source_id=cacm_author_guidelines`.
-- Registry caveat: `references/source_inventory/source_registry.yaml` under `survey_writing_methods`.
-- Live recapture note: `validation/live_recapture_2026-05-05.md`.
+- Download rows: `references/canonical_sources/download_manifest.jsonl` with `source_id=cacm_author_guidelines` and `capture_method=manual_browser_pdf_download`.
+- Canonical Markdown: `references/canonical_sources/md/cacm_author_guidelines/`.
+- Document locators: `references/corpus_index/document_index.jsonl` with `source_id=cacm_author_guidelines`.
+- Manual capture note: `validation/manual_browser_capture_2026-05-05.md`.
 
 ## Unresolved gaps
 
-- Need browser-assisted or access-approved capture of the CACM-specific author-guidelines page.
-- Need local Markdown for CACM/ACM fallback pages before any non-live evidence-backed venue advice.
+- Add finer line/section locators for CACM section types, length expectations, and review process details before high-stakes venue advice.
+- Recapture from official HTML if Cloudflare/scripted access becomes available.
+- Verify ACM/CACM reuse terms before public redistribution of full captured text.

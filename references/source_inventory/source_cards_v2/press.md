@@ -3,82 +3,89 @@
 ```yaml
 source_id: press
 source_family: sr_certainty_appraisal_bias_search
-canonical_paths: []
+canonical_paths:
+  - references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md
+  - references/canonical_sources/md/press/manual_browser_pdf_hub_page.md
+  - references/canonical_sources/md/press/manual_browser_pdf_ee_detail_page.md
 canonical_urls:
   - https://www.cda-amc.ca/press-peer-review-electronic-search-strategies
   - https://www.cda-amc.ca/press-peer-review-electronic-search-strategies-2015-guideline-explanation-and-elaboration
   - https://www.cda-amc.ca/sites/default/files/attachments/2023-06/PRESS%20Peer%20Review%20Electronic%20Search%20Strategies_%202015%20Guideline%20Explanation%20and%20Elaboration%20%28PRESS%20E%26E%29.pdf
   - https://www.cda-amc.ca/sites/default/files/archive/127686/CP0015_PRESS_Update_Report_2016.pdf
-authority_level: blocked_inventory_target
-version_or_access_date: "2015 guideline/explanation published 2016; page updated 2026-02-26; browser-live checked 2026-05-05"
+authority_level: methodology_guideline
+version_or_access_date: "2015 guideline/explanation published 2016; page updated 2026-02-26; manually captured 2026-05-05"
 applies_to:
-  - inventory target for peer review of electronic search strategies
-  - future browser-assisted or access-approved PRESS capture
+  - peer review of electronic search strategies
+  - systematic-review and health-technology-assessment search QA
+  - checking search-strategy elements, translation, syntax, limits, and documentation
 not_for:
-  - local evidence citation until access-approved canonical content is captured
   - whole-review conduct guidance
   - non-electronic search tasks
+  - study appraisal, certainty grading, or bias assessment
   - database API behavior
 route_relevance:
   - sr_writing_prior
   - evidence_grounding
   - source_audit
-freshness_risk: high until local canonical content is captured; browser access worked on 2026-05-05 but scripted fetch still hit Cloudflare 403.
-reuse_or_license_risk: CDA-AMC terms apply; subagent observed non-commercial/no-modification/credit conditions in the official E&E PDF.
-qa_status: browser_live_verified_scripted_fetch_blocked_no_local_content
+freshness_risk: medium; the E&E PDF is a stable 2016 guideline, but hub/detail pages and access conditions can change and scripted fetch still returns 403.
+reuse_or_license_risk: CDA-AMC terms apply; the E&E PDF allows non-commercial reproduction if unmodified and credited, but verify terms before public redistribution or translation.
+qa_status: manual_browser_pdf_capture_available_scripted_fetch_blocked
 last_reviewed: "2026-05-05"
 ```
 
 ## Key points
 
 ```yaml
-- claim: PRESS is no longer best described as dead; browser-live access found official hub, detail, and E&E PDF URLs on 2026-05-05.
+- claim: PRESS is now locally captured in this pack through manual browser PDF downloads.
   supporting_canonical_paths:
-    - references/source_inventory/source_manifest.jsonl
-  support_type: blocked
-  verification_note: The manifest records browser-verified URLs but no local canonical Markdown/raw content.
-  quote_or_locator: source_manifest.jsonl row with source_id=press; browser_verified_urls
-- claim: PRESS still cannot be used as local canonical evidence in this pack.
+    - references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md
+    - references/canonical_sources/md/press/manual_browser_pdf_hub_page.md
+    - references/canonical_sources/md/press/manual_browser_pdf_ee_detail_page.md
+  support_type: direct
+  verification_note: These Markdown files were converted from user-downloaded browser/PDF captures on 2026-05-05; simple scripted fetches still failed with 403.
+  quote_or_locator: canonical Markdown headers and download_manifest rows with capture_method=manual_browser_pdf_download
+- claim: The PRESS E&E PDF is the primary local PRESS evidence for search-strategy peer-review guidance.
   supporting_canonical_paths:
-    - references/source_inventory/source_manifest.jsonl
-    - references/canonical_sources/download_manifest.jsonl
-  support_type: blocked
-  verification_note: Simple local fetch attempts remain 403-blocked and no tracked Markdown exists under canonical_sources/md/press/.
-  quote_or_locator: source_manifest.jsonl row with local_content_status=blocked; download_manifest rows with source_id=press
-- claim: The best future capture target is the official PRESS E&E PDF plus the current hub/detail pages, not stale standalone table URLs.
+    - references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md
+  support_type: direct
+  verification_note: The 79-page E&E capture contains the guideline explanation/elaboration text and is preferred over hub/detail print captures for substantive PRESS claims.
+  quote_or_locator: manual_browser_pdf_press_ee_2015.md:1-40
+- claim: PRESS should be used only for electronic-search-strategy peer review/search QA, not as a whole-review methodology source.
   supporting_canonical_paths:
-    - references/source_inventory/source_manifest.jsonl
-  support_type: blocked
-  verification_note: This is a browser-live locator claim from the 2026-05-05 subagent check, not local canonical evidence.
-  quote_or_locator: source_manifest.jsonl row with browser_verified_urls
+    - references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md
+  support_type: direct
+  verification_note: The source title and scope are electronic search strategies and peer review of those strategies.
+  quote_or_locator: manual_browser_pdf_press_ee_2015.md:1-40
 ```
 
 ## Operational rules
 
-- Use this card only to remember that `press` is a browser-live but locally uncaptured search-strategy peer-review authority.
-- Do not cite PRESS checklist or recommendation content from this pack until canonical content is captured.
-- If PRESS is needed, use browser/manual or another access-approved route and store the hub/detail/E&E PDF capture with license notes.
-- Treat PRESS as search strategy QA, not whole-review conduct guidance.
+- Prefer `manual_browser_pdf_press_ee_2015.md` for substantive PRESS evidence.
+- Use the hub/detail page captures for official locator, version, and access context.
+- Keep scripted-fetch 403 rows in mind for refresh planning; recapture may require browser/manual access again.
+- Treat PRESS as search-strategy QA, not whole-review conduct guidance.
 
 ## Common misuses
 
-- Reconstructing PRESS checklist content from memory.
-- Treating the browser-live locator as local evidence.
-- Treating the failed `download_manifest` rows as proof that official PRESS content is unavailable.
 - Using PRESS for non-search or whole-review method claims.
+- Treating the browser print/PDF hub page as the primary checklist/guideline text when the E&E PDF is available.
+- Assuming standalone Table 8, Table 9, or Table 10 URLs are separately captured; use the E&E PDF first.
+- Ignoring CDA-AMC reuse terms when copying or redistributing the source.
 
 ## Evidence limits
 
-There is still no tracked local canonical Markdown for PRESS. The safe local claim is limited to inventory status, browser-live locator status, and the continuing need for access-approved capture.
+The local hub/detail captures are browser print PDFs and include navigation/footer artifacts. The E&E PDF is the primary clean guideline capture. Simple local HTTP fetch still fails for CDA-AMC URLs, so future refreshes should record whether capture was browser/manual or scripted.
 
 ## Verification paths
 
 - Source row: `references/source_inventory/source_manifest.jsonl` with `source_id=press`.
-- Failed scripted download rows: `references/canonical_sources/download_manifest.jsonl` with `source_id=press`.
-- Confirm local absence: `references/canonical_sources/md/press/`.
-- Live recapture note: `validation/live_recapture_2026-05-05.md`.
+- Download rows: `references/canonical_sources/download_manifest.jsonl` with `source_id=press` and `capture_method=manual_browser_pdf_download`.
+- Canonical Markdown: `references/canonical_sources/md/press/`.
+- Document locators: `references/corpus_index/document_index.jsonl` with `source_id=press`.
+- Manual capture note: `validation/manual_browser_capture_2026-05-05.md`.
 
 ## Unresolved gaps
 
-- Need browser-assisted or access-approved capture of the PRESS hub, detail page, and official E&E PDF.
-- Need local Markdown conversion and source-card upgrade before using PRESS content as evidence.
+- Add finer line/section locators for individual PRESS checklist items before high-stakes claim reuse.
+- Optional: separately capture standalone table PDFs if exact table-file provenance becomes important.
+- Recheck CDA-AMC access and reuse terms before public redistribution or translation.

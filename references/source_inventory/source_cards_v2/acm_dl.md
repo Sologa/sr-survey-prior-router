@@ -50,7 +50,7 @@ last_reviewed: "2026-05-05"
   support_type: direct
   verification_note: Do not infer API access or bulk-harvest rights from web-interface search features.
   quote_or_locator: official_dl_user_guide_pdf_new_acm-digital-library-user-guide.pdf.md:197-229
-- claim: Several more directly relevant ACM web pages, including DL home/usage-policy and CACM author pages, were blocked in local capture, so this card has partial coverage.
+- claim: Several ACM web pages, including DL home/usage-policy, remain outside this card; CACM author pages are now captured separately under `cacm_author_guidelines`, so this card remains limited to ACM DL user-guide coverage.
   supporting_canonical_paths:
     - references/canonical_sources/download_manifest.jsonl
   support_type: locator_only
@@ -69,12 +69,12 @@ last_reviewed: "2026-05-05"
 
 - Treating ACM DL as a survey-writing method authority.
 - Treating search UI availability as permission for automated harvesting.
-- Substituting ACM DL user-guide material for blocked CACM author guidelines.
+- Substituting ACM DL user-guide material for CACM author guidelines now captured under `cacm_author_guidelines`.
 - Assuming Guide-to-Computing-Literature coverage is complete or current without checking ACM documentation.
 
 ## Evidence limits
 
-The local canonical content is a user guide PDF only. More authoritative ACM DL home, policy, and CACM author pages failed local capture. This card therefore supports preliminary source routing and interface orientation, not legal/usage-policy conclusions or methodology claims.
+The local canonical content for this card is a user guide PDF only. CACM author pages are captured separately under `cacm_author_guidelines`; more authoritative ACM DL home and policy pages still need live verification before legal/usage-policy conclusions.
 
 ## Verification paths
 
@@ -87,4 +87,4 @@ The local canonical content is a user guide PDF only. More authoritative ACM DL 
 
 - Capture or manually verify ACM DL usage-policy pages before automating access.
 - Capture a current ACM API or export documentation source if API behavior becomes relevant.
-- Keep CACM author-guideline work blocked until CACM-specific official content is available.
+- Use `cacm_author_guidelines` for CACM-specific official content; do not route CACM author-guideline claims through the ACM DL user-guide card.

@@ -20,7 +20,7 @@ Survey-writing prior is not an automatic survey-generation pipeline. Reporting c
 
 - Local raw and Markdown snapshots now exist for retrieved method sources under `../../canonical_sources/`; use `source_manifest.jsonl` `local_documents` entries to locate them.
 - Nickerson taxonomy is locally captured from the Springer publisher PDF because the Augsburg OPUS mirror timed out from this environment.
-- ACM DL has a local official user-guide snapshot, but CACM author guideline pages remain browser-live/no-local-content and still need access-approved capture before evidence use.
+- CACM author guidelines and ACM author pages now have manual browser PDF captures; ACM DL remains a separate user-guide/source-discovery document and should not substitute for CACM venue guidance.
 - `state_of_art_review_2022` was repaired on 2026-05-05; use it only for state-of-the-art review methodology claims.
 - NLP/speech-specific survey conventions need exemplar-derived cards.
 - Comparison-table schemas are not yet formalized.

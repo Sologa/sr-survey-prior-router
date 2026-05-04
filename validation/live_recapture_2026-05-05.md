@@ -4,6 +4,10 @@ Status: completed
 Artifact type: browser/live-access validation note
 Canonical evidence status: derivative audit note; verify final claims against canonical Markdown or live official URLs
 
+## Superseded Status Update
+
+This note records the pre-manual-capture state from the live browser/subagent pass. A later user-assisted manual browser PDF capture on 2026-05-05 added local Markdown for `press` and `cacm_author_guidelines`; see `manual_browser_capture_2026-05-05.md` and the current source cards for the updated local corpus state.
+
 ## Scope
 
 This pass used parallel subagents with live browser/web access to revisit four sources previously marked as blocked, bad capture, or too sparse:

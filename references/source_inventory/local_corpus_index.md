@@ -61,7 +61,7 @@ Status rules: available = local Markdown/raw with no blocked attempts; partial =
 | grade_cerqual | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_cerqual/canonical.md |
 | grade_handbook | partial | 3 (3/3) | 2 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_handbook/canonical_handbook.html.md |
 | grade_working_group | available | 3 (3/3) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_working_group/canonical.md |
-| press | blocked | 0 (0/0) | 6 |  |
+| press | partial | 3 (3/3) | 6 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md |
 | rob2 | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rob2/canonical_rob-2-0-tool.md |
 | robins_i | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robins_i/canonical_home.md |
 | robis | available | 2 (2/2) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robis/canonical_robisjclinepi.pdf.md |
@@ -84,7 +84,7 @@ Status rules: available = local Markdown/raw with no blocked attempts; partial =
 | source_id | status | docs md/raw | blocked | primary md path |
 | --- | --- | ---: | ---: | --- |
 | acm_dl | partial | 1 (1/1) | 5 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acm_dl/official_dl_user_guide_pdf_new_acm-digital-library-user-guide.pdf.md |
-| cacm_author_guidelines | blocked | 0 (0/0) | 5 |  |
+| cacm_author_guidelines | partial | 4 (4/4) | 5 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md |
 | cochrane_ch09 | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_ch09/canonical_chapter-09.md |
 | cochrane_ch12 | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_ch12/canonical_chapter-12.md |
 | entreq | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/entreq/canonical_entreq.md |
@@ -106,8 +106,8 @@ Notes:
 
 - `state_of_art_review_2022` was repaired on 2026-05-05; the local Markdown now contains the PMC article body and can support scoped SotA-review methodology claims.
 - `clinicaltrials_api` now includes the official OpenAPI v2 snapshot plus the live version endpoint capture; the old learn-about-API HTML remains only a sparse locator.
-- `press` is browser-live verified after the 2026-05-05 check, but local scripted fetches still hit CDA-AMC/CADTH 403 and no local Markdown/raw support exists for PRESS content claims.
-- `cacm_author_guidelines` has browser-live fallback pages, but the CACM-specific target and local scripted capture remain blocked/no-local-content.
+- `press` now has manual browser PDF captures for the official hub, detail page, and 79-page E&E PDF; scripted fetches still hit CDA-AMC/CADTH 403, so refreshes may require browser/manual capture.
+- `cacm_author_guidelines` now has manual browser PDF captures for the CACM author-guidelines page and official CACM/ACM fallback pages; scripted fetches still hit Cloudflare 403 and the captures are venue/publisher guidance only.
 - `equator_prisma` is listed under scholarly databases/APIs as a registry/update locator; use `prisma_2020` or related primary PRISMA rows for method or reporting evidence.
 - `core_api` has `conversion_depth=mixed_full_and_entry_stub`; use richer local docs or current official sources before making detailed API capability claims from stub captures.
 - `scite_api` has `conversion_depth=mixed_entry_stub_and_openapi`; use OpenAPI/current licensed docs rather than short entry-point stubs for detailed API capability claims.

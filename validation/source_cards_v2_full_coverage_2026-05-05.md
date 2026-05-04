@@ -60,7 +60,7 @@ This pass tightened `validation/validate_source_cards_v2.py` so it now:
 
 ## Known Boundaries Preserved in Cards
 
-- `press` and `cacm_author_guidelines` are blocked local inventory targets and cannot be used as local canonical evidence.
+- `press` and `cacm_author_guidelines` now have manual browser PDF captures, but scripted fetch remains blocked; use them only within their scoped roles and preserve reuse caveats.
 - Superseded by `live_recapture_2026-05-05.md`: `state_of_art_review_2022` now has local article-body Markdown, and `clinicaltrials_api` now has local OpenAPI/version captures. Both remain scoped sources, not universal methodology authorities.
 - Registry, API, database, venue, and exemplar cards are locator/context sources, not SR or survey methodology authorities.
 - Commercial/API sources keep freshness, access, rate-limit, subscription, and reuse caveats.

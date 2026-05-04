@@ -70,9 +70,9 @@ families:
       - press
     scope: Certainty, confidence, appraisal, risk of bias, and search strategy QA.
     not_for: Substituting for full SR conduct or paper writing guidance.
-    bundle_policy: prefer canonical_sources/md for downloaded authorities; document blocked PRESS/CDA-AMC retrieval separately.
+    bundle_policy: prefer canonical_sources/md for downloaded authorities; PRESS now has manual browser PDF captures, while scripted CDA-AMC retrieval remains blocked.
     per_source_caveats:
-      press: Browser-live official PRESS locators were verified on 2026-05-05, but no local canonical Markdown/raw content is currently available and scripted fetch still returns 403.
+      press: Manual browser PDF captures for the official PRESS hub/detail/E&E PDF were added on 2026-05-05; scripted fetch still returns 403, so refreshes may require browser/manual capture.
     source_card_ref: source_cards/sr-method-authorities.md
 
   survey_writing_methods:
@@ -103,7 +103,7 @@ families:
     bundle_policy: use as a layered prior; keep method sources separate from venue norms; prefer canonical_sources/md where available.
     per_source_caveats:
       state_of_art_review_2022: Article body recaptured from PMC on 2026-05-05; use only for scoped state-of-the-art review methodology claims.
-      cacm_author_guidelines: CACM-specific page remains no-local-content; official CACM/ACM fallback pages were browser-live verified but need local/browser-assisted capture before evidence use.
+      cacm_author_guidelines: Manual browser PDF captures for CACM author guidelines and ACM author pages were added on 2026-05-05; use only as venue/publisher guidance and live-verify current requirements.
       acm_dl: Local source is an ACM DL user-guide/publisher-corpus document, not a review-method or CACM author-guideline substitute.
     source_card_ref: source_cards/survey-writing-methods.md
 
