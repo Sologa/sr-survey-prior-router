@@ -1,0 +1,163 @@
+schema_version: 0.1
+last_checked: "2026-05-04"
+purpose: >
+  Seed authority registry for sr-survey-prior-router. This registry distinguishes
+  methodology authorities, reporting guidelines, venue norms, exemplar corpora,
+  bibliographic databases, trial registries, citation graph enrichers, and
+  commercial/proprietary sources.
+
+promotion_policy:
+  status: staged_seed_inventory_with_local_corpus
+  may_claim: seed source inventory and first local raw/Markdown corpus exist
+  must_not_claim:
+    - exhaustive canonical survey/SR corpus is bundled
+    - all source rows, APIs, venue pages, and commercial sources have local snapshots
+    - derivative source cards can replace canonical sources
+  before_knowledge_heavy_claim:
+    - validate source_manifest rows for the claimed route
+    - prefer local canonical_sources/md paths when available
+    - create route-specific source cards
+    - verify license and access boundaries
+    - test evidence packet retrieval against real tasks
+
+families:
+  codex_skill_packaging:
+    authority_type: tool_documentation
+    coverage_state: partial
+    canonicality: official_docs
+    freshness_signal: checked_2026-05-04
+    source_ids:
+      - openai_codex_skills
+      - openai_codex_agents_md
+    scope: Codex skill format, progressive disclosure, AGENTS.md guidance layering.
+    not_for: Domain methodology truth for SR or survey writing.
+    bundle_policy: keep as references only; do not mix with methodology authority.
+    source_card_ref: source_cards/codex-skill-packaging.md
+
+  sr_reporting_and_conduct:
+    authority_type: methodology_guideline
+    coverage_state: seed_core_with_local_documents
+    canonicality: official_or_method_authority
+    freshness_signal: mixed; see source_manifest.jsonl
+    source_ids:
+      - prisma_2020
+      - prisma_extensions
+      - prisma_s
+      - prisma_p
+      - prisma_scr
+      - cochrane_handbook
+      - cochrane_mecir
+      - jbi_manual_2024
+      - campbell_standards
+    scope: Systematic/scoping review reporting and conduct authorities.
+    not_for: Treating reporting checklists as full conduct manuals or applying health-review rules without adaptation.
+    bundle_policy: prefer canonical_sources/md for downloaded authorities; keep source cards as locators, not replacements.
+    source_card_ref: source_cards/sr-method-authorities.md
+
+  sr_certainty_appraisal_bias_search:
+    authority_type: methodology_guideline
+    coverage_state: seed_core_with_partial_local_documents
+    canonicality: official_or_method_authority
+    freshness_signal: mixed; see source_manifest.jsonl
+    source_ids:
+      - grade_working_group
+      - grade_handbook
+      - grade_cerqual
+      - amstar2
+      - robis
+      - rob2
+      - robins_i
+      - press
+    scope: Certainty, confidence, appraisal, risk of bias, and search strategy QA.
+    not_for: Substituting for full SR conduct or paper writing guidance.
+    bundle_policy: prefer canonical_sources/md for downloaded authorities; document blocked PRESS/CDA-AMC retrieval separately.
+    per_source_caveats:
+      press: Candidate search-strategy peer-review authority, but no local canonical Markdown/raw content is currently available.
+    source_card_ref: source_cards/sr-method-authorities.md
+
+  survey_writing_methods:
+    authority_type: mixed_methodology_and_venue_guidance
+    coverage_state: seed_partial_with_local_documents
+    canonicality: mixed
+    freshness_signal: mixed; see source_manifest.jsonl
+    source_ids:
+      - swim
+      - entreq
+      - rameses_meta_narrative
+      - rameses_realist
+      - cochrane_ch09
+      - cochrane_ch12
+      - sanra
+      - narrative_synthesis_york_2006
+      - state_of_art_review_2022
+      - narrative_review_writing_2011
+      - nickerson_taxonomy_2013
+      - kundisch_taxonomy_update_2021
+      - nature_scirev_guidelines
+      - nature_reviews_submission
+      - ieee_comst_guidelines
+      - cacm_author_guidelines
+      - acm_dl
+    scope: Human survey/scoping/narrative review writing, structured synthesis, taxonomy construction, and venue expectations.
+    not_for: Claiming one universal official survey-writing standard exists.
+    bundle_policy: use as a layered prior; keep method sources separate from venue norms; prefer canonical_sources/md where available.
+    per_source_caveats:
+      state_of_art_review_2022: Local raw/Markdown capture is a PMC browser-check page only; do not use as method evidence until the article body is recaptured.
+      cacm_author_guidelines: Blocked locally; use only as a candidate venue source until official content is captured.
+      acm_dl: Local source is an ACM DL user-guide/publisher-corpus document, not a review-method or CACM author-guideline substitute.
+    source_card_ref: source_cards/survey-writing-methods.md
+
+  nlp_speech_cs_exemplar_sources:
+    authority_type: exemplar_corpus_and_venue_norms
+    coverage_state: seed_partial_with_local_documents
+    canonicality: official_venue_or_field_database
+    freshness_signal: checked_2026-05-04
+    source_ids:
+      - acl_anthology
+      - acl_anthology_github
+      - acl_arr_authors
+      - aclpub_formatting
+      - tacl_submission
+      - computational_linguistics
+      - isca_archive
+      - interspeech_policy
+      - dblp
+      - arxiv
+      - paperswithcode
+    scope: NLP/speech/CS exemplars, venue metadata, and article norms.
+    not_for: Replacing methodology authorities or assuming all PDFs are reusable without license checks.
+    bundle_policy: prefer canonical_sources/md for downloaded venue/API documents; full-text paper retrieval still needs license-aware selection.
+    source_card_ref: source_cards/nlp-speech-cs-exemplars.md
+
+  scholarly_databases_and_apis:
+    authority_type: registry_database
+    coverage_state: seed_core_with_local_documentation
+    canonicality: official_database_docs
+    freshness_signal: checked_2026-05-04
+    source_ids:
+      - crossref_api
+      - openalex
+      - openalex_snapshot
+      - pubmed_eutilities
+      - europe_pmc
+      - clinicaltrials_api
+      - who_ictrp
+      - prospero
+      - equator_prisma
+      - cochrane_library
+      - epistemonikos
+      - opencitations
+      - semantic_scholar
+      - core_api
+      - lens_api
+      - dimensions_api
+      - scite_api
+      - ieee_xplore_api
+    scope: Metadata, discovery, citation graph, trial registry, and optional enrichment layers.
+    not_for: Methodology authority or unrestricted bulk full-text reuse.
+    bundle_policy: prefer canonical_sources/md for downloaded API docs; do not mirror bulk datasets or commercial data products without explicit license/access approval.
+    per_source_caveats:
+      equator_prisma: Registry locator and update monitor only; use primary PRISMA rows for method or reporting evidence.
+      core_api: Mixed local capture depth; selected API entry-point stubs are locator-only until a richer local or current official document supports the claim.
+      scite_api: Mixed local capture depth; selected API docs are entry-point stubs and Scite remains a licensed/commercial enrichment source.
+    source_card_ref: source_cards/scholarly-databases.md

@@ -1,0 +1,17 @@
+# Local full-document backing corpus.
+# Keep these out of normal GitHub PR/review surfaces unless a maintainer chooses
+# a large-file channel such as Git LFS, release assets, or object storage.
+/references/canonical_sources/raw/
+/references/canonical_sources/md/
+
+# Large split section locators are local/rebuildable backing data. Keep the
+# manifest in GitHub review, but exclude per-source locator dumps by default.
+/references/corpus_index/sections/by_source/
+
+# Rebuildable graph navigation output.
+/graphify-out/
+/.graphify_*
+
+# macOS metadata files do not carry corpus or router semantics.
+._*
+**/._*

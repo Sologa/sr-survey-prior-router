@@ -1,0 +1,6 @@
+interface:
+  display_name: "SR/Survey Prior Router"
+  short_description: "Route SR/survey prior references"
+
+policy:
+  allow_implicit_invocation: false

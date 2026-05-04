@@ -1,0 +1,161 @@
+# Route Source Index
+#
+# This file bridges route selection to source/document lookup. It should stay
+# small enough to read after route-registry.md, while document and section
+# detail stays in source_inventory/local_corpus_index.* and corpus_index/.
+
+defaults:
+  first_load_limit:
+    source_cards: 2
+    source_rows: 8
+    documents: 3
+    sections_per_source: 20
+  index_order:
+    - source_inventory/source_registry.yaml
+    - source_inventory/local_corpus_index.md
+    - source_inventory/local_corpus_index.json
+    - corpus_index/document_index.jsonl
+    - corpus_index/section_index_manifest.jsonl
+    - corpus_index/sections/by_source/<source_id>.jsonl
+  fulltext_rule: open canonical_sources/md/<source_id>/<file>.md only after a selected source_id and document/section locator are known.
+  canonical_verification: important claims require the selected canonical Markdown/raw source, not only an index row or source card.
+  optional_navigation_backends:
+    graphify:
+      contract: graphify-navigation.md
+      default_scope: index_graph
+      output_dir: graphify-out/
+      use_after: route and source-scope selection
+      purpose: narrow candidate source/document/section neighborhoods before canonical verification
+      evidence_rule: graph output is locator-only and cannot support substantive claims by itself
+
+routes:
+  general_domain_prior:
+    primary_families:
+      - codex_skill_packaging
+      - scholarly_databases_and_apis
+      - nlp_speech_cs_exemplar_sources
+    priority_source_ids:
+      - openai_codex_skills
+      - openai_codex_agents_md
+      - openalex
+      - crossref_api
+      - pubmed_eutilities
+      - semantic_scholar
+      - acl_anthology
+    default_source_cards:
+      - source_inventory/source_cards/codex-skill-packaging.md
+      - source_inventory/source_cards/scholarly-databases.md
+    evidence_gate: architecture claims may use source-map/retrieval notes; claims about a specific external source need a canonical source row and locator.
+
+  survey_writing_prior:
+    primary_families:
+      - survey_writing_methods
+      - nlp_speech_cs_exemplar_sources
+      - scholarly_databases_and_apis
+    priority_source_ids:
+      - prisma_scr
+      - jbi_manual_2024
+      - cochrane_ch09
+      - cochrane_ch12
+      - swim
+      - entreq
+      - rameses_meta_narrative
+      - rameses_realist
+      - sanra
+      - narrative_synthesis_york_2006
+      - nickerson_taxonomy_2013
+      - kundisch_taxonomy_update_2021
+      - ieee_comst_guidelines
+      - nature_reviews_submission
+      - nature_scirev_guidelines
+      - acl_anthology
+      - isca_archive
+      - dblp
+      - openalex
+      - crossref_api
+    default_source_cards:
+      - source_inventory/source_cards/survey-writing-methods.md
+      - source_inventory/source_cards/nlp-speech-cs-exemplars.md
+      - source_inventory/source_cards/scholarly-databases.md
+    blocked_or_partial_source_ids:
+      - cacm_author_guidelines
+    evidence_gate: separate review-method authorities from venue guidance and database/discovery sources.
+
+  sr_writing_prior:
+    primary_families:
+      - sr_reporting_and_conduct
+      - sr_certainty_appraisal_bias_search
+      - scholarly_databases_and_apis
+    priority_source_ids:
+      - prisma_2020
+      - prisma_s
+      - prisma_p
+      - prisma_extensions
+      - cochrane_handbook
+      - cochrane_mecir
+      - jbi_manual_2024
+      - campbell_standards
+      - grade_working_group
+      - grade_handbook
+      - grade_cerqual
+      - amstar2
+      - robis
+      - rob2
+      - robins_i
+      - prospero
+      - pubmed_eutilities
+      - clinicaltrials_api
+      - who_ictrp
+    default_source_cards:
+      - source_inventory/source_cards/sr-method-authorities.md
+      - source_inventory/source_cards/scholarly-databases.md
+    blocked_or_partial_source_ids:
+      - press
+    evidence_gate: cite versioned guideline/conduct/manual sources for method claims; registries and databases are not methodology authorities.
+
+  evidence_grounding:
+    primary_families:
+      - sr_reporting_and_conduct
+      - sr_certainty_appraisal_bias_search
+      - survey_writing_methods
+      - scholarly_databases_and_apis
+    priority_source_ids: []
+    default_source_cards: []
+    evidence_gate: start from the claim's candidate source_id; if absent, search source_registry/local_corpus_index before opening any full document.
+
+  source_audit:
+    primary_families:
+      - sr_reporting_and_conduct
+      - sr_certainty_appraisal_bias_search
+      - survey_writing_methods
+      - scholarly_databases_and_apis
+      - nlp_speech_cs_exemplar_sources
+      - codex_skill_packaging
+    priority_source_ids: []
+    default_source_cards: []
+    extra_indexes:
+      - source_inventory/source_manifest.jsonl
+      - canonical_sources/download_manifest.jsonl
+    evidence_gate: audit rows against source_manifest, local_corpus_index, download_manifest, then selected canonical sources.
+
+  synthesis_writing:
+    primary_families:
+      - sr_reporting_and_conduct
+      - sr_certainty_appraisal_bias_search
+      - survey_writing_methods
+      - nlp_speech_cs_exemplar_sources
+    priority_source_ids:
+      - prisma_2020
+      - cochrane_handbook
+      - jbi_manual_2024
+      - prisma_scr
+      - swim
+      - entreq
+      - rameses_meta_narrative
+      - narrative_synthesis_york_2006
+      - nickerson_taxonomy_2013
+      - kundisch_taxonomy_update_2021
+    default_source_cards:
+      - source_inventory/source_cards/sr-method-authorities.md
+      - source_inventory/source_cards/survey-writing-methods.md
+    evidence_gate: draft only from accepted evidence packets or explicitly label agent inference and unresolved gaps.

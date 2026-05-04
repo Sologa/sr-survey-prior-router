@@ -1,0 +1,1579 @@
+{
+  "acl_anthology": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "ACL Anthology programmatic access",
+    "authority_class": "primary_research",
+    "canonical_url": "https://aclanthology.org/faq/api/",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acl_anthology/canonical_api.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acl_anthology/canonical_api.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "acl_anthology_github": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "ACL Anthology GitHub repository",
+    "authority_class": "primary_research",
+    "canonical_url": "https://github.com/acl-org/acl-anthology",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acl_anthology_github/canonical_acl-anthology.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acl_anthology_github/canonical_acl-anthology.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "acl_arr_authors": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "ACL Rolling Review author guidance",
+    "authority_class": "venue_guidance",
+    "canonical_url": "https://aclrollingreview.org/authors",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acl_arr_authors/canonical_authors.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acl_arr_authors/canonical_authors.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "aclpub_formatting": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "ACLPUB formatting guidance",
+    "authority_class": "venue_guidance",
+    "canonical_url": "https://acl-org.github.io/ACLPUB/formatting.html",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/aclpub_formatting/canonical_formatting.html.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/aclpub_formatting/canonical_formatting.html.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "acm_dl": {
+    "family": "survey_writing_methods",
+    "title": "ACM Digital Library and Guide",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.acm.org/publications/digital-library",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 5,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acm_dl/official_dl_user_guide_pdf_new_acm-digital-library-user-guide.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acm_dl/official_dl_user_guide_pdf_new_acm-digital-library-user-guide.pdf.md"
+    ],
+    "conversion_types": [
+      "pdf_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "amstar2": {
+    "family": "sr_certainty_appraisal_bias_search",
+    "title": "AMSTAR 2",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.amstar.ca/",
+    "local_docs_count": 4,
+    "md_docs_count": 4,
+    "raw_docs_count": 4,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/amstar2/canonical.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/amstar2/linked_1_bmj.j4008.full.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/amstar2/linked_2_amstar-2.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/amstar2/linked_3_amstar_202-guidance-document.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/amstar2/canonical.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/amstar2/linked_1_bmj.j4008.full.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/amstar2/linked_2_amstar-2.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/amstar2/linked_3_amstar_202-guidance-document.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "arxiv": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "arXiv API and bulk access",
+    "authority_class": "primary_research",
+    "canonical_url": "https://info.arxiv.org/help/api/index.html",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/arxiv/canonical_index.html.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/arxiv/canonical_index.html.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "cacm_author_guidelines": {
+    "family": "survey_writing_methods",
+    "title": "CACM author guidelines",
+    "authority_class": "venue_guidance",
+    "canonical_url": "https://cacm.acm.org/author-guidelines",
+    "local_docs_count": 0,
+    "md_docs_count": 0,
+    "raw_docs_count": 0,
+    "blocked_attempts_count": 5,
+    "primary_md_paths": [],
+    "all_md_paths": [],
+    "conversion_types": [],
+    "status": "blocked"
+  },
+  "campbell_standards": {
+    "family": "sr_reporting_and_conduct",
+    "title": "Campbell Standards for reviews",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.campbellcollaboration.org/methods/standards/",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/campbell_standards/canonical_standards.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/campbell_standards/canonical_standards.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "clinicaltrials_api": {
+    "family": "scholarly_databases_and_apis",
+    "title": "ClinicalTrials.gov API",
+    "authority_class": "registry_database",
+    "canonical_url": "https://clinicaltrials.gov/data-about-studies/learn-about-api",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/canonical_learn-about-api.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/clinicaltrials_api/canonical_learn-about-api.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "cochrane_ch09": {
+    "family": "survey_writing_methods",
+    "title": "Cochrane Handbook Chapter 9: Summarizing study characteristics and preparing for synthesis",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://training.cochrane.org/handbook/current/chapter-09",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_ch09/canonical_chapter-09.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_ch09/canonical_chapter-09.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "cochrane_ch12": {
+    "family": "survey_writing_methods",
+    "title": "Cochrane Handbook Chapter 12: Synthesizing and presenting findings using other methods",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://training.cochrane.org/handbook/current/chapter-12",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_ch12/canonical_chapter-12.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_ch12/canonical_chapter-12.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "cochrane_handbook": {
+    "family": "sr_reporting_and_conduct",
+    "title": "Cochrane Handbook for Systematic Reviews of Interventions",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://training.cochrane.org/handbook",
+    "local_docs_count": 27,
+    "md_docs_count": 27,
+    "raw_docs_count": 27,
+    "blocked_attempts_count": 2,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/canonical_current.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_01_chapter-01.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_02_chapter-02.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_03_chapter-03.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_04_chapter-04.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_05_chapter-05.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_06_chapter-06.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_07_chapter-07.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/canonical_current.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_01_chapter-01.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_02_chapter-02.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_03_chapter-03.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_04_chapter-04.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_05_chapter-05.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_06_chapter-06.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_07_chapter-07.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_08_chapter-08.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_09_chapter-09.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_10_chapter-10.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_11_chapter-11.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_12_chapter-12.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_13_chapter-13.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_14_chapter-14.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_15_chapter-15.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_16_chapter-16.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_17_chapter-17.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_18_chapter-18.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_19_chapter-19.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_20_chapter-20.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_21_chapter-21.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_22_chapter-22.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/chapter_23_chapter-23.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/linked_1_inline-supplementary-material-1.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/linked_2_machine_learning_in_eppi-reviewer_v_7_web_version.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/linked_4_annotatedbibliographtifyingunpublishedstudies.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "cochrane_library": {
+    "family": "scholarly_databases_and_apis",
+    "title": "Cochrane Library",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.cochrane.org/products-and-services/cochrane-library",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_library/canonical_cochrane-library.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_library/canonical_cochrane-library.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "cochrane_mecir": {
+    "family": "sr_reporting_and_conduct",
+    "title": "MECIR Manual",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.cochrane.org/authors/handbooks-and-manuals/mecir-manual",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_mecir/canonical_mecir-manual.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_mecir/canonical_mecir-manual.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "computational_linguistics": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "Computational Linguistics journal page",
+    "authority_class": "venue_guidance",
+    "canonical_url": "https://direct.mit.edu/coli",
+    "local_docs_count": 8,
+    "md_docs_count": 8,
+    "raw_docs_count": 8,
+    "blocked_attempts_count": 2,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_journal_home_cljournal.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_original_submission_checklist_originalsubmissionchecklist.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_revision_final_checklist_resubmissionsandfinalaccepts.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_style_guide_styleguide.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_submission_guidelines_submissions.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_file_cls_clv2025.cls.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_manual_pdf_coli_manual.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_template_pdf_coli_template.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_journal_home_cljournal.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_original_submission_checklist_originalsubmissionchecklist.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_revision_final_checklist_resubmissionsandfinalaccepts.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_style_guide_styleguide.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_submission_guidelines_submissions.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_file_cls_clv2025.cls.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_manual_pdf_coli_manual.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_template_pdf_coli_template.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown",
+      "text_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "core_api": {
+    "family": "scholarly_databases_and_apis",
+    "title": "CORE API",
+    "authority_class": "registry_database",
+    "canonical_url": "https://core.ac.uk/services/api",
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
+    "blocked_attempts_count": 1,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/core_api/canonical_services_api_api.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/core_api/official_api_root_official_api_root.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/core_api/official_api_v3_docs_v3.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/core_api/canonical_services_api_api.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/core_api/official_api_root_official_api_root.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/core_api/official_api_v3_docs_v3.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "partial",
+    "conversion_depth": "mixed_full_and_entry_stub",
+    "content_quality_notes": "Mixed richer CORE service page plus entry-point API stubs; stub docs are locator-only unless a richer local/current official document is selected."
+  },
+  "crossref_api": {
+    "family": "scholarly_databases_and_apis",
+    "title": "Crossref REST API",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/crossref_api/canonical_rest-api.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/crossref_api/canonical_rest-api.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "dblp": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "DBLP computer science bibliography",
+    "authority_class": "registry_database",
+    "canonical_url": "https://dblp.org/",
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dblp/canonical.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dblp/linked_1_dblpxml.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dblp/linked_2_dblpxmlreq.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dblp/canonical.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dblp/linked_1_dblpxml.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dblp/linked_2_dblpxmlreq.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "dimensions_api": {
+    "family": "scholarly_databases_and_apis",
+    "title": "Dimensions API",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.dimensions.ai/products/all-products/dimensions-api/",
+    "local_docs_count": 4,
+    "md_docs_count": 4,
+    "raw_docs_count": 4,
+    "blocked_attempts_count": 2,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dimensions_api/canonical_product_api_dimensions-api.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dimensions_api/official_api_access_api.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dimensions_api/official_dsl_docs_home_dsl.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dimensions_api/official_reasonable_use_corrected_usagepolicy.html.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dimensions_api/canonical_product_api_dimensions-api.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dimensions_api/official_api_access_api.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dimensions_api/official_dsl_docs_home_dsl.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dimensions_api/official_reasonable_use_corrected_usagepolicy.html.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "entreq": {
+    "family": "survey_writing_methods",
+    "title": "ENTREQ qualitative synthesis reporting guideline",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.equator-network.org/reporting-guidelines/entreq/",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/entreq/canonical_entreq.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/entreq/canonical_entreq.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "epistemonikos": {
+    "family": "scholarly_databases_and_apis",
+    "title": "Epistemonikos",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.epistemonikos.org/en/",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/epistemonikos/canonical_en.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/epistemonikos/canonical_en.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "equator_prisma": {
+    "family": "scholarly_databases_and_apis",
+    "title": "EQUATOR PRISMA record",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.equator-network.org/reporting-guidelines/prisma/",
+    "local_docs_count": 5,
+    "md_docs_count": 5,
+    "raw_docs_count": 5,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/canonical_prisma.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/linked_1_prisma_2020_checklist.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/linked_2_prisma_2020_checklist.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/linked_3_prisma_2020_expanded_checklist.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/linked_4_prisma_2020_italian.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/canonical_prisma.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/linked_1_prisma_2020_checklist.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/linked_2_prisma_2020_checklist.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/linked_3_prisma_2020_expanded_checklist.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/equator_prisma/linked_4_prisma_2020_italian.pdf.md"
+    ],
+    "conversion_types": [
+      "docx_to_markdown",
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available",
+    "evidence_use": "locator_only",
+    "content_quality_notes": "Registry record and linked PRISMA files; use as locator/update monitor, not as a method authority row.",
+    "notes": "Moved to scholarly_databases_and_apis as a registry locator. Use prisma_2020/prisma_extensions rows for method or reporting evidence."
+  },
+  "europe_pmc": {
+    "family": "scholarly_databases_and_apis",
+    "title": "Europe PMC REST and bulk services",
+    "authority_class": "registry_database",
+    "canonical_url": "https://europepmc.org/RestfulWebService",
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/europe_pmc/canonical_restfulwebservice.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/europe_pmc/linked_1_europe_pmc_restful_release_notes.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/europe_pmc/linked_2_ebi_europe_pmc_web_service_reference.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/europe_pmc/canonical_restfulwebservice.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/europe_pmc/linked_1_europe_pmc_restful_release_notes.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/europe_pmc/linked_2_ebi_europe_pmc_web_service_reference.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "grade_cerqual": {
+    "family": "sr_certainty_appraisal_bias_search",
+    "title": "GRADE-CERQual",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.cerqual.org/",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_cerqual/canonical.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_cerqual/canonical.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "grade_handbook": {
+    "family": "sr_certainty_appraisal_bias_search",
+    "title": "GRADE handbook",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
+    "blocked_attempts_count": 2,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_handbook/canonical_handbook.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_handbook/official_gradepro_etd_overview_204000076798-etd-overview.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_handbook/official_gradepro_exporting_tables_204000077184-exporting-tables.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_handbook/canonical_handbook.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_handbook/official_gradepro_etd_overview_204000076798-etd-overview.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_handbook/official_gradepro_exporting_tables_204000077184-exporting-tables.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "grade_working_group": {
+    "family": "sr_certainty_appraisal_bias_search",
+    "title": "GRADE Working Group",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.gradeworkinggroup.org/",
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_working_group/canonical.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_working_group/linked_1_criteria_for_using_grade_2016-04-05.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_working_group/linked_2_grade-working-group-newsletter-202409.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_working_group/canonical.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_working_group/linked_1_criteria_for_using_grade_2016-04-05.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_working_group/linked_2_grade-working-group-newsletter-202409.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "ieee_comst_guidelines": {
+    "family": "survey_writing_methods",
+    "title": "IEEE Communications Surveys & Tutorials policies and guidelines",
+    "authority_class": "venue_guidance",
+    "canonical_url": "https://www.comsoc.org/publications/journals/ieee-comst/policies-guidelines",
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
+    "blocked_attempts_count": 2,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_comst_guidelines/canonical_policies-guidelines.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_comst_guidelines/official_comsoc_author_kit_author-kit.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_comst_guidelines/linked_2_opsmanual.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_comst_guidelines/canonical_policies-guidelines.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_comst_guidelines/linked_2_opsmanual.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_comst_guidelines/official_comsoc_author_kit_author-kit.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "ieee_xplore_api": {
+    "family": "scholarly_databases_and_apis",
+    "title": "IEEE Xplore API",
+    "authority_class": "registry_database",
+    "canonical_url": "https://developer.ieee.org/docs",
+    "local_docs_count": 5,
+    "md_docs_count": 5,
+    "raw_docs_count": 5,
+    "blocked_attempts_count": 1,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/canonical_docs_home_docs.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/official_metadata_api_details_metadata_api_details.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/official_metadata_api_overview_ieee_xplore_metadata_api_overview.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/official_metadata_api_responses_metadata_api_responses.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/official_searching_metadata_api_searching_the_ieee_xplore_metadata_api.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/canonical_docs_home_docs.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/official_metadata_api_details_metadata_api_details.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/official_metadata_api_overview_ieee_xplore_metadata_api_overview.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/official_metadata_api_responses_metadata_api_responses.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/ieee_xplore_api/official_searching_metadata_api_searching_the_ieee_xplore_metadata_api.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "interspeech_policy": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "INTERSPEECH policy",
+    "authority_class": "venue_guidance",
+    "canonical_url": "https://www.isca-speech.org/Interspeech-Policy",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/interspeech_policy/canonical_interspeech-policy.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/interspeech_policy/linked_1_iscaprivacypolicy.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/interspeech_policy/canonical_interspeech-policy.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/interspeech_policy/linked_1_iscaprivacypolicy.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "isca_archive": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "ISCA Archive",
+    "authority_class": "primary_research",
+    "canonical_url": "https://www.isca-archive.org/",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 1,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/isca_archive/canonical.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/isca_archive/linked_1_interspeech_2025_booklet_pdf_booklet.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/isca_archive/canonical.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/isca_archive/linked_1_interspeech_2025_booklet_pdf_booklet.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "jbi_manual_2024": {
+    "family": "sr_reporting_and_conduct",
+    "title": "JBI Manual for Evidence Synthesis",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/overview?homepageId=4685837",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/jbi_manual_2024/canonical_overview.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/jbi_manual_2024/extra_1_jbi_20manual_20for_20evidence_20synthesis_202024.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/jbi_manual_2024/canonical_overview.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/jbi_manual_2024/extra_1_jbi_20manual_20for_20evidence_20synthesis_202024.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "kundisch_taxonomy_update_2021": {
+    "family": "survey_writing_methods",
+    "title": "An Update for Taxonomy Designers",
+    "authority_class": "peer_reviewed_method_paper",
+    "canonical_url": "https://link.springer.com/article/10.1007/s12599-021-00723-x",
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/kundisch_taxonomy_update_2021/canonical_s12599-021-00723-x.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/kundisch_taxonomy_update_2021/linked_1_s12599-021-00723-x.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/kundisch_taxonomy_update_2021/linked_2_12599_2021_723_moesm1_esm.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/kundisch_taxonomy_update_2021/canonical_s12599-021-00723-x.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/kundisch_taxonomy_update_2021/linked_1_s12599-021-00723-x.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/kundisch_taxonomy_update_2021/linked_2_12599_2021_723_moesm1_esm.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "lens_api": {
+    "family": "scholarly_databases_and_apis",
+    "title": "Lens API",
+    "authority_class": "registry_database",
+    "canonical_url": "https://docs.api.lens.org/",
+    "local_docs_count": 5,
+    "md_docs_count": 5,
+    "raw_docs_count": 5,
+    "blocked_attempts_count": 1,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/canonical_docs_home_canonical_docs_home.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/official_scholarly_examples_examples-scholar.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/official_scholarly_request_schema_request-scholar.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/official_scholarly_response_schema_response-scholar.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/official_swagger_yaml_swagger.yaml.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/canonical_docs_home_canonical_docs_home.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/official_scholarly_examples_examples-scholar.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/official_scholarly_request_schema_request-scholar.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/official_scholarly_response_schema_response-scholar.html.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/lens_api/official_swagger_yaml_swagger.yaml.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "text_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "narrative_review_writing_2011": {
+    "family": "survey_writing_methods",
+    "title": "Writing a narrative biomedical review",
+    "authority_class": "peer_reviewed_method_paper",
+    "canonical_url": "https://ease.org.uk/wp-content/uploads/2016/05/writing-reviews.pdf",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/narrative_review_writing_2011/canonical_writing-reviews.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/narrative_review_writing_2011/extra_1_writing-reviews.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/narrative_review_writing_2011/canonical_writing-reviews.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/narrative_review_writing_2011/extra_1_writing-reviews.pdf.md"
+    ],
+    "conversion_types": [
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "narrative_synthesis_york_2006": {
+    "family": "survey_writing_methods",
+    "title": "Guidance on the conduct of narrative synthesis in systematic reviews",
+    "authority_class": "peer_reviewed_or_method_guidance",
+    "canonical_url": "https://www.york.ac.uk/media/crd/Guidance%20on%20the%20conduct%20of%20narrative%20synthesis%20in%20systematic%20review.pdf",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/narrative_synthesis_york_2006/canonical_guidance_20on_20the_20conduct_20of_20narrative_20synthesis_20in_20systematic_20r.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/narrative_synthesis_york_2006/extra_1_guidance_20on_20the_20conduct_20of_20narrative_20synthesis_20in_20systematic_20rev.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/narrative_synthesis_york_2006/canonical_guidance_20on_20the_20conduct_20of_20narrative_20synthesis_20in_20systematic_20r.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/narrative_synthesis_york_2006/extra_1_guidance_20on_20the_20conduct_20of_20narrative_20synthesis_20in_20systematic_20rev.md"
+    ],
+    "conversion_types": [
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "nature_reviews_submission": {
+    "family": "survey_writing_methods",
+    "title": "Nature Reviews preparing your submission",
+    "authority_class": "venue_guidance",
+    "canonical_url": "https://www.nature.com/natrevphys/for-authors/preparing-your-submission",
+    "local_docs_count": 5,
+    "md_docs_count": 5,
+    "raw_docs_count": 5,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/canonical_preparing-your-submission.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/linked_1_natrev-articleformatguide-review.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/linked_2_natrev-articleformatguide-perspective.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/linked_3_natrev-articleformatguide-recommendations.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/linked_4_natrev-articleformatguide-news.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/canonical_preparing-your-submission.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/linked_1_natrev-articleformatguide-review.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/linked_2_natrev-articleformatguide-perspective.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/linked_3_natrev-articleformatguide-recommendations.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_reviews_submission/linked_4_natrev-articleformatguide-news.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "nature_scirev_guidelines": {
+    "family": "survey_writing_methods",
+    "title": "Scientific Reviews submission guidelines",
+    "authority_class": "venue_guidance",
+    "canonical_url": "https://www.nature.com/scirev/author-instructions/submission-guidelines",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_scirev_guidelines/canonical_submission-guidelines.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_scirev_guidelines/linked_1_scireviews-checklist-for-initial-submissions.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_scirev_guidelines/canonical_submission-guidelines.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nature_scirev_guidelines/linked_1_scireviews-checklist-for-initial-submissions.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "nickerson_taxonomy_2013": {
+    "family": "survey_writing_methods",
+    "title": "A Method for Taxonomy Development and its Application in Information Systems",
+    "authority_class": "peer_reviewed_method_paper",
+    "canonical_url": "https://opus.bibliothek.uni-augsburg.de/opus4/files/93439/93439.pdf",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 2,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nickerson_taxonomy_2013/publisher_pdf_ejis.2012.26.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/nickerson_taxonomy_2013/publisher_pdf_ejis.2012.26.pdf.md"
+    ],
+    "conversion_types": [
+      "pdf_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "openai_codex_agents_md": {
+    "family": "codex_skill_packaging",
+    "title": "Custom instructions with AGENTS.md",
+    "authority_class": "tool_documentation",
+    "canonical_url": "https://developers.openai.com/codex/guides/agents-md",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openai_codex_agents_md/canonical_agents-md.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openai_codex_agents_md/canonical_agents-md.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "openai_codex_skills": {
+    "family": "codex_skill_packaging",
+    "title": "Agent Skills",
+    "authority_class": "tool_documentation",
+    "canonical_url": "https://developers.openai.com/codex/skills",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openai_codex_skills/canonical_skills.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openai_codex_skills/canonical_skills.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "openalex": {
+    "family": "scholarly_databases_and_apis",
+    "title": "OpenAlex API",
+    "authority_class": "registry_database",
+    "canonical_url": "https://developers.openalex.org",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex/canonical.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex/canonical.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "openalex_snapshot": {
+    "family": "scholarly_databases_and_apis",
+    "title": "OpenAlex snapshot",
+    "authority_class": "registry_database",
+    "canonical_url": "https://developers.openalex.org/download/snapshot-format",
+    "local_docs_count": 5,
+    "md_docs_count": 5,
+    "raw_docs_count": 5,
+    "blocked_attempts_count": 1,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/canonical_snapshot_format_manifest_url_snapshot-format_9050c8de.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/official_api_overview_introduction.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/official_docs_overview_official_docs_overview.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/official_snapshot_data_format_snapshot-format.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/official_snapshot_overview_snapshot-format.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/canonical_snapshot_format_manifest_url_snapshot-format_9050c8de.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/official_api_overview_introduction.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/official_docs_overview_official_docs_overview.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/official_snapshot_data_format_snapshot-format.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/openalex_snapshot/official_snapshot_overview_snapshot-format.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "opencitations": {
+    "family": "scholarly_databases_and_apis",
+    "title": "OpenCitations",
+    "authority_class": "registry_database",
+    "canonical_url": "https://opencitations.net/",
+    "local_docs_count": 5,
+    "md_docs_count": 5,
+    "raw_docs_count": 5,
+    "blocked_attempts_count": 1,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/canonical_home_canonical_home.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/official_api_selector_official_api_selector.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/official_index_api_v2_v2.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/official_meta_api_v1_v1.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/official_querying_data_querying.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/canonical_home_canonical_home.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/official_api_selector_official_api_selector.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/official_index_api_v2_v2.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/official_meta_api_v1_v1.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/opencitations/official_querying_data_querying.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "paperswithcode": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "Papers with Code about/data terms",
+    "authority_class": "derivative_summary",
+    "canonical_url": "https://paperswithcode.com/about",
+    "local_docs_count": 6,
+    "md_docs_count": 6,
+    "raw_docs_count": 6,
+    "blocked_attempts_count": 3,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_about_trending_33783fc6.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_sota_trending_87d86935.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_client_readme_readme.md.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_client_repo_paperswithcode-client.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_data_readme_readme.md.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_data_repo_paperswithcode-data.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_about_trending_33783fc6.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_sota_trending_87d86935.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_client_readme_readme.md.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_client_repo_paperswithcode-client.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_data_readme_readme.md.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_data_repo_paperswithcode-data.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "text_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "press": {
+    "family": "sr_certainty_appraisal_bias_search",
+    "title": "PRESS Peer Review of Electronic Search Strategies",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.cda-amc.ca/press-peer-review-electronic-search-strategies",
+    "local_docs_count": 0,
+    "md_docs_count": 0,
+    "raw_docs_count": 0,
+    "blocked_attempts_count": 6,
+    "primary_md_paths": [],
+    "all_md_paths": [],
+    "conversion_types": [],
+    "status": "blocked",
+    "evidence_use": "candidate_only_until_recaptured",
+    "notes": "Blocked locally by CDA-AMC/CADTH 403 responses after 6 attempts; no local Markdown/raw support for claims."
+  },
+  "prisma_2020": {
+    "family": "sr_reporting_and_conduct",
+    "title": "PRISMA 2020 statement",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.prisma-statement.org/prisma-2020",
+    "local_docs_count": 24,
+    "md_docs_count": 24,
+    "raw_docs_count": 24,
+    "blocked_attempts_count": 2,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/canonical_prisma-2020.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_plos_statement_html_article.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_plos_statement_pdf_file.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/pmc_bmj_explanation_elaboration_printable_html_pmc8005925.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/pmc_bmj_statement_printable_html_pmc8005924.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_abstracts_abstracts.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_checklist_prisma-2020-checklist.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_citing_citing-prisma-2020.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/canonical_prisma-2020.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_pagm061899.w1.pdf_pagm061899.w1.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_pagm061899.w2.pdf_pagm061899.w2.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_pagm061901.w1.pdf_pagm061901.w1.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_abstract_checklist-apht.pdf_prisma_2020_abstract_checklist.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_abstract_checklist-pgx2.docx_prisma_2020_abstract_checklist.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_checklist-ab3g.pdf_prisma_2020_checklist.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_checklist-k3f4.docx_prisma_2020_checklist.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_examples.pdf_prisma_2020_examples.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_expanded_checklist-w7ra.pdf_prisma_2020_expanded_checklist.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_flow_diagram_new_srs_v1-lml8.docx_prisma_2020_flow_diagram_new_srs_v1.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_flow_diagram_new_srs_v2-t3jp.docx_prisma_2020_flow_diagram_new_srs_v2.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_flow_diagram_updated_srs_v1-f8ly.docx_prisma_2020_flow_diagram_updated_srs_v1.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_flow_diagram_updated_srs_v2-dbrh.docx_prisma_2020_flow_diagram_updated_srs_v2.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_plos_statement_html_article.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_plos_statement_pdf_file.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/pmc_bmj_explanation_elaboration_printable_html_pmc8005925.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/pmc_bmj_statement_printable_html_pmc8005924.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_abstracts_abstracts.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_checklist_prisma-2020-checklist.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_citing_citing-prisma-2020.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_explanation_elaboration_prisma-2020-explanation-elaboration.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_flow_diagram_prisma-2020-flow-diagram.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_statement_prisma-2020-statement.md"
+    ],
+    "conversion_types": [
+      "docx_to_markdown",
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "prisma_extensions": {
+    "family": "sr_reporting_and_conduct",
+    "title": "PRISMA extensions",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.prisma-statement.org/extensions",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_extensions/canonical_extensions.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_extensions/linked_1_prisma_register_extension_form.docx.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_extensions/canonical_extensions.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_extensions/linked_1_prisma_register_extension_form.docx.md"
+    ],
+    "conversion_types": [
+      "docx_to_markdown",
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "prisma_p": {
+    "family": "sr_reporting_and_conduct",
+    "title": "PRISMA-P: preferred reporting items for systematic review and meta-analysis protocols",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.prisma-statement.org/protocols",
+    "local_docs_count": 4,
+    "md_docs_count": 4,
+    "raw_docs_count": 4,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_p/canonical_protocols.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_p/linked_1_prisma-p-checklist.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_p/linked_2_prisma-p-checklist.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_p/linked_3_prisma-p-systrev-checklist.docx.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_p/canonical_protocols.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_p/linked_1_prisma-p-checklist.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_p/linked_2_prisma-p-checklist.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_p/linked_3_prisma-p-systrev-checklist.docx.md"
+    ],
+    "conversion_types": [
+      "docx_to_markdown",
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "prisma_s": {
+    "family": "sr_reporting_and_conduct",
+    "title": "PRISMA-S: extension for reporting literature searches in systematic reviews",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.equator-network.org/reporting-guidelines/prisma-s/",
+    "local_docs_count": 4,
+    "md_docs_count": 4,
+    "raw_docs_count": 4,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_s/canonical_prisma-s.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_s/linked_1_protocol-prisma-s-delphi.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_s/linked_2_tarcis_checklist_for_terminology_and_reporting_of_citation_searching.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_s/linked_3_tarcis_checklist_for_terminology_and_reporting_of_citation_searching.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_s/canonical_prisma-s.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_s/linked_1_protocol-prisma-s-delphi.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_s/linked_2_tarcis_checklist_for_terminology_and_reporting_of_citation_searching.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_s/linked_3_tarcis_checklist_for_terminology_and_reporting_of_citation_searching.pdf.md"
+    ],
+    "conversion_types": [
+      "docx_to_markdown",
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "prisma_scr": {
+    "family": "survey_writing_methods",
+    "title": "PRISMA Extension for Scoping Reviews (PRISMA-ScR)",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.prisma-statement.org/scoping",
+    "local_docs_count": 5,
+    "md_docs_count": 5,
+    "raw_docs_count": 5,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/canonical_scoping.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/linked_1_prisma-scr-fillable-checklist_11sept2019.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/linked_2_prisma-scr-fillable-checklist_10sept2019.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/linked_3_prisma-scr_tipsheet_item1-1.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/linked_4_prisma-scr_tipsheet_item2-1.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/canonical_scoping.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/linked_1_prisma-scr-fillable-checklist_11sept2019.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/linked_2_prisma-scr-fillable-checklist_10sept2019.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/linked_3_prisma-scr_tipsheet_item1-1.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_scr/linked_4_prisma-scr_tipsheet_item2-1.pdf.md"
+    ],
+    "conversion_types": [
+      "docx_to_markdown",
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "prospero": {
+    "family": "scholarly_databases_and_apis",
+    "title": "PROSPERO international prospective register of systematic reviews",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.crd.york.ac.uk/CRDWeb/maintenancePROSPERO.html",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prospero/canonical_maintenanceprospero.html.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prospero/canonical_maintenanceprospero.html.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "pubmed_eutilities": {
+    "family": "scholarly_databases_and_apis",
+    "title": "PubMed / NCBI E-utilities",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK25497/",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/pubmed_eutilities/canonical_nbk25497.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/pubmed_eutilities/linked_1_bookshelf_nbk25497.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/pubmed_eutilities/canonical_nbk25497.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/pubmed_eutilities/linked_1_bookshelf_nbk25497.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "rameses_meta_narrative": {
+    "family": "survey_writing_methods",
+    "title": "RAMESES publication standards: meta-narrative reviews",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.equator-network.org/reporting-guidelines/rameses-publication-standards-meta-narrative-reviews/",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rameses_meta_narrative/canonical_rameses-publication-standards-meta-narrative-reviews.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rameses_meta_narrative/canonical_rameses-publication-standards-meta-narrative-reviews.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "rameses_realist": {
+    "family": "survey_writing_methods",
+    "title": "RAMESES publication standards: realist syntheses",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.equator-network.org/reporting-guidelines/rameses-publication-standards-realist-syntheses/",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rameses_realist/canonical_rameses-publication-standards-realist-syntheses.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rameses_realist/canonical_rameses-publication-standards-realist-syntheses.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "rob2": {
+    "family": "sr_certainty_appraisal_bias_search",
+    "title": "RoB 2 tool",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.riskofbias.info/welcome/rob-2-0-tool",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rob2/canonical_rob-2-0-tool.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rob2/canonical_rob-2-0-tool.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "robins_i": {
+    "family": "sr_certainty_appraisal_bias_search",
+    "title": "ROBINS-I tool",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.riskofbias.info/welcome/home",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robins_i/canonical_home.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robins_i/canonical_home.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "available"
+  },
+  "robis": {
+    "family": "sr_certainty_appraisal_bias_search",
+    "title": "ROBIS risk of bias in systematic reviews",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.bristol.ac.uk/media-library/sites/social-community-medicine/robis/robisjclinepi.pdf",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robis/canonical_robisjclinepi.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robis/extra_1_robisguidancedocument.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robis/canonical_robisjclinepi.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robis/extra_1_robisguidancedocument.pdf.md"
+    ],
+    "conversion_types": [
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "sanra": {
+    "family": "survey_writing_methods",
+    "title": "SANRA: scale for the quality assessment of narrative review articles",
+    "authority_class": "peer_reviewed_method_paper",
+    "canonical_url": "https://researchintegrityjournal.biomedcentral.com/articles/10.1186/s41073-019-0064-8",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/sanra/canonical_s41073-019-0064-8.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/sanra/linked_1_s41073-019-0064-8.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/sanra/canonical_s41073-019-0064-8.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/sanra/linked_1_s41073-019-0064-8.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "scite_api": {
+    "family": "scholarly_databases_and_apis",
+    "title": "Scite data and services",
+    "authority_class": "registry_database",
+    "canonical_url": "https://scite.org/data-and-services",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 2,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/scite_api/official_api_docs_docs_7da8d680.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/scite_api/official_openapi_json_openapi.json.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/scite_api/official_api_docs_docs_7da8d680.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/scite_api/official_openapi_json_openapi.json.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "text_to_markdown"
+    ],
+    "status": "partial",
+    "conversion_depth": "mixed_entry_stub_and_openapi",
+    "content_quality_notes": "Mixed short API docs entry stub plus OpenAPI JSON; stub docs are locator-only unless the OpenAPI/current licensed docs support the claim."
+  },
+  "semantic_scholar": {
+    "family": "scholarly_databases_and_apis",
+    "title": "Semantic Scholar API and datasets",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.semanticscholar.org/product/api",
+    "local_docs_count": 5,
+    "md_docs_count": 5,
+    "raw_docs_count": 5,
+    "blocked_attempts_count": 1,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/canonical_product_api_api.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/official_api_tutorial_tutorial.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/official_datasets_swagger_json_swagger.json.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/official_graph_swagger_json_swagger.json.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/official_recommendations_swagger_json_swagger.json.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/canonical_product_api_api.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/official_api_tutorial_tutorial.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/official_datasets_swagger_json_swagger.json.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/official_graph_swagger_json_swagger.json.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/semantic_scholar/official_recommendations_swagger_json_swagger.json.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "text_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "state_of_art_review_2022": {
+    "family": "survey_writing_methods",
+    "title": "State-of-the-art literature review methodology: a six-step approach for knowledge synthesis",
+    "authority_class": "peer_reviewed_method_paper",
+    "canonical_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9582072/",
+    "local_docs_count": 1,
+    "md_docs_count": 1,
+    "raw_docs_count": 1,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/state_of_art_review_2022/canonical_pmc9582072.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown"
+    ],
+    "status": "bad_capture",
+    "content_quality": "browser_check_only",
+    "evidence_use": "not_supported",
+    "notes": "Local raw/Markdown capture is a PMC reCAPTCHA/browser-check page only; not usable as method evidence until article body is recaptured."
+  },
+  "swim": {
+    "family": "survey_writing_methods",
+    "title": "Synthesis without meta-analysis (SWiM) reporting guideline",
+    "authority_class": "methodology_guideline",
+    "canonical_url": "https://www.equator-network.org/reporting-guidelines/synthesis-without-meta-analysis-swim-in-systematic-reviews-reporting-guideline/",
+    "local_docs_count": 3,
+    "md_docs_count": 3,
+    "raw_docs_count": 3,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/swim/canonical_synthesis-without-meta-analysis-swim-in-systematic-reviews-reporting-guideline.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/swim/linked_1_synthesis-without-meta-analysis-swim-checklist.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/swim/linked_2_synthesis-without-meta-analysis-swim-checklist.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/swim/canonical_synthesis-without-meta-analysis-swim-in-systematic-reviews-reporting-guideline.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/swim/linked_1_synthesis-without-meta-analysis-swim-checklist.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/swim/linked_2_synthesis-without-meta-analysis-swim-checklist.pdf.md"
+    ],
+    "conversion_types": [
+      "docx_to_markdown",
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  },
+  "tacl_submission": {
+    "family": "nlp_speech_cs_exemplar_sources",
+    "title": "TACL submission guidelines",
+    "authority_class": "venue_guidance",
+    "canonical_url": "https://direct.mit.edu/tacl/pages/submission-guidelines",
+    "local_docs_count": 6,
+    "md_docs_count": 6,
+    "raw_docs_count": 6,
+    "blocked_attempts_count": 2,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_bibliography_style_acl_natbib.bst.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_finalversion_formatting_pdf_tacl2021v1-finalversion-formatting-instructions.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_style_file_tacl2021v1.sty.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_submission_formatting_pdf_tacl2021v1-submission-formatting-instructions.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_submission_guidelines_submissions.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_template_tex_tacl2021v1-template.tex.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_bibliography_style_acl_natbib.bst.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_finalversion_formatting_pdf_tacl2021v1-finalversion-formatting-instructions.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_style_file_tacl2021v1.sty.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_submission_formatting_pdf_tacl2021v1-submission-formatting-instructions.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_submission_guidelines_submissions.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_template_tex_tacl2021v1-template.tex.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown",
+      "text_to_markdown"
+    ],
+    "status": "partial"
+  },
+  "who_ictrp": {
+    "family": "scholarly_databases_and_apis",
+    "title": "WHO ICTRP Search Portal",
+    "authority_class": "registry_database",
+    "canonical_url": "https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal",
+    "local_docs_count": 2,
+    "md_docs_count": 2,
+    "raw_docs_count": 2,
+    "blocked_attempts_count": 0,
+    "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/who_ictrp/canonical_the-ictrp-search-portal.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/who_ictrp/linked_1_ictrp_revisions_document.pdf.md"
+    ],
+    "all_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/who_ictrp/canonical_the-ictrp-search-portal.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/who_ictrp/linked_1_ictrp_revisions_document.pdf.md"
+    ],
+    "conversion_types": [
+      "html_to_markdown",
+      "pdf_to_markdown"
+    ],
+    "status": "available"
+  }
+}

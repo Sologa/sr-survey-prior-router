@@ -1,0 +1,13 @@
+# Default graph scope is the router/index layer, not the full backing corpus.
+references/canonical_sources/raw/
+references/canonical_sources/md/
+references/corpus_index/sections/by_source/
+
+# Avoid self-ingestion of graphify outputs and transient files.
+graphify-out/
+.graphify_*
+
+# macOS metadata files do not carry corpus or router semantics.
+.DS_Store
+._*
+**/._*
