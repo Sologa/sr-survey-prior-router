@@ -79,9 +79,10 @@ Before this pack is described as knowledge-heavy for a route, require:
 ## Validation
 
 - `../../validation/agent_qa_validation_2026-05-04.md`: two-agent Q/A validation passed for route-first behavior, SR authority boundaries, survey-writing routing, evidence locator rules, blocked-source handling, and GitHub/full-corpus boundaries.
+- `../../validation/source_cards_v2_batch_2026-05-04.md`: source-card-v2 batch validation passed for 26 cards, covering first-wave PRISMA extensions, conduct/manual sources, appraisal/certainty/bias tools, survey/synthesis reporting methods, and taxonomy-method sources.
 
 ## Recommended First Priority
 
-For `sr_writing_prior`, validate and card these first: PRISMA 2020, PRISMA-S, Cochrane Handbook, MECIR, JBI Manual, Campbell Standards, GRADE/CERQual, AMSTAR 2, ROBIS, RoB 2, ROBINS-I, PROSPERO, and PRESS only after browser/manual or access-approved retrieval succeeds.
+For `sr_writing_prior`, the first source-card-v2 wave now covers PRISMA 2020, PRISMA-S, PRISMA-P, Cochrane Handbook, MECIR, JBI Manual, Campbell Standards, GRADE/CERQual, AMSTAR 2, ROBIS, RoB 2, and ROBINS-I. PROSPERO and PRESS remain future candidates; PRESS should be carded only after browser/manual or access-approved retrieval succeeds.
 
-For `survey_writing_prior`, validate and card these first: PRISMA-ScR, JBI scoping/narrative chapters, SWiM, ENTREQ, RAMESES, Cochrane chapters 9 and 12, SANRA, narrative synthesis guidance, Nickerson taxonomy method, Kundisch taxonomy update, IEEE Communications Surveys & Tutorials, ACL Anthology, ISCA Archive, DBLP, OpenAlex, Crossref. Do not use `state_of_art_review_2022` until the article body is recaptured.
+For `survey_writing_prior`, the first source-card-v2 wave now covers PRISMA-ScR, SWiM, ENTREQ, RAMESES, SANRA, Nickerson taxonomy method, and Kundisch taxonomy update. JBI scoping/narrative chapter-level cards, Cochrane chapter-specific cards, venue/exemplar cards, and additional scholarly-database cards remain future work. Do not use `state_of_art_review_2022` until the article body is recaptured.

@@ -36,6 +36,8 @@ REQUIRED_SECTIONS = [
     "## Unresolved gaps",
 ]
 
+ALLOWED_SUPPORT_TYPES = {"direct", "indirect", "locator_only", "blocked", "unsupported"}
+
 FORBIDDEN_DIRECT_EVIDENCE_PATH_PARTS = [
     "references/source_inventory/source_cards",
     "references/corpus_index/",
@@ -54,6 +56,7 @@ BLOCKED_OR_LOCATOR_AUTHORITY_LEVELS = {
 }
 
 IGNORED_METADATA_DIRS = {".git", ".omx"}
+IGNORED_METADATA_FILES = {"._.omx"}
 
 
 def load_source_ids() -> set[str]:
@@ -133,6 +136,11 @@ def extract_supporting_paths(keypoint_block: str) -> list[str]:
     return paths
 
 
+def should_ignore_generated_metadata(path: Path) -> bool:
+    rel_parts = path.relative_to(ROOT).parts
+    return bool(IGNORED_METADATA_DIRS & set(rel_parts)) or path.name in IGNORED_METADATA_FILES
+
+
 def main() -> int:
     errors: list[str] = []
 
@@ -145,6 +153,7 @@ def main() -> int:
     source_ids = load_source_ids()
     route_ids = load_route_ids()
     cards = sorted(path for path in CARDS_DIR.glob("*.md") if path.name != "README.md")
+    seen_card_source_ids: dict[str, Path] = {}
 
     for card in cards:
         rel = card.relative_to(ROOT)
@@ -163,6 +172,10 @@ def main() -> int:
             errors.append(f"{rel}: filename does not match source_id {source_id!r}")
         if source_id not in source_ids:
             errors.append(f"{rel}: source_id not found in source_manifest.jsonl")
+        if source_id in seen_card_source_ids:
+            first = seen_card_source_ids[source_id].relative_to(ROOT)
+            errors.append(f"{rel}: duplicate source_id {source_id!r}; first seen in {first}")
+        seen_card_source_ids[source_id] = card
 
         authority_level = metadata.get("authority_level")
         allow_missing_canonical_paths = authority_level in BLOCKED_OR_LOCATOR_AUTHORITY_LEVELS
@@ -210,6 +223,8 @@ def main() -> int:
                 errors.append(f"{rel}: key point {index} missing supporting_canonical_paths")
             support_match = re.search(r"support_type:\s*([A-Za-z_]+)", keypoint)
             support_type = support_match.group(1) if support_match else ""
+            if support_type and support_type not in ALLOWED_SUPPORT_TYPES:
+                errors.append(f"{rel}: key point {index} has invalid support_type: {support_type}")
             if support_type in {"direct", "indirect"}:
                 for path_text in paths:
                     if any(part in path_text for part in FORBIDDEN_DIRECT_EVIDENCE_PATH_PARTS):
@@ -222,7 +237,7 @@ def main() -> int:
     generated_metadata = sorted(
         str(path.relative_to(ROOT))
         for path in ROOT.rglob("._*")
-        if not (IGNORED_METADATA_DIRS & set(path.relative_to(ROOT).parts))
+        if not should_ignore_generated_metadata(path)
     )
     if generated_metadata:
         errors.append(f"pack contains macOS metadata files: {generated_metadata}")

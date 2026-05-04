@@ -63,6 +63,7 @@ neighborhoods before the agent opens canonical source text.
 
 ```sh
 cd docs/agent_capability_packs/sr-survey-prior-router
+python3 -m pip install -r requirements.txt
 python3 scripts/build_graphify_index_graph.py
 python3 validation/validate_graphify_navigation.py
 ```

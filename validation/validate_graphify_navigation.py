@@ -29,6 +29,7 @@ FORBIDDEN_GRAPH_OUTPUT_PATTERNS = [
 ]
 
 IGNORED_METADATA_DIRS = {".git", ".omx"}
+IGNORED_METADATA_FILES = {"._.omx"}
 
 REQUIRED_PHRASES = {
     "SKILL.md": [
@@ -87,6 +88,11 @@ REQUIRED_PHRASES = {
 }
 
 
+def should_ignore_generated_metadata(path: Path) -> bool:
+    rel_parts = path.relative_to(ROOT).parts
+    return bool(IGNORED_METADATA_DIRS & set(rel_parts)) or path.name in IGNORED_METADATA_FILES
+
+
 def main() -> int:
     errors: list[str] = []
 
@@ -107,7 +113,7 @@ def main() -> int:
     generated_metadata = sorted(
         str(path.relative_to(ROOT))
         for path in ROOT.rglob("._*")
-        if not (IGNORED_METADATA_DIRS & set(path.relative_to(ROOT).parts))
+        if not should_ignore_generated_metadata(path)
     )
     if generated_metadata:
         errors.append(f"pack contains macOS metadata files: {generated_metadata}")
