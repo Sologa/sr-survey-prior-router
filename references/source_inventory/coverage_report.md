@@ -1,14 +1,14 @@
 # Source Inventory Coverage Report
 
-Last checked: 2026-05-04
+Last checked: 2026-05-05
 
 This inventory was assembled before promoting `sr-survey-prior-router` from a staged router to a substantive survey/SR prior. It records candidate canonical sources, method authorities, venue guidance, exemplar corpora, and backing databases. A first local corpus now exists at `../canonical_sources/`, with raw downloads and Markdown conversions for sources that could be retrieved.
 
 ## Bottom Line
 
-The pack can now claim that it has a seed source inventory and a first local full-document corpus for survey/SR prior construction.
+The pack can now claim that it has a seed source inventory, a first local full-document corpus, and a source-card-v2 file for every `source_manifest.jsonl` row.
 
-It must not yet claim complete knowledge-heavy coverage. Full coverage still requires validating each source row, resolving or documenting blocked official URLs, generating source cards for individual high-priority sources, and testing retrieval/evidence packets against real writing tasks.
+It must not yet claim final knowledge-heavy coverage. Remaining work is no longer "missing source cards"; it is live recapture/currentness checks for blocked or freshness-sensitive sources, route-level evidence-packet testing, and real writing-task validation.
 
 ## Local Corpus Status
 
@@ -20,7 +20,7 @@ Local corpus path: `docs/agent_capability_packs/sr-survey-prior-router/reference
 - `source_inventory/local_corpus_index.md` and `.json`: source-level lazy-load index; 65 source IDs, 201 Markdown paths, with primary entry points capped for initial selection. One local capture, `state_of_art_review_2022`, is flagged `bad_capture` because the Markdown contains only a browser-check page.
 - `corpus_index/document_index.jsonl`: 201 document locator rows.
 - `corpus_index/section_index_manifest.jsonl` plus `corpus_index/sections/by_source/<source_id>.jsonl`: split section/page locator indexes for selected sources only. The split by-source files are local/rebuildable backing locators and may be absent from a public GitHub checkout.
-- `source_inventory/source_cards_v2/`: per-source derivative cards with canonical paths, support types, and fallback locators for public review.
+- `source_inventory/source_cards_v2/`: per-source derivative cards with canonical paths, support types, and fallback locators for public review. There is now one v2 card for each of the 65 `source_manifest.jsonl` source IDs.
 - Current verified count after the 2026-05-04 augmentation plus subagent completion pass: 201 raw files and 201 Markdown files.
 - `source_manifest.jsonl` now has local raw/Markdown documents for 63 of 65 source rows. The rows without local documents are `press` and `cacm_author_guidelines`, both blocked by official-site 403 responses from this environment. Of the 63 with local files, `state_of_art_review_2022` is not evidence-usable because the captured PMC page is a reCAPTCHA/browser-check response.
 - PRISMA 2020 now includes the PRISMA site pages, checklist PDFs/DOCX, expanded checklist PDF, abstract checklist PDF/DOCX, flow diagram DOCX files, PLOS statement PDF, PLOS statement HTML, and PMC/BMJ printable full-text HTML for the statement and explanation/elaboration papers.
@@ -52,7 +52,6 @@ Local corpus path: `docs/agent_capability_packs/sr-survey-prior-router/reference
 - Bad local captures, especially `state_of_art_review_2022`, whose current local Markdown contains only a PMC browser-check page rather than article content.
 - MIT Press canonical pages for TACL and Computational Linguistics returned 403, but official TransACL and Computational Linguistics OJS/style-file alternatives are locally captured.
 - Direct BMJ PDF endpoints for PRISMA 2020 statement and explanation/elaboration returned 403 after repeated attempts; equivalent/open full-text local fallbacks are captured from PRISMA/PLOS/PMC where available.
-- Exhaustive source cards for every source row.
 - Domain-specific NLP/speech taxonomy exemplars and worked paper-to-taxonomy ledgers.
 - Bibliometric-review-specific methods as a full workflow.
 - Automatic survey generation pipelines.
@@ -80,9 +79,10 @@ Before this pack is described as knowledge-heavy for a route, require:
 
 - `../../validation/agent_qa_validation_2026-05-04.md`: two-agent Q/A validation passed for route-first behavior, SR authority boundaries, survey-writing routing, evidence locator rules, blocked-source handling, and GitHub/full-corpus boundaries.
 - `../../validation/source_cards_v2_batch_2026-05-04.md`: source-card-v2 batch validation passed for 26 cards, covering first-wave PRISMA extensions, conduct/manual sources, appraisal/certainty/bias tools, survey/synthesis reporting methods, and taxonomy-method sources.
+- `../../validation/source_cards_v2_full_coverage_2026-05-05.md`: source-card-v2 full coverage validation passed for 65 cards, one for every `source_manifest.jsonl` source ID.
 
 ## Recommended First Priority
 
-For `sr_writing_prior`, the first source-card-v2 wave now covers PRISMA 2020, PRISMA-S, PRISMA-P, Cochrane Handbook, MECIR, JBI Manual, Campbell Standards, GRADE/CERQual, AMSTAR 2, ROBIS, RoB 2, and ROBINS-I. PROSPERO and PRESS remain future candidates; PRESS should be carded only after browser/manual or access-approved retrieval succeeds.
+For `sr_writing_prior`, source-card-v2 coverage now includes PRISMA 2020, PRISMA extensions, PRISMA-S, PRISMA-P, Cochrane Handbook, MECIR, JBI Manual, Campbell Standards, GRADE/CERQual, AMSTAR 2, ROBIS, RoB 2, ROBINS-I, PROSPERO, EQUATOR PRISMA, registry/API locators, and blocked PRESS status. PRESS remains blocked local evidence until browser/manual or access-approved retrieval succeeds.
 
-For `survey_writing_prior`, the first source-card-v2 wave now covers PRISMA-ScR, SWiM, ENTREQ, RAMESES, SANRA, Nickerson taxonomy method, and Kundisch taxonomy update. JBI scoping/narrative chapter-level cards, Cochrane chapter-specific cards, venue/exemplar cards, and additional scholarly-database cards remain future work. Do not use `state_of_art_review_2022` until the article body is recaptured.
+For `survey_writing_prior`, source-card-v2 coverage now includes PRISMA-ScR, JBI Manual, Cochrane chapters 9 and 12, SWiM, ENTREQ, RAMESES, SANRA, York narrative synthesis guidance, narrative-review writing guidance, Nickerson taxonomy method, Kundisch taxonomy update, venue/exemplar cards, and scholarly-database/API cards. Do not use `state_of_art_review_2022` until the article body is recaptured.

@@ -152,7 +152,11 @@ def main() -> int:
 
     source_ids = load_source_ids()
     route_ids = load_route_ids()
-    cards = sorted(path for path in CARDS_DIR.glob("*.md") if path.name != "README.md")
+    cards = sorted(
+        path
+        for path in CARDS_DIR.glob("*.md")
+        if path.name != "README.md" and not path.name.startswith("._")
+    )
     seen_card_source_ids: dict[str, Path] = {}
 
     for card in cards:
@@ -234,6 +238,10 @@ def main() -> int:
                     if not (ROOT / path_text).exists():
                         errors.append(f"{rel}: key point {index} supporting path does not exist: {path_text}")
 
+    missing_source_cards = sorted(source_ids - set(seen_card_source_ids))
+    for source_id in missing_source_cards:
+        errors.append(f"missing source_cards_v2 card for source_manifest source_id: {source_id}")
+
     generated_metadata = sorted(
         str(path.relative_to(ROOT))
         for path in ROOT.rglob("._*")
@@ -250,6 +258,7 @@ def main() -> int:
 
     print("source_cards_v2 validation: PASS")
     print(f"checked_cards: {len(cards)}")
+    print(f"source_manifest_sources: {len(source_ids)}")
     return 0
 
 

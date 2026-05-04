@@ -21,6 +21,7 @@ File naming:
 Rules:
 
 - Use exactly one live inventory `source_id` per card.
+- Maintain one card for every `source_id` in `references/source_inventory/source_manifest.jsonl`; `validation/validate_source_cards_v2.py` fails if any manifest source lacks a matching card.
 - Do not merge multiple source IDs into one v2 card, even when they belong to the same source family.
 - Keep family-level comparisons in future `family_cards_v2/`, not in source cards v2.
 
