@@ -4,6 +4,10 @@ Status: completed
 Artifact type: browser/live-access validation note
 Canonical evidence status: derivative audit note; verify final claims against canonical Markdown or live official URLs
 
+## Publication Note
+
+Historical snapshot. Current live status is tracked in `validation/source_integrity_tracker.md`. Superseded points: PRESS/CACM manual captures now exist, `state_of_art_review_2022` was recaptured, and graphify outputs were refreshed where relevant.
+
 ## Superseded Status Update
 
 This note records the pre-manual-capture state from the live browser/subagent pass. A later user-assisted manual browser PDF capture on 2026-05-05 added local Markdown for `press` and `cacm_author_guidelines`; see `manual_browser_capture_2026-05-05.md` and the current source cards for the updated local corpus state.

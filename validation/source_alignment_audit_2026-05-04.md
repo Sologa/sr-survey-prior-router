@@ -2,6 +2,10 @@
 
 Date: 2026-05-04
 
+## Publication Note
+
+Historical snapshot. Current live status is tracked in `validation/source_integrity_tracker.md`. Superseded points: PRESS/CACM manual captures now exist, `state_of_art_review_2022` was recaptured, and graphify outputs were refreshed where relevant.
+
 ## Scope
 
 This audit checks whether the organized `sr-survey-prior-router` files align with the local canonical source corpus under:

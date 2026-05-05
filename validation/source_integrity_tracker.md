@@ -39,6 +39,12 @@ Status vocabulary:
 | `graphify_requirements` | Subagent review found graph builder imports beyond `networkx`: `yaml` and the `graphify` module provided by the `graphifyy` package. | `requirements.txt`; `scripts/build_graphify_index_graph.py`; `validation/graphify_navigation_validation_2026-05-04.md` | `validated` | 2026-05-05 | Added `PyYAML` and `graphifyy` to requirements and updated the validation note to use `--require-generated`. | `validation/source_integrity_tracker.md` |
 | `source_cards_v2_schema` | Subagent review found source-card `authority_level` values outside the README's recommended list even though the cards validate and the values are intentional. | `references/source_inventory/source_cards_v2/README.md`; `references/source_inventory/source_cards_v2/*.md`; `validation/validate_source_cards_v2.py` | `validated` | 2026-05-05 | Documented the current intentional authority-level values in the source-card-v2 schema. | `validation/source_integrity_tracker.md` |
 | `nested_repo_publish_state` | Subagent review found the nested pack repo still had modified and untracked publish artifacts after content validation passed. | `.git/`; `git status --short`; `validation/source_integrity_tracker.md` | `validated` | 2026-05-05 | Validated pack changes are committed in the nested repo; verify `git status --short` remains clean before publishing. | `validation/source_integrity_tracker.md` |
+| `current_omx_native_audit_2026_05_05` | Fresh native-subagent plus isolated-OMX audit found no current source-content blocker in the tracked pack. Derivative cards/indexes align with checked canonical Markdown at draft-router scope. | `SKILL.md`; `agents/openai.yaml`; `references/source_inventory/source_cards_v2/`; `references/canonical_sources/md/`; `references/corpus_index/`; `validation/source_integrity_tracker.md` | `validated` | 2026-05-05 | No source-content repair required from this audit. Keep draft/seed-corpus limitations visible and do not claim final knowledge-heavy coverage. | `validation/source_integrity_tracker.md` |
+| `validation_snapshot_supersession_headers` | Fresh tracker audit found older validation snapshot files still contain stale blocked/bad-capture/not-ready conclusions without in-file supersession headers. The tracker is current, but a reviewer opening old notes directly can be misled. | `validation/agent_qa_validation_2026-05-04.md`; `validation/source_alignment_audit_2026-05-04.md`; `validation/source_alignment_fix_validation_2026-05-04.md`; `validation/live_recapture_2026-05-05.md`; `validation/README.md` | `validated` | 2026-05-05 | Supersession banners were added to the four stale snapshots, and `validation/README.md` now points reviewers to the current tracker before dated notes. | `validation/source_integrity_tracker.md` |
+| `omx_validation_environment` | Isolated OMX worker used an environment with `networkx 3.3`, below this pack's `networkx>=3.4,<4` requirement, so graphify validation failed only in that OMX environment. Pack-local Python had `networkx 3.6.1` and passed graphify validation. | `requirements.txt`; `validation/validate_graphify_navigation.py`; `validation/source_integrity_tracker.md` | `deferred` | 2026-05-05 | Install this pack's requirements in the OMX lab before treating OMX as a green validation environment, or make the graphify validator compatible with `networkx 3.3` if that environment must be supported. | `validation/source_integrity_tracker.md` |
+| `remote_publish_state` | Before this publication-prep update, the nested pack repo was clean but local `main` was ahead of `origin/main` by three commits, so content was locally ready but not confirmed remote-published. | `.git/`; `git status --branch --short`; `git branch -vv` | `todo` | 2026-05-05 | Push the nested repo when the goal is actual GitHub publication rather than local readiness review. | `validation/source_integrity_tracker.md` |
+| `archive_publish_sidecars` | Native publish-readiness audit found AppleDouble files inside nested `.git` (`.git/._index`, `.git/gk/._config`). They are not Git-push blockers, but would matter if the whole directory is zipped or handed off. | `.git/._index`; `.git/gk/._config` | `deferred` | 2026-05-05 | For archive-based handoff, exclude `.git/` or remove sidecars before packaging. Not needed for normal Git publication. | `validation/source_integrity_tracker.md` |
+| `validation_publication_entrypoint` | Publication-surface audit recommended a tracked validation entry point so reviewers see current status before historical snapshots. | `validation/README.md`; `validation/source_integrity_tracker.md` | `validated` | 2026-05-05 | `validation/README.md` is the publication-facing entry point; `source_integrity_tracker.md` remains the live source of truth. | `validation/README.md` |
 
 ## 2026-05-05 First-round native subagent audit
 
@@ -273,3 +279,180 @@ Post-commit addendum:
 
 - Fourth-round repair commit: `2801500c04ffd824c7136c76f50514e1f7c2edca` (`Fix sr-survey prior publish readiness`).
 - The commit hash could not be known until after the tracker section itself was committed, so this addendum records the repair commit in a tracker-only follow-up commit.
+
+## 2026-05-05 Fifth-round OMX/native subagent audit
+
+Task: answer whether the current `sr-survey-prior-router` Markdown and index
+content aligns with the canonical Markdown corpus under
+`references/canonical_sources/md/`, and whether the staged skill is ready to
+publish as a draft. This round used three native read-only subagents plus one
+isolated read-only OMX worker. The only intended write is this tracker section.
+
+Review paths:
+
+- Native subagent A: canonical/source-card alignment, focused on high-risk
+  manual/partial sources.
+- Native subagent B: publish-readiness, path portability, Git state, ignored
+  artifacts, and policy boundaries.
+- Native subagent C: tracker and validation-note consistency.
+- Isolated OMX worker: independent read-only audit of alignment and draft
+  publish readiness.
+
+Direct answers:
+
+1. Alignment with canonical Markdown: qualified yes. No reviewer found a current
+   blocker where a checked derivative card/index/route claim contradicted the
+   canonical Markdown. The strongest evidence is structural plus targeted
+   semantic: 65/65 source-card-v2 files validate against 65 manifest sources,
+   338 source-card locator document references all match their supporting
+   canonical paths, 212 canonical Markdown headers point to existing
+   pack-root-relative raw files, and targeted deep checks for `press`,
+   `cacm_author_guidelines`, `state_of_art_review_2022`, `clinicaltrials_api`,
+   `paperswithcode`, `prisma_2020`, `computational_linguistics`,
+   `tacl_submission`, `grade_working_group`, `core_api`, and `equator_prisma`
+   matched the current canonical Markdown within their stated scopes.
+2. Ready to publish: conditional ready for a tracked draft capability pack, not
+   ready to claim final knowledge-heavy coverage, not confirmed remote-published,
+   and not ideal as a whole-folder zip. Draft publication is content-ready if
+   reviewers use the nested Git repo surface, respect ignored/local generated
+   artifacts, and read this tracker as the current status. Remaining publication
+   caveats are the stale wording in older validation snapshots, local branch
+   `ahead 3`, archive-only `.git` AppleDouble sidecars, no live web refresh, and
+   the isolated OMX environment not satisfying `requirements.txt`.
+
+Controller verification:
+
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_source_cards_v2.py`: pass; 65 cards for 65 manifest sources.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py`: pass; generated graph present.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py --require-generated`: pass; generated graph present.
+- `git diff --check`: pass.
+- `find . -path './.git' -prune -o -name '._*' -type f -print`: pass; no tracked-surface AppleDouble files.
+- Path portability check across `source_manifest`, `download_manifest`,
+  `document_index`, `section_index_manifest`, `local_corpus_index`, and 65 split
+  by-source section indexes: pass; 661 top-level rows, 1125 top-level path
+  values, 4647 split-section path values, 0 parent-prefixed paths, 0 absolute
+  local paths, 0 missing pack-root paths.
+- Canonical Markdown raw-header check: pass; 212 Markdown files, 212 `Local raw
+  file:` headers, 0 bad prefixes, 0 missing raw files.
+- Source-set consistency check: pass; 65 manifest IDs, 65 local corpus IDs, 65
+  source cards, 65 document-index source IDs, 65 section-index source IDs; no
+  missing source sets.
+- Source-card locator/support check: pass; 308 claim blocks, 338 locator
+  document references, 0 unmatched locator documents, 0 missing support paths.
+- Publish-surface stale path/policy scan over `SKILL.md`, `agents/openai.yaml`,
+  and `references/`: pass; 0 `/Volumes/My Book`, parent-prefixed pack paths, or
+  `allow_implicit_invocation: true` matches.
+- Pack-local Python dependency check: `/opt/homebrew/opt/python@3.13/bin/python3.13`
+  with `networkx 3.6.1`; satisfies `requirements.txt`.
+- `git status --branch --short`: clean working tree before this tracker append,
+  `main...origin/main [ahead 3]`. After this section is written, this tracker
+  file itself is the expected working-tree modification until committed.
+
+Native subagent synthesis:
+
+- Alignment worker verdict: qualified alignment. It found no current high-risk
+  source where derivative claims contradicted canonical Markdown. It emphasized
+  that this is a draft router plus local canonical corpus, not a mature complete
+  knowledge base. It also noted that PRESS/CACM remain manual browser captures;
+  API/registry/stub sources must stay within their locator/API/partial-source
+  boundaries.
+- Publish worker verdict: conditional ready. It treated local draft publication
+  as acceptable from the nested Git repo surface, but identified three practical
+  conditions: push the nested repo for remote GitHub publication, exclude `.git`
+  sidecars for archive handoff, and avoid final knowledge-heavy or license-clean
+  claims.
+- Tracker worker verdict: tracker is current for live tracked state, but
+  qualified insufficient as standalone publish evidence because old snapshot
+  files still contain stale blocked/not-ready/bad-capture statements without
+  in-file supersession banners.
+
+OMX worker synthesis:
+
+- The isolated OMX worker agreed that targeted high-risk source-card content was
+  broadly aligned with canonical Markdown and that source-card-v2 validation
+  passed.
+- It reported graphify validation failures in the isolated OMX environment:
+  `node_link_graph() got an unexpected keyword argument 'edges'`.
+- Controller follow-up showed this was an environment mismatch: the OMX worker
+  had `networkx 3.3`, while this pack requires `networkx>=3.4,<4`; the
+  pack-local environment had `networkx 3.6.1` and graphify validators passed.
+  Therefore this is not evidence of canonical-content misalignment, but it is a
+  real validation-environment caveat for future OMX-based audits.
+
+Content findings:
+
+- No current source-content blocker was found in the checked runtime/review
+  surfaces.
+- The current pack still must not claim final knowledge-heavy coverage. It can
+  claim a seed source inventory, first local canonical Markdown corpus, complete
+  v2 source-card coverage for the 65 manifest sources, and route/index/source
+  boundaries.
+- Manual browser captures for `press` and `cacm_author_guidelines` are locally
+  usable and correctly disclosed, but remain refresh-sensitive and not clean
+  publisher XML/HTML.
+- Older validation snapshots remain useful provenance, but several need explicit
+  supersession headers before the validation folder can stand alone as reviewer
+  evidence.
+
+Remaining limitations:
+
+- No live web refresh was performed.
+- No full semantic re-review of all 308 source-card claims was performed; the
+  semantic review was targeted to high-risk/manual/partial sources plus
+  structural validators.
+- Remote GitHub publication was not performed or verified in this round.
+- Archive-based handoff was not prepared; normal Git publication and folder zip
+  publication have different cleanliness requirements.
+
+Verdict: conditional ready for draft Git publication of the tracked nested pack
+surface, with no current canonical-alignment blocker found. Not final
+knowledge-heavy; not remote-published until the `ahead 3` commits are pushed;
+and not a fully standalone validation evidence bundle until stale snapshot files
+get supersession banners or a current validation-status README.
+
+## 2026-05-05 Sixth-round publication prep
+
+Task: close the operational publication-readiness gaps found after the fifth
+round by native subagents. This round used one write worker for supersession
+banners and two read-only subagents for publication-surface review.
+
+Changes made:
+
+- Added publication/supersession banners to these historical snapshots:
+  `validation/agent_qa_validation_2026-05-04.md`,
+  `validation/source_alignment_audit_2026-05-04.md`,
+  `validation/source_alignment_fix_validation_2026-05-04.md`, and
+  `validation/live_recapture_2026-05-05.md`.
+- Added `validation/README.md` as the publication-facing validation entry point.
+  It tells reviewers to start with this tracker and warns that dated notes are
+  snapshots that may be superseded.
+- Removed non-`.git` AppleDouble sidecars generated while editing validation
+  files.
+- Updated the live item table to mark `validation_snapshot_supersession_headers`
+  as `validated` and added `validation_publication_entrypoint`.
+
+Subagent findings integrated:
+
+- Supersession-banner worker: added concise banners without deleting historical
+  findings.
+- Current-status entrypoint auditor: recommended tracking `validation/README.md`
+  rather than adding a separate `CURRENT_VALIDATION_STATUS.md`.
+- Publication-surface auditor: identified the final blockers as validation
+  AppleDouble sidecars, dirty/untracked validation edits, the tracker row still
+  saying `todo`, and the unpushed local branch.
+
+Expected remaining state after this prep is committed:
+
+- The nested Git working tree should be clean.
+- Source-card and graphify validators should pass.
+- The tracked publication/review surface should have a clear validation entry
+  point and explicit supersession banners for stale snapshots.
+- Local `main` will still be ahead of `origin/main` until pushed; that is the
+  remaining remote-publication step, not a local content/readiness defect.
+
+Archive caveat:
+
+- Normal Git publication excludes ignored raw corpus, split section dumps,
+  graphify output, and `.git` sidecars. Whole-folder zip/archive handoff should
+  explicitly exclude `.git/`, `references/canonical_sources/raw/`,
+  `references/corpus_index/sections/`, and `graphify-out/`.

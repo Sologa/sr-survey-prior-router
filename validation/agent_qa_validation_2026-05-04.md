@@ -2,6 +2,10 @@
 
 Date: 2026-05-04
 
+## Publication Note
+
+Historical snapshot. Current live status is tracked in `validation/source_integrity_tracker.md`. Superseded points: PRESS/CACM manual captures now exist, `state_of_art_review_2022` was recaptured, and graphify outputs were refreshed where relevant.
+
 Scope: validate that `sr-survey-prior-router` works as a thin route-first skill with lazy-loaded source/document/section indexes, rather than encouraging agents to bulk-load the downloaded full-document corpus.
 
 Agents:

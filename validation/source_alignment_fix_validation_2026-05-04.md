@@ -2,6 +2,10 @@
 
 Date: 2026-05-04
 
+## Publication Note
+
+Historical snapshot. Current live status is tracked in `validation/source_integrity_tracker.md`. Superseded points: PRESS/CACM manual captures now exist, `state_of_art_review_2022` was recaptured, and graphify outputs were refreshed where relevant.
+
 Scope: organized/index layer under `docs/agent_capability_packs/sr-survey-prior-router`.
 
 This validation checks the remediation requested after `source_alignment_audit_2026-05-04.md`. It treats `references/canonical_sources/raw/` and `references/canonical_sources/md/` as the backing corpus and does not use them as route-level context.
