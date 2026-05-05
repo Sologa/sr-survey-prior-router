@@ -1,7 +1,7 @@
 # acm_dl (official_dl_user_guide_pdf)
 
 Source URL: https://libraries.acm.org/binaries/content/assets/libraries/new_acm-digital-library-user-guide.pdf
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/acm_dl/official_dl_user_guide_pdf_new_acm-digital-library-user-guide.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/acm_dl/official_dl_user_guide_pdf_new_acm-digital-library-user-guide.pdf.pdf`
 
 ## Page 1
 

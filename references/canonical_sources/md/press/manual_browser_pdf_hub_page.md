@@ -3,7 +3,7 @@
 Source URL: https://www.cda-amc.ca/press-peer-review-electronic-search-strategies
 Captured: 2026-05-05
 Capture method: manual browser PDF download supplied by user.
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/press/manual_browser_pdf_hub_page.pdf`
+Local raw file: `references/canonical_sources/raw/press/manual_browser_pdf_hub_page.pdf`
 Original downloaded filename: `PRESS Peer Review of Electronic Search Strategies | CDA-AMC.pdf`
 PDF pages: 7
 Evidence use: locator_and_context

@@ -1,7 +1,7 @@
 # PRISMA-S: extension for reporting literature searches in systematic reviews (linked_1)
 
 Source URL: https://www.equator-network.org/wp-content/uploads/2009/02/Protocol-PRISMA-S-Delphi.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_s/linked_1_protocol-prisma-s-delphi.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/prisma_s/linked_1_protocol-prisma-s-delphi.pdf.pdf`
 
 
 

@@ -1,7 +1,7 @@
 # lens_api (official_scholarly_examples)
 
 Source URL: https://docs.api.lens.org/examples-scholar.html
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/lens_api/official_scholarly_examples_examples-scholar.html.html`
+Local raw file: `references/canonical_sources/raw/lens_api/official_scholarly_examples_examples-scholar.html.html`
 
 Scholar Examples
 

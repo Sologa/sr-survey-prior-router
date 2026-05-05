@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (subpage_citing)
 
 Source URL: https://www.prisma-statement.org/citing-prisma-2020
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/subpage_citing_citing-prisma-2020.html`
+Local raw file: `references/canonical_sources/raw/prisma_2020/subpage_citing_citing-prisma-2020.html`
 
 Citing PRISMA 2020 — PRISMA statement
 

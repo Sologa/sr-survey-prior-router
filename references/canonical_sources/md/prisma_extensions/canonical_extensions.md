@@ -1,7 +1,7 @@
 # PRISMA extensions
 
 Source URL: https://www.prisma-statement.org/extensions
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_extensions/canonical_extensions.html`
+Local raw file: `references/canonical_sources/raw/prisma_extensions/canonical_extensions.html`
 
 PRISMA extensions — PRISMA statement
 

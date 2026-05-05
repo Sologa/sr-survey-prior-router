@@ -1,7 +1,7 @@
 # Crossref REST API
 
 Source URL: https://www.crossref.org/documentation/retrieve-metadata/rest-api/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/crossref_api/canonical_rest-api.html`
+Local raw file: `references/canonical_sources/raw/crossref_api/canonical_rest-api.html`
 
 REST API - Crossref
 

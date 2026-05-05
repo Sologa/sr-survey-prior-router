@@ -1,7 +1,7 @@
 # ROBIS risk of bias in systematic reviews (extra_1)
 
 Source URL: https://www.bristol.ac.uk/media-library/sites/social-community-medicine/robis/robisguidancedocument.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/robis/extra_1_robisguidancedocument.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/robis/extra_1_robisguidancedocument.pdf.pdf`
 
 
 

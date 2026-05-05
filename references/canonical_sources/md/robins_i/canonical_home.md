@@ -1,7 +1,7 @@
 # ROBINS-I tool
 
 Source URL: https://www.riskofbias.info/welcome/home
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/robins_i/canonical_home.html`
+Local raw file: `references/canonical_sources/raw/robins_i/canonical_home.html`
 
 Risk of bias tools - ROBINS-I tool
 

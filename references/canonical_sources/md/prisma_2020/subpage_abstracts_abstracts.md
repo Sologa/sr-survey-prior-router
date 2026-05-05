@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (subpage_abstracts)
 
 Source URL: https://www.prisma-statement.org/abstracts
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/subpage_abstracts_abstracts.html`
+Local raw file: `references/canonical_sources/raw/prisma_2020/subpage_abstracts_abstracts.html`
 
 Abstracts — PRISMA statement
 

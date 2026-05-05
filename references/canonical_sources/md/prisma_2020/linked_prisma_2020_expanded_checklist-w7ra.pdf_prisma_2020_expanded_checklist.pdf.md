@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (linked_prisma_2020_expanded_checklist-w7ra.pdf)
 
 Source URL: https://static1.squarespace.com/static/65b880e13b6ca75573dfe217/t/67e61c3b5d427f3ad2386ae8/1743133757230/PRISMA_2020_expanded_checklist.pdf
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/linked_prisma_2020_expanded_checklist-w7ra.pdf_prisma_2020_expanded_checklist.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/prisma_2020/linked_prisma_2020_expanded_checklist-w7ra.pdf_prisma_2020_expanded_checklist.pdf.pdf`
 
 ## Page 1
 

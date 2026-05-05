@@ -1,7 +1,7 @@
 # JBI Manual for Evidence Synthesis (extra_1)
 
 Source URL: https://jbi-global-wiki.refined.site/download/attachments/355599504/JBI%20Manual%20for%20Evidence%20Synthesis%202024.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/jbi_manual_2024/extra_1_jbi_20manual_20for_20evidence_20synthesis_202024.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/jbi_manual_2024/extra_1_jbi_20manual_20for_20evidence_20synthesis_202024.pdf.pdf`
 
 
 

@@ -1,7 +1,7 @@
 # lens_api (canonical_docs_home)
 
 Source URL: https://docs.api.lens.org/
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/lens_api/canonical_docs_home_canonical_docs_home.html`
+Local raw file: `references/canonical_sources/raw/lens_api/canonical_docs_home_canonical_docs_home.html`
 
 Lens API Documentation
 

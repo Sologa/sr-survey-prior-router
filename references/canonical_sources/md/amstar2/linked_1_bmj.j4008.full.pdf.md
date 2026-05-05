@@ -1,7 +1,7 @@
 # AMSTAR 2 (linked_1)
 
 Source URL: https://www.bmj.com/content/bmj/358/bmj.j4008.full.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/amstar2/linked_1_bmj.j4008.full.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/amstar2/linked_1_bmj.j4008.full.pdf.pdf`
 
 
 

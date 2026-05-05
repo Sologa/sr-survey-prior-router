@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (paper_plos_statement_html)
 
 Source URL: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003583
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/paper_plos_statement_html_article.html`
+Local raw file: `references/canonical_sources/raw/prisma_2020/paper_plos_statement_html_article.html`
 
 The PRISMA 2020 statement: An updated guideline for reporting systematic reviews | PLOS Medicine
 

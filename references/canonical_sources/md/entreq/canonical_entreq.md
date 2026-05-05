@@ -1,7 +1,7 @@
 # ENTREQ qualitative synthesis reporting guideline
 
 Source URL: https://www.equator-network.org/reporting-guidelines/entreq/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/entreq/canonical_entreq.html`
+Local raw file: `references/canonical_sources/raw/entreq/canonical_entreq.html`
 
 Enhancing transparency in reporting the synthesis of qualitative research: ENTREQ | EQUATOR Network
 skip to main content

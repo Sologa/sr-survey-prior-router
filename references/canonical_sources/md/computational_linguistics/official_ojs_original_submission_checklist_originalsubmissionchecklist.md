@@ -1,7 +1,7 @@
 # computational_linguistics (official_ojs_original_submission_checklist)
 
 Source URL: https://submissions.cljournal.org/index.php/cljournal/OriginalSubmissionChecklist
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/computational_linguistics/official_ojs_original_submission_checklist_originalsubmissionchecklist.html`
+Local raw file: `references/canonical_sources/raw/computational_linguistics/official_ojs_original_submission_checklist_originalsubmissionchecklist.html`
 
 Submission Checklist for Original, First Time Submissions | Computational Linguistics
 

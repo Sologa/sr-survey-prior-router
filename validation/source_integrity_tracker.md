@@ -39,3 +39,232 @@ Status vocabulary:
 | `graphify_requirements` | Subagent review found graph builder imports beyond `networkx`: `yaml` and the `graphify` module provided by the `graphifyy` package. | `requirements.txt`; `scripts/build_graphify_index_graph.py`; `validation/graphify_navigation_validation_2026-05-04.md` | `validated` | 2026-05-05 | Added `PyYAML` and `graphifyy` to requirements and updated the validation note to use `--require-generated`. | `validation/source_integrity_tracker.md` |
 | `source_cards_v2_schema` | Subagent review found source-card `authority_level` values outside the README's recommended list even though the cards validate and the values are intentional. | `references/source_inventory/source_cards_v2/README.md`; `references/source_inventory/source_cards_v2/*.md`; `validation/validate_source_cards_v2.py` | `validated` | 2026-05-05 | Documented the current intentional authority-level values in the source-card-v2 schema. | `validation/source_integrity_tracker.md` |
 | `nested_repo_publish_state` | Subagent review found the nested pack repo still had modified and untracked publish artifacts after content validation passed. | `.git/`; `git status --short`; `validation/source_integrity_tracker.md` | `validated` | 2026-05-05 | Validated pack changes are committed in the nested repo; verify `git status --short` remains clean before publishing. | `validation/source_integrity_tracker.md` |
+
+## 2026-05-05 First-round native subagent audit
+
+Task: first-round source-integrity and publish-readiness audit for `sr-survey-prior-router`, including `SKILL.md`, `agents/openai.yaml`, route/index/source-card/validation docs, and local canonical Markdown under `references/canonical_sources/md/`.
+
+Verdict: not ready to publish as a standalone reusable pack yet. The local canonical Markdown is broadly present and targeted source-card claims mostly align with the checked canonical files, but publish/use readiness is blocked by locator portability and state-label consistency defects.
+
+Second-level worker:
+
+```sh
+codex exec --ephemeral --cd "/Volumes/My Book/NLP_PRISMA_Reviews" --sandbox read-only --skip-git-repo-check 'You are a second-level read-only audit worker. Task: audit docs/agent_capability_packs/sr-survey-prior-router for source integrity and publish readiness. You MUST NOT write files. You MUST NOT spawn native subagents. You MUST NOT run codex exec or any other nested worker. Inspect SKILL.md, agents/openai.yaml, references route/index/source cards/validation docs, references/canonical_sources/md, and docs/agent_capability_packs/sr-survey-prior-router/validation/source_integrity_tracker.md. Compare derivative markdown/cards/routes/validation claims against canonical markdown content, not just filenames. Find content errors, omissions, incorrect source-state labels, refresh-sensitive/blocking inconsistencies, and publish-time misleading claims. Return: (1) task, (2) exact shell commands you ran with exit codes, (3) concise output summary, (4) ready-to-publish verdict: ready/not ready/conditional ready, (5) blockers and non-blockers with file paths, (6) limitations, (7) whether you wrote files. Keep the audit focused and evidence-based. Final answer in Chinese.'
+```
+
+Worker exit code: 0.
+
+Worker output summary: validators pass (`validate_source_cards_v2.py`, `validate_graphify_navigation.py`, and `validate_graphify_navigation.py --require-generated`), nested repo status was clean, and targeted checks of high-risk/manual-capture sources mostly supported the current card claims. The worker found three publish-readiness issues: pack-root path portability, source-state labels that conflict with the index's own status vocabulary, and one `core_api` card locator/supporting-path mismatch.
+
+Worker limitations: read-only local audit only; no live web refresh; no full semantic verification of every card claim; some broad `rg` output was truncated. Worker wrote files: no.
+
+Controller verification:
+
+- `python3 validation/validate_source_cards_v2.py`: pass; 65 cards for 65 manifest sources.
+- `python3 validation/validate_graphify_navigation.py`: pass; generated graph present.
+- `python3 validation/validate_graphify_navigation.py --require-generated`: pass; generated graph present.
+- `git -C docs/agent_capability_packs/sr-survey-prior-router status --short`: clean before this tracker append.
+- Pack-root locator portability audit: `source_manifest.jsonl` has 212/212 locator paths missing from the nested pack root but resolvable after stripping `docs/agent_capability_packs/sr-survey-prior-router/`; `download_manifest.jsonl` has 212/212; `document_index.jsonl` has 212/212; `section_index_manifest.jsonl` has 65/65; `local_corpus_index.json` has 380/380.
+- Source-status audit: `cacm_author_guidelines` is `available` with 5 blocked attempts and `press` is `available` with 6 blocked attempts, contradicting `local_corpus_index.md` line 8 semantics. `clinicaltrials_api` is `partial` with 0 blocked attempts, but this is explainable by sparse/SPA human docs plus richer OpenAPI/version captures.
+- Source-card locator audit: checked 338 `quote_or_locator` Markdown line references; found 2 issues in `references/source_inventory/source_cards_v2/core_api.md`, where `official_api_root_official_api_root.md` and `official_api_v3_docs_v3.md` appear in the locator string but not in that key point's `supporting_canonical_paths`.
+
+Blockers:
+
+1. `references/source_inventory/source_manifest.jsonl`, `references/canonical_sources/download_manifest.jsonl`, `references/corpus_index/document_index.jsonl`, `references/corpus_index/section_index_manifest.jsonl`, `references/source_inventory/local_corpus_index.json`, and `references/source_inventory/local_corpus_index.md` use parent-repo-prefixed locator paths. These work from `/Volumes/My Book/NLP_PRISMA_Reviews` but break from the nested pack root and would mislead a standalone GitHub reviewer or installed skill.
+2. `references/source_inventory/local_corpus_index.md` and `.json` mark `press` and `cacm_author_guidelines` as `available` despite retained blocked scripted-fetch attempts. Either the rows should use a state such as `partial`/`accepted_manual`, or the status vocabulary should explicitly separate local evidence availability from refresh/retrieval blockage.
+
+Non-blockers:
+
+- `references/source_inventory/source_cards_v2/core_api.md` should add the two cited stub files to the affected key point's `supporting_canonical_paths`, or remove them from that key point's locator string.
+- `agents/openai.yaml` sets `allow_implicit_invocation: true`; this is not a source-integrity error, but should be explicitly confirmed before publishing a broad router.
+- Manual browser captures for PRESS and CACM have navigation/footer/cookie noise and reuse caveats. These are documented and do not currently hide source limits.
+- `graphify-out/` and split by-source section locators are ignored local/rebuildable artifacts. Current docs describe fallback behavior, so this is acceptable if the public pack does not require them.
+
+Next smallest action for the repair round: normalize locator paths to the pack root or teach every consumer/validator to resolve both parent-prefixed and pack-root-relative paths, then fix the `available` status semantics for manual-capture-with-blocked-refresh rows and repair the `core_api` card locator mismatch.
+
+## 2026-05-05 Second-round repair
+
+Task: linearly repair the first-round publish blockers/non-blocker for `sr-survey-prior-router`, using a first-level controller plus foreground read-only `codex exec` workers for patch review.
+
+Files repaired:
+
+- `references/source_inventory/source_manifest.jsonl`
+- `references/canonical_sources/download_manifest.jsonl`
+- `references/corpus_index/document_index.jsonl`
+- `references/corpus_index/section_index_manifest.jsonl`
+- `references/corpus_index/sections/by_source/*.jsonl`
+- `references/source_inventory/local_corpus_index.json`
+- `references/source_inventory/local_corpus_index.md`
+- `references/source_inventory/source_cards_v2/core_api.md`
+- `graphify-out/` regenerated as ignored locator-only local output
+- `validation/source_integrity_tracker.md`
+
+Repair summary:
+
+- Normalized public locator paths from parent-repo-prefixed `docs/agent_capability_packs/sr-survey-prior-router/...` to pack-root-relative `references/...` paths.
+- Included split section locators under `references/corpus_index/sections/by_source/*.jsonl` after the first second-level patch review found 4647 remaining parent-prefixed `md_path` values.
+- Kept `press` and `cacm_author_guidelines` as locally `available` because manual browser Markdown evidence exists, but changed the status rule to separate local evidence availability from blocked scripted-refresh attempts.
+- Added `refresh_status=scripted_fetch_blocked_manual_browser_refresh_required` to the `press` and `cacm_author_guidelines` rows in `local_corpus_index.json`.
+- Added the two CORE entry-stub Markdown files cited by the last `core_api` key point to that key point's `supporting_canonical_paths`.
+- Rebuilt `graphify-out/` after index changes; graph output remains locator-only and contains no canonical raw/md or split-section paths.
+
+Second-level worker 1:
+
+```sh
+codex exec --ephemeral --cd "/Volumes/My Book/NLP_PRISMA_Reviews" --sandbox read-only --skip-git-repo-check 'You are a second-level read-only patch-review worker for docs/agent_capability_packs/sr-survey-prior-router. You MUST NOT write files. You MUST NOT spawn native subagents. You MUST NOT run codex exec or any nested worker. Review the current second-round repair patch against this spec: path portability must remove parent prefix docs/agent_capability_packs/sr-survey-prior-router/ from locator artifacts while keeping referenced files resolvable from the pack root; status semantics must make press and cacm_author_guidelines available/manual evidence compatible with blocked scripted refresh attempts; core_api.md must not cite quote locator files absent from supporting_canonical_paths; graphify generated artifacts may be refreshed but must remain locator-only. Inspect git -C docs/agent_capability_packs/sr-survey-prior-router diff, run read-only validation or audit commands as needed from the pack root, and report in Chinese: task, exact commands you ran with exit codes, output summary, whether blockers remain, ready-to-publish verdict, limitations, and whether you wrote files.'
+```
+
+Worker 1 exit code: 0.
+
+Worker 1 output summary: source-card and graphify validators passed, the six top-level locator artifacts had zero parent prefixes and all checked JSON path values resolved from the pack root, `press`/`cacm_author_guidelines` status semantics were acceptable, `core_api` had no remaining locator/supporting-path mismatch, and `graphify-out/` stayed locator-only. The worker found one remaining same-class blocker: all 65 split by-source section index files still had parent-prefixed `md_path` values, 4647 path values total, all resolvable after stripping the prefix.
+
+Worker 1 limitations: read-only local audit only; no live web refresh; no graph or section-index regeneration; no full semantic re-review of all source-card claims; some exploratory output was truncated. Worker 1 wrote files: no.
+
+Second-level worker 2:
+
+```sh
+codex exec --ephemeral --cd "/Volumes/My Book/NLP_PRISMA_Reviews" --sandbox read-only --skip-git-repo-check 'You are a second-level final read-only patch-review worker for docs/agent_capability_packs/sr-survey-prior-router. You MUST NOT write files. You MUST NOT spawn native subagents. You MUST NOT run codex exec or any nested worker. Keep output small and avoid broad diff or broad rg output. Review the final second-round repair after the controller also normalized references/corpus_index/sections/by_source/*.jsonl. From the pack root, run concise read-only checks only: git status short and diff stat; validate_source_cards_v2.py; validate_graphify_navigation.py; validate_graphify_navigation.py --require-generated; a concise parent-prefix/path-resolution count covering the six top-level locator artifacts plus references/corpus_index/sections/by_source/*.jsonl; a concise check of press and cacm_author_guidelines status/local manual availability/blocked refresh fields; a concise core_api quote_or_locator versus supporting_canonical_paths check; and graphify-out forbidden path check. Report in Chinese: task, exact commands you ran with exit codes, output summary, remaining blockers if any, ready-to-publish verdict, limitations, and whether you wrote files.'
+```
+
+Worker 2 exit code: 0.
+
+Worker 2 output summary: `git status --short` showed only modified tracked pack files; `git diff --stat` reported 8 modified tracked files before this tracker append; `validate_source_cards_v2.py`, `validate_graphify_navigation.py`, and `validate_graphify_navigation.py --require-generated` passed. Parent-prefix/path-resolution count passed for the six top-level locator files and the split by-source section locators: top-level `rows=662`, `path_values=1574`, `bad_prefix=0`, `missing=0`, `parent_mismatch=0`; by-source `files=65`, `section_rows=4647`, `path_values=4647`, `bad_prefix=0`, `missing=0`, `parent_mismatch=0`, `filename_source_mismatch=0`. `press` had 3 manual downloads and 6 failed scripted refresh attempts; `cacm_author_guidelines` had 4 manual downloads and 5 failed scripted refresh attempts; both were locally available with manual-capture validation. `core_api` had `claims=4`, `locator_doc_refs=6`, `unmatched_locator_docs=0`, and `missing_support_paths=0`. Forbidden graphify path counts were all zero for canonical raw, canonical md, split section paths, `refs_old/`, and `upstream_repo/`.
+
+Worker 2 limitations: read-only local audit only; no live network refresh; no full diff expansion; no full-text semantic re-review. Worker 2 wrote files: no.
+
+Controller verification after repairs:
+
+- `python3 validation/validate_source_cards_v2.py`: pass; 65 cards for 65 manifest sources.
+- `python3 validation/validate_graphify_navigation.py`: pass; generated graph present.
+- `python3 validation/validate_graphify_navigation.py --require-generated`: pass; generated graph present.
+- Targeted path portability check: pass; 5837 path references checked across the six top-level locator artifacts plus 65 by-source section index files; parent-prefixed strings: 0.
+- Targeted status semantics check: pass; `press` and `cacm_author_guidelines` are locally `available`, manual-browser converted, refresh-sensitive, and explicitly marked `scripted_fetch_blocked_manual_browser_refresh_required`.
+- Targeted `core_api` locator/support check: pass; 4 claim blocks checked; no quote locator references missing from supporting paths.
+- macOS metadata check: pass; no pack `._*` files outside ignored `.git`/`.omx` metadata remained after edits.
+
+Remaining limitations:
+
+- No live web refresh was performed.
+- Manual browser captures for `press` and `cacm_author_guidelines` remain refresh-sensitive and should be recaptured manually or with browser automation if exact current wording is needed later.
+- The ready-to-publish judgment covers this source-integrity and locator-portability repair scope; it does not certify every substantive claim in every source card against full canonical text.
+
+Verdict: ready to publish for the second-round source-integrity scope.
+
+## 2026-05-05 Third-round zero-known-issues audit
+
+Task: zero-known-issues local publish/readiness audit for `sr-survey-prior-router` after the second-round repair. This round intentionally did not repair content. The only intended write is this tracker section.
+
+Second-level worker:
+
+```sh
+codex exec --ephemeral --cd "/Volumes/My Book/NLP_PRISMA_Reviews" --sandbox read-only --skip-git-repo-check 'You are a second-level read-only audit worker for docs/agent_capability_packs/sr-survey-prior-router. You MUST NOT write files. You MUST NOT spawn native subagents. You MUST NOT run codex exec or any nested worker. Task: perform a zero-known-issues local publish/readiness audit after previous repairs. Inspect SKILL.md, agents/openai.yaml, requirements, .gitignore, .graphifyignore, README-like docs, references route/index/source inventory/source cards v2/canonical_sources/corpus_index, validation notes/scripts/validators, tracked diff/status, and behavior when ignored generated files are absent. Check for any remaining problem that would affect complete publication and use: stale wording, misleading status semantics, parent-prefixed or absolute paths, validator gaps, ignored/rebuildable artifact dependency, GitHub checkout portability, allow_implicit_invocation risk, source-card versus canonical markdown alignment, manifest/local corpus/document index consistency. Do not do live web refresh. Run validators and focused read-only scripts as needed. Return in Chinese: task, exact shell commands run with exit codes, concise output summary, limitations, whether you wrote files, and final verdict. If any issue exists, do not say ready; list severity, exact file(s), evidence, and smallest recommended fix. If no issues, say no known issues within local audit scope and state limitations.'
+```
+
+Worker exit code: 0.
+
+Worker output summary: not ready. The worker found that the local validators and main locator indexes pass, but zero-known-issues is not met because canonical Markdown headers still expose non-portable local raw paths, the nested pack repo is not in a clean publish state, `coverage_report.md` still has a parent-prefixed corpus path, and `allow_implicit_invocation: true` remains a publish policy risk for a broad router.
+
+Worker command/result summary:
+
+- `git status --branch --short`: exit 0; branch `main...origin/main [ahead 1]` with 8 modified tracked files.
+- `python3 validation/validate_source_cards_v2.py`: exit 0; pass, 65 cards / 65 manifest sources.
+- `python3 validation/validate_graphify_navigation.py`: exit 0; pass, generated graph present.
+- `python3 validation/validate_graphify_navigation.py --require-generated`: exit 0; pass.
+- Simulated absent `graphify-out` default validation: exit 0; pass as `absent_optional_rebuildable`.
+- Simulated absent `graphify-out --require-generated`: exit 1 as expected; missing generated graph artifacts reported.
+- JSON/JSONL parse and manifest/index consistency checks: exit 0; 65 source IDs, 65 local corpus sources, 65 source cards, 212 document rows, 254 download rows, 65 section manifests, and no missing source/card/index sets.
+- Top-level locator portability check: exit 0; 1125 path values, 0 parent-prefixed paths, 0 local absolute paths, 0 missing pack-root paths.
+- Split `sections/by_source` check: exit 0; 65 files and 4647 rows, with 0 parent/absolute/missing/source-mismatch issues.
+- Source-card keypoint locator/support check: exit 0; 308 claims, 338 locator doc refs, 0 unmatched locator docs, 0 missing support paths.
+- Canonical Markdown raw-header portability check: exit 0 but found 212 `Local raw file:` headers; 109 absolute local paths, 100 parent-prefixed paths, 3 pack-root-relative paths.
+- `git diff --check`: exit 0.
+- Requirements import check (`networkx`, `yaml`, `graphify`): exit 0.
+- Two here-doc probes failed in the read-only worker because the sandbox could not create shell temp files; no files were written.
+
+Worker limitations: read-only local audit only; no live web refresh; no full semantic re-review of all 308 source-card claims; raw corpus, split section, and graphify absence were simulated rather than physically deleting ignored artifacts; outer `/Volumes/My Book/NLP_PRISMA_Reviews` is not a Git repo, so Git state is from the nested pack repo.
+
+Worker wrote files: no.
+
+Controller checks:
+
+- `git status --branch --short`: exit 0; nested pack repo is `main...origin/main [ahead 1]` with the same 8 modified tracked files.
+- `python3 validation/validate_source_cards_v2.py`: exit 0; pass, 65 cards for 65 manifest sources.
+- `python3 validation/validate_graphify_navigation.py`: exit 0; pass, generated graph present.
+- `python3 validation/validate_graphify_navigation.py --require-generated`: exit 0; pass, generated graph present.
+- `git diff --check`: exit 0.
+- `python3 -m json.tool references/source_inventory/local_corpus_index.json` plus JSONL parse check: exit 0.
+- Requirements import check for `networkx`, `yaml`, and `graphify`: exit 0.
+- Manifest/index consistency check: exit 0; `source_manifest_ids=65`, `unique_source_ids=65`, `local_corpus_sources=65`, `source_cards_v2=65`, `document_index_rows=212`, `download_manifest_rows=254`, `section_manifest_rows=65`, `doc_sources=65`, `section_sources=65`; all missing/delta lists empty.
+- Top-level locator portability check across `source_manifest`, `download_manifest`, `document_index`, `section_index_manifest`, and `local_corpus_index`: exit 0; `rows=596`, `path_values=1125`, `parent_prefix=0`, `absolute_local=0`, `missing_pack_root=0`.
+- Source-card keypoint locator/support check: exit 0; `claims=308`, `locator_doc_refs=338`, `unmatched_locator_docs=0`, `missing_support_paths=0`.
+- Canonical Markdown raw-header portability check: exit 0 but confirms the worker issue: `md_files=212`, `local_raw_headers=212`, `absolute=109`, `parent_prefixed=100`, `pack_relative=3`, `other=0`.
+- Simulated absent `graphify-out` with `PYTHONDONTWRITEBYTECODE=1`: default validation exit 0 (`generated_graph: absent_optional_rebuildable`); `--require-generated` exit 1 as expected with three missing generated graph artifacts.
+- Controller cleanup note: an initial Python import simulation created `validation/__pycache__` and AppleDouble metadata; these controller-created temp files were removed, and final `find validation -maxdepth 2 \( -name '__pycache__' -o -name '._*' \) -print` returned no paths.
+
+Remaining issues:
+
+1. Severity: medium-high. Tracked canonical Markdown headers still expose non-portable raw paths. All 212 tracked files under `references/canonical_sources/md/**/*.md` have `Local raw file:` headers; 109 are local absolute paths such as `/Volumes/My Book/...`, and 100 are parent-repo-prefixed `docs/agent_capability_packs/sr-survey-prior-router/...` paths. Example: `references/canonical_sources/md/acl_anthology/canonical_api.md:4`. Smallest fix: normalize these headers to pack-root-relative `references/canonical_sources/raw/...` paths, or use an explicit placeholder such as `${RAW_CORPUS_ROOT}/...` plus wording that raw backing files may be absent from a public checkout. Add a validator so this cannot recur.
+2. Severity: medium. The nested pack repo is not in a clean publish state. `git status --branch --short` shows `main...origin/main [ahead 1]` and 8 modified tracked files: `references/canonical_sources/download_manifest.jsonl`, `references/corpus_index/document_index.jsonl`, `references/corpus_index/section_index_manifest.jsonl`, `references/source_inventory/local_corpus_index.json`, `references/source_inventory/local_corpus_index.md`, `references/source_inventory/source_cards_v2/core_api.md`, `references/source_inventory/source_manifest.jsonl`, and `validation/source_integrity_tracker.md`. This also conflicts with the tracker row that says validated pack changes are committed and clean before publishing. Smallest fix: either commit the validated repair files before publishing, or mark the publish state as pending commit and keep the release gate at a clean `git status`.
+3. Severity: low. `references/source_inventory/coverage_report.md:15` still says the local corpus path is `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/`, which is parent-prefixed from the pack root. Smallest fix: change it to `references/canonical_sources/`.
+4. Severity: low / publish policy decision. `agents/openai.yaml:6` sets `allow_implicit_invocation: true` for a broad router whose skill description covers prepared resources, domain prior, literature corpora, survey/SR writing prior, evidence grounding, source audit, and source-grounded synthesis. `SKILL.md` has useful route boundaries, but the publish policy should still be explicit. Smallest fix: set it to `false` for draft/explicit-only publication, or keep `true` and document that implicit invocation is intentional.
+
+Positive checks with no new issues found:
+
+- Source-card v2 schema validation passes.
+- Graphify navigation validation passes with generated graph present, and default validation can tolerate absent ignored `graphify-out/`.
+- Required generated graph validation fails when graphify artifacts are absent, as intended.
+- Main manifest/index locator paths are now pack-root-relative and resolvable.
+- Source-card keypoint quote locators match supporting canonical paths in the checked pattern.
+- JSON/JSONL files parse.
+- Requirements imports are available in the current environment.
+
+Verdict: not ready for zero-known-issues publication. The stopping criterion "no known issues" is not met. Next repair round should fix the four remaining issues above, then rerun the same zero-known-issues audit.
+
+## 2026-05-05 Fourth-round repair
+
+Task: repair the four third-round zero-known-issues blockers for `sr-survey-prior-router`, verify the pack, and prepare a clean nested-repo publish state.
+
+Repairs:
+
+- Normalized all `references/canonical_sources/md/**/*.md` `Local raw file:` headers to pack-root-relative `references/canonical_sources/raw/...` paths. Body text was not intentionally changed.
+- Changed `references/source_inventory/coverage_report.md` local corpus path from the parent-repo-prefixed path to `references/canonical_sources/`.
+- Changed `agents/openai.yaml` from broad implicit invocation to explicit-only: `allow_implicit_invocation: false`, with description/capabilities scoped to explicit prepared SR/survey prior routing.
+- Removed controller-created AppleDouble `._*` metadata files after the first validator run exposed them as publish blockers.
+
+Second-level read-only worker:
+
+```sh
+COPYFILE_DISABLE=1 codex exec --ephemeral --cd "/Volumes/My Book/NLP_PRISMA_Reviews" --sandbox read-only --skip-git-repo-check 'You are a second-level read-only patch/audit reviewer for the fourth-round repair of docs/agent_capability_packs/sr-survey-prior-router. You MUST NOT write files. You MUST NOT spawn native subagents. You MUST NOT run codex exec or any other nested worker. Inspect the current pack state and dirty diff only within docs/agent_capability_packs/sr-survey-prior-router. Review the four known issues from the third-round audit: (1) Local raw file headers under references/canonical_sources/md/**/*.md must be pack-root-relative references/canonical_sources/raw/... with no /Volumes or docs/agent_capability_packs/sr-survey-prior-router prefix and existing local raw paths; (2) coverage_report.md must not contain parent-prefixed corpus path; (3) agents/openai.yaml must be explicit-only and no broad implicit invocation risk; (4) nested pack tracked changes should be publish-readiness-only and committable, with final clean state expected after commit. Run read-only checks as needed, including validators if feasible. Return in Chinese: task, exact shell commands you ran with exit codes, concise output summary, verdict ready/not ready/no-known-issues or blockers, limitations, and whether you wrote files. Keep it evidence-based and mention any remaining issue explicitly.'
+```
+
+Worker exit code: 0.
+
+Worker output summary: no known issues within the fourth-round local audit scope. It verified 212/212 canonical Markdown raw headers are pack-root-relative and point to existing raw files, no `/Volumes` or parent-prefixed pack paths remain in the checked locator surfaces, `coverage_report.md` has no parent-prefixed corpus path, `agents/openai.yaml` is explicit-only, source-card and graphify validators pass, `git diff --check` passes, and all dirty tracked files are within expected publish-readiness surfaces. It found no remaining blocker; the only pre-commit condition was that the nested pack repo remained dirty until the repair is committed.
+
+Worker limitations: read-only local audit only; no live web refresh; no full semantic re-review of all source-card claims; one read-only here-doc probe failed because the read-only sandbox could not create a shell temp file, and one quoted `python3 -c` probe failed before the worker reran an equivalent raw-header check successfully. Worker wrote files: no.
+
+Controller command/result summary:
+
+- Initial mechanical header rewrite with default locale: exit 9 due missing `C.UTF-8`; no useful output indicated a completed rewrite.
+- Retried header rewrite with `LC_ALL=C LANG=C`: exit 0.
+- `python3` targeted raw-header check: exit 0; `headers=212`, `bad_prefix=0`, `missing_raw_paths=0`, `non_pack_relative_local_raw_values=0`.
+- `python3` targeted coverage report check: exit 0; `coverage_parent_prefixed_refs=0`.
+- `python3` targeted `openai.yaml` invocation-policy check: exit 0; `allow_implicit_invocation_false=True`, `allow_implicit_invocation_true_absent=True`, explicit-only description and capabilities present.
+- `git diff --check`: exit 0.
+- First `python3 validation/validate_source_cards_v2.py`: exit 1 because pack AppleDouble `._*` metadata files were present.
+- `find docs/agent_capability_packs/sr-survey-prior-router -name '._*' -type f -print -delete | wc -l`: exit 0; removed 216 pack metadata files.
+- `COPYFILE_DISABLE=1 python3 validation/validate_source_cards_v2.py`: exit 0; pass, 65 cards for 65 manifest sources.
+- `COPYFILE_DISABLE=1 python3 validation/validate_graphify_navigation.py`: exit 0; pass, generated graph present.
+- `COPYFILE_DISABLE=1 python3 validation/validate_graphify_navigation.py --require-generated`: exit 0; pass, generated graph present.
+- Final metadata check before commit: exit 0; no pack `._*` files remained.
+- Second-level `codex exec` worker command above: exit 0; no known issues within scope.
+
+Commit: pending at the time this section was written; a post-commit addendum records the repair commit hash after Git creates it.
+
+Remaining limitations:
+
+- No live web refresh was performed.
+- No full semantic re-review of every source-card claim was performed.
+- `press` and `cacm_author_guidelines` remain refresh-sensitive manual captures for future current-wording checks, but this is no longer a local publish-readiness blocker.
+
+Verdict before commit: no known issues within the fourth-round local publish-readiness audit scope except the expected dirty tracked state, to be closed by committing the nested pack repair.

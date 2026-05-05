@@ -1,7 +1,7 @@
 # Europe PMC REST and bulk services
 
 Source URL: https://europepmc.org/RestfulWebService
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/europe_pmc/canonical_restfulwebservice.html`
+Local raw file: `references/canonical_sources/raw/europe_pmc/canonical_restfulwebservice.html`
 
 Europe PMC Europe PMC RESTful Web Service - Developers - Europe PMC
 1

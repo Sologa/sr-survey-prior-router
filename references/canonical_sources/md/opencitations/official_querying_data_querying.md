@@ -1,7 +1,7 @@
 # opencitations (official_querying_data)
 
 Source URL: https://opencitations.net/querying/
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/opencitations/official_querying_data_querying.html`
+Local raw file: `references/canonical_sources/raw/opencitations/official_querying_data_querying.html`
 
 Querying Data - OpenCitations
 

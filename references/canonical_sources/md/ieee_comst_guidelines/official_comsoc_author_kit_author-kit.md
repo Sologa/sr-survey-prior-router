@@ -1,7 +1,7 @@
 # ieee_comst_guidelines (official_comsoc_author_kit)
 
 Source URL: https://www.comsoc.org/publications/ieee-comsoc-technical-committees-newsletter/author-kit
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/ieee_comst_guidelines/official_comsoc_author_kit_author-kit.html`
+Local raw file: `references/canonical_sources/raw/ieee_comst_guidelines/official_comsoc_author_kit_author-kit.html`
 
 IEEE ComSoc Technical Committees Newsletter Author Kit | IEEE Communications Society
 Skip to main content

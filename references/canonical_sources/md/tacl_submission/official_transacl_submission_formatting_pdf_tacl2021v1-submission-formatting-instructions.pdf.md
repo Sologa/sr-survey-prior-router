@@ -1,7 +1,7 @@
 # tacl_submission (official_transacl_submission_formatting_pdf)
 
 Source URL: https://transacl.org/tacl-submission-templates/tacl2021v1-submission-formatting-instructions.pdf
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/tacl_submission/official_transacl_submission_formatting_pdf_tacl2021v1-submission-formatting-instructions.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/tacl_submission/official_transacl_submission_formatting_pdf_tacl2021v1-submission-formatting-instructions.pdf.pdf`
 
 ## Page 1
 

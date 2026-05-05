@@ -57,6 +57,8 @@ last_reviewed: "2026-05-05"
 - claim: CORE documents free access subject to rate limits, faster registered rates, and a basic limit of one batch request or five single requests per 10 seconds.
   supporting_canonical_paths:
     - references/canonical_sources/md/core_api/canonical_services_api_api.md
+    - references/canonical_sources/md/core_api/official_api_root_official_api_root.md
+    - references/canonical_sources/md/core_api/official_api_v3_docs_v3.md
   support_type: direct
   verification_note: Treat the local v3 docs/root captures as entry-point stubs for detailed endpoint work.
   quote_or_locator: canonical_services_api_api.md:149-177; official_api_root_official_api_root.md:6-8; official_api_v3_docs_v3.md:1-6

@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (subpage_checklist)
 
 Source URL: https://www.prisma-statement.org/prisma-2020-checklist
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/subpage_checklist_prisma-2020-checklist.html`
+Local raw file: `references/canonical_sources/raw/prisma_2020/subpage_checklist_prisma-2020-checklist.html`
 
 PRISMA 2020 checklist — PRISMA statement
 

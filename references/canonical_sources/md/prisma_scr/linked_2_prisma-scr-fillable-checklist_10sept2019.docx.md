@@ -1,7 +1,7 @@
 # PRISMA Extension for Scoping Reviews (PRISMA-ScR) (linked_2)
 
 Source URL: https://static1.squarespace.com/static/65b880e13b6ca75573dfe217/t/65b9e61c973dbd320b25f31c/1706681884867/PRISMA-ScR-Fillable-Checklist_10Sept2019.docx
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_scr/linked_2_prisma-scr-fillable-checklist_10sept2019.docx.docx`
+Local raw file: `references/canonical_sources/raw/prisma_scr/linked_2_prisma-scr-fillable-checklist_10sept2019.docx.docx`
 
 Preferred Reporting Items for Systematic reviews and Meta-Analyses extension for Scoping Reviews (PRISMA-ScR) Checklist
 

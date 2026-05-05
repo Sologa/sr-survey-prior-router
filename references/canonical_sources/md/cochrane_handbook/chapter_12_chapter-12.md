@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (chapter_12)
 
 Source URL: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-12
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/chapter_12_chapter-12.html`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/chapter_12_chapter-12.html`
 
 Chapter 12: Synthesizing and presenting findings using other methods | Cochrane
 Skip to main content

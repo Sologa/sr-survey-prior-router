@@ -3,7 +3,7 @@
 Source URL: https://authors.acm.org/magazines/cacm
 Captured: 2026-05-05
 Capture method: manual browser PDF download supplied by user.
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cacm_author_guidelines/manual_browser_pdf_cacm_overview.pdf`
+Local raw file: `references/canonical_sources/raw/cacm_author_guidelines/manual_browser_pdf_cacm_overview.pdf`
 Original downloaded filename: `CACM Overview.pdf`
 PDF pages: 2
 Evidence use: venue_guidance_locator

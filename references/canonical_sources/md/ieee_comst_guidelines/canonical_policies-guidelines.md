@@ -1,7 +1,7 @@
 # IEEE Communications Surveys & Tutorials policies and guidelines
 
 Source URL: https://www.comsoc.org/publications/journals/ieee-comst/policies-guidelines
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/ieee_comst_guidelines/canonical_policies-guidelines.html`
+Local raw file: `references/canonical_sources/raw/ieee_comst_guidelines/canonical_policies-guidelines.html`
 
 IEEE Communications Surveys & Tutorials Policies and Guidelines | IEEE Communications Society
 Skip to main content

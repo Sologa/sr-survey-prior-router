@@ -1,7 +1,7 @@
 # PRISMA-S: extension for reporting literature searches in systematic reviews (linked_3)
 
 Source URL: https://ub.unibas.ch/fileadmin/user_upload/universitaetsbibliothek/Universitaetsbibliothek/5_Standorte/UB_Medizin/TARCiS/TARCiS_Checklist_for_Terminology_and_Reporting_of_Citation_Searching.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_s/linked_3_tarcis_checklist_for_terminology_and_reporting_of_citation_searching.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/prisma_s/linked_3_tarcis_checklist_for_terminology_and_reporting_of_citation_searching.pdf.pdf`
 
 
 

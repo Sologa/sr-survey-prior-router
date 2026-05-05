@@ -12,7 +12,7 @@ It must not yet claim final knowledge-heavy coverage. Remaining work is no longe
 
 ## Local Corpus Status
 
-Local corpus path: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/`.
+Local corpus path: `references/canonical_sources/`.
 
 - `raw/`: downloaded HTML, PDF, DOCX, and other raw files.
 - `md/`: Markdown conversions for downloaded readable documents.

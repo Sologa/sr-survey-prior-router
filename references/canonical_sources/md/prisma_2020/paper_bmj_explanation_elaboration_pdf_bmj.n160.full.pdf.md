@@ -2,7 +2,7 @@
 
 Source URL: https://www.bmj.com/content/372/bmj.n160.full.pdf
 Captured from: https://eprints.whiterose.ac.uk/id/eprint/173314/1/bmj.n160.full.pdf
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/paper_bmj_explanation_elaboration_pdf_bmj.n160.full.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/prisma_2020/paper_bmj_explanation_elaboration_pdf_bmj.n160.full.pdf.pdf`
 
 ## Page 1
 

@@ -1,7 +1,7 @@
 # ACL Rolling Review author guidance
 
 Source URL: https://aclrollingreview.org/authors
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/acl_arr_authors/canonical_authors.html`
+Local raw file: `references/canonical_sources/raw/acl_arr_authors/canonical_authors.html`
 
 Authors Guidelines – ACL Rolling Review – A peer review platform for the Association for Computational Linguistics
 

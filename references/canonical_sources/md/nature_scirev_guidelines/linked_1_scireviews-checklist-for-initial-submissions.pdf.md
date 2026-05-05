@@ -1,7 +1,7 @@
 # Scientific Reviews submission guidelines (linked_1)
 
 Source URL: https://www.nature.com/documents/scireviews-checklist-for-initial-submissions.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/nature_scirev_guidelines/linked_1_scireviews-checklist-for-initial-submissions.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/nature_scirev_guidelines/linked_1_scireviews-checklist-for-initial-submissions.pdf.pdf`
 
 
 

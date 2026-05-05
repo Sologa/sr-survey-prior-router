@@ -1,7 +1,7 @@
 # IEEE Communications Surveys & Tutorials policies and guidelines (linked_2)
 
 Source URL: https://pspb.ieee.org/images/files/PSPB/opsmanual.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/ieee_comst_guidelines/linked_2_opsmanual.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/ieee_comst_guidelines/linked_2_opsmanual.pdf.pdf`
 
 
 

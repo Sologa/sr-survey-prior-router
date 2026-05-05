@@ -3,7 +3,7 @@
 Source URL: https://www.cda-amc.ca/sites/default/files/attachments/2023-06/PRESS%20Peer%20Review%20Electronic%20Search%20Strategies_%202015%20Guideline%20Explanation%20and%20Elaboration%20%28PRESS%20E%26E%29.pdf
 Captured: 2026-05-05
 Capture method: manual browser PDF download supplied by user.
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/press/manual_browser_pdf_press_ee_2015.pdf`
+Local raw file: `references/canonical_sources/raw/press/manual_browser_pdf_press_ee_2015.pdf`
 Original downloaded filename: `PRESS Peer Review Electronic Search Strategies_ 2015 Guideline Explanation and Elaboration (PRESS E&E).pdf`
 PDF pages: 79
 Evidence use: search_strategy_qa_method_evidence_with_scope

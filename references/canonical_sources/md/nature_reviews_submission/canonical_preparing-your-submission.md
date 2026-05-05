@@ -1,7 +1,7 @@
 # Nature Reviews preparing your submission
 
 Source URL: https://www.nature.com/natrevphys/for-authors/preparing-your-submission
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/nature_reviews_submission/canonical_preparing-your-submission.html`
+Local raw file: `references/canonical_sources/raw/nature_reviews_submission/canonical_preparing-your-submission.html`
 
 Preparing your submission | Nature Reviews Physics
 

@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (chapter_07)
 
 Source URL: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-07
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/chapter_07_chapter-07.html`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/chapter_07_chapter-07.html`
 
 Chapter 7: Considering bias and conflicts of interest among the included studies | Cochrane
 Skip to main content

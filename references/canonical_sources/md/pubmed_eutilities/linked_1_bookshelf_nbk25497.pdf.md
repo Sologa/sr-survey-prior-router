@@ -1,7 +1,7 @@
 # PubMed / NCBI E-utilities (linked_1)
 
 Source URL: https://www.ncbi.nlm.nih.gov/sites/books/NBK25497/pdf/Bookshelf_NBK25497.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/pubmed_eutilities/linked_1_bookshelf_nbk25497.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/pubmed_eutilities/linked_1_bookshelf_nbk25497.pdf.pdf`
 
 
 

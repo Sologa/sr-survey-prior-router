@@ -1,7 +1,7 @@
 # RoB 2 tool
 
 Source URL: https://www.riskofbias.info/welcome/rob-2-0-tool
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/rob2/canonical_rob-2-0-tool.html`
+Local raw file: `references/canonical_sources/raw/rob2/canonical_rob-2-0-tool.html`
 
 Risk of bias tools - RoB 2 tool
 

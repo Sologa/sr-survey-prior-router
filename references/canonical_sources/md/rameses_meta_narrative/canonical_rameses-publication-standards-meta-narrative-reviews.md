@@ -1,7 +1,7 @@
 # RAMESES publication standards: meta-narrative reviews
 
 Source URL: https://www.equator-network.org/reporting-guidelines/rameses-publication-standards-meta-narrative-reviews/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/rameses_meta_narrative/canonical_rameses-publication-standards-meta-narrative-reviews.html`
+Local raw file: `references/canonical_sources/raw/rameses_meta_narrative/canonical_rameses-publication-standards-meta-narrative-reviews.html`
 
 RAMESES publication standards: meta-narrative reviews | EQUATOR Network
 skip to main content

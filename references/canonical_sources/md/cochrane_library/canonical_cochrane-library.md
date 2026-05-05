@@ -1,7 +1,7 @@
 # Cochrane Library
 
 Source URL: https://www.cochrane.org/products-and-services/cochrane-library
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_library/canonical_cochrane-library.html`
+Local raw file: `references/canonical_sources/raw/cochrane_library/canonical_cochrane-library.html`
 
 Cochrane Library | Cochrane
 Skip to main content

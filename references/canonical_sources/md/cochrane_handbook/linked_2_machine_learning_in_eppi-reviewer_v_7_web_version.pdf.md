@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (linked_2)
 
 Source URL: https://eppi.ioe.ac.uk/CMS/Portals/35/machine_learning_in_eppi-reviewer_v_7_web_version.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/linked_2_machine_learning_in_eppi-reviewer_v_7_web_version.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/linked_2_machine_learning_in_eppi-reviewer_v_7_web_version.pdf.pdf`
 
 
 

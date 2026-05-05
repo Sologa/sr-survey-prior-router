@@ -1,7 +1,7 @@
 # dimensions_api (official_reasonable_use_corrected)
 
 Source URL: https://docs.dimensions.ai/dsl/usagepolicy.html
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/dimensions_api/official_reasonable_use_corrected_usagepolicy.html.html`
+Local raw file: `references/canonical_sources/raw/dimensions_api/official_reasonable_use_corrected_usagepolicy.html.html`
 
 Reasonable Use — DSL 2.14 documentation
 

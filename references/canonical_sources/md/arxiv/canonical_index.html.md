@@ -1,7 +1,7 @@
 # arXiv API and bulk access
 
 Source URL: https://info.arxiv.org/help/api/index.html
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/arxiv/canonical_index.html.html`
+Local raw file: `references/canonical_sources/raw/arxiv/canonical_index.html.html`
 
 arXiv API Access - arXiv info | arXiv e-print repository
 

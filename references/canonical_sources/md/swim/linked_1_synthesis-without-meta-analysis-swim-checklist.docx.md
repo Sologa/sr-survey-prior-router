@@ -1,7 +1,7 @@
 # Synthesis without meta-analysis (SWiM) reporting guideline (linked_1)
 
 Source URL: https://www.equator-network.org/wp-content/uploads/2020/01/Synthesis-without-Meta-analysis-SWiM-Checklist.docx
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/swim/linked_1_synthesis-without-meta-analysis-swim-checklist.docx.docx`
+Local raw file: `references/canonical_sources/raw/swim/linked_1_synthesis-without-meta-analysis-swim-checklist.docx.docx`
 
 The citation for the Synthesis Without Meta-analysis explanation and elaboration article is: Campbell M, McKenzie JE, Sowden A, Katikireddi SV, Brennan SE, Ellis S, Hartmann-Boyce J, Ryan R, Shepperd S, Thomas J, Welch V, Thomson H. Synthesis without meta-analysis (SWiM) in systematic reviews: reporting guideline BMJ 2020;368:l6890 http://dx.doi.org/10.1136/bmj.l6890
 

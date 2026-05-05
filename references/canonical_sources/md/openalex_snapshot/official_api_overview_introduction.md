@@ -1,7 +1,7 @@
 # openalex_snapshot (official_api_overview)
 
 Source URL: https://developers.openalex.org/api-reference/introduction
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/openalex_snapshot/official_api_overview_introduction.html`
+Local raw file: `references/canonical_sources/raw/openalex_snapshot/official_api_overview_introduction.html`
 
 API Overview - OpenAlex Developers
 

@@ -1,7 +1,7 @@
 # isca_archive (linked_1_interspeech_2025_booklet_pdf)
 
 Source URL: https://www.isca-archive.org/interspeech_2025/booklet.pdf
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/isca_archive/linked_1_interspeech_2025_booklet_pdf_booklet.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/isca_archive/linked_1_interspeech_2025_booklet_pdf_booklet.pdf.pdf`
 
 ## Page 1
 

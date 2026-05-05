@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions
 
 Source URL: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/canonical_current.html`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/canonical_current.html`
 
 Cochrane Handbook for Systematic Reviews of Interventions (current version) | Cochrane
 Skip to main content

@@ -1,7 +1,7 @@
 # PubMed / NCBI E-utilities
 
 Source URL: https://www.ncbi.nlm.nih.gov/sites/books/NBK25497/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/pubmed_eutilities/canonical_nbk25497.html`
+Local raw file: `references/canonical_sources/raw/pubmed_eutilities/canonical_nbk25497.html`
 
 A General Introduction to the E-utilities - Entrez® Programming Utilities Help - NCBI Bookshelf
 

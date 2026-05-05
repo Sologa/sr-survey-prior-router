@@ -1,7 +1,7 @@
 # Epistemonikos
 
 Source URL: https://www.epistemonikos.org/en/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/epistemonikos/canonical_en.html`
+Local raw file: `references/canonical_sources/raw/epistemonikos/canonical_en.html`
 
 Epistemonikos: Database of the best Evidence-Based Health Care
 

@@ -1,7 +1,7 @@
 # ClinicalTrials.gov API
 
 Source URL: https://clinicaltrials.gov/data-about-studies/learn-about-api
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/clinicaltrials_api/canonical_learn-about-api.html`
+Local raw file: `references/canonical_sources/raw/clinicaltrials_api/canonical_learn-about-api.html`
 
 ClinicalTrials.gov
 

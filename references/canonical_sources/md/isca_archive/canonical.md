@@ -1,7 +1,7 @@
 # ISCA Archive
 
 Source URL: https://www.isca-archive.org/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/isca_archive/canonical.html`
+Local raw file: `references/canonical_sources/raw/isca_archive/canonical.html`
 
 ISCA Archive
 

@@ -1,6 +1,11 @@
 interface:
   display_name: "SR/Survey Prior Router"
-  short_description: "Route SR/survey prior references"
+  short_description: "Explicit-only router for prepared SR/survey prior references"
 
 policy:
-  allow_implicit_invocation: true
+  allow_implicit_invocation: false
+
+capabilities:
+  - Route explicit requests for prepared SR/survey prior references.
+  - Locate the smallest relevant source inventory, corpus index, or source card.
+  - Keep broad synthesis, source-integrity, and provenance boundaries visible.

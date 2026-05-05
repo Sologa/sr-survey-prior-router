@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (chapter_21)
 
 Source URL: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-21
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/chapter_21_chapter-21.html`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/chapter_21_chapter-21.html`
 
 Chapter 21: Qualitative evidence | Cochrane
 Skip to main content

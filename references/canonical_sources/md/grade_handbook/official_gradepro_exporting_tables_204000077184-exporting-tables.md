@@ -1,7 +1,7 @@
 # grade_handbook (official_gradepro_exporting_tables)
 
 Source URL: https://help.gradepro.org/support/solutions/articles/204000077184-exporting-tables
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/grade_handbook/official_gradepro_exporting_tables_204000077184-exporting-tables.html`
+Local raw file: `references/canonical_sources/raw/grade_handbook/official_gradepro_exporting_tables_204000077184-exporting-tables.html`
 
 Exporting tables : GRADEpro
 

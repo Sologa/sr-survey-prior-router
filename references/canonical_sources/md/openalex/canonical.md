@@ -1,7 +1,7 @@
 # OpenAlex API
 
 Source URL: https://developers.openalex.org/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/openalex/canonical.html`
+Local raw file: `references/canonical_sources/raw/openalex/canonical.html`
 
 Overview - OpenAlex Developers
 

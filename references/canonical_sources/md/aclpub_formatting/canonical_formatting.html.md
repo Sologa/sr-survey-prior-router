@@ -1,7 +1,7 @@
 # ACLPUB formatting guidance
 
 Source URL: https://acl-org.github.io/ACLPUB/formatting.html
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/aclpub_formatting/canonical_formatting.html.html`
+Local raw file: `references/canonical_sources/raw/aclpub_formatting/canonical_formatting.html.html`
 
 Paper formatting guidelines - ACLPUB
 

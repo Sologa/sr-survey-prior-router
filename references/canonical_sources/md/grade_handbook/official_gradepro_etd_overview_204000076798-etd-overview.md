@@ -1,7 +1,7 @@
 # grade_handbook (official_gradepro_etd_overview)
 
 Source URL: https://help.gradepro.org/support/solutions/articles/204000076798-etd-overview
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/grade_handbook/official_gradepro_etd_overview_204000076798-etd-overview.html`
+Local raw file: `references/canonical_sources/raw/grade_handbook/official_gradepro_etd_overview_204000076798-etd-overview.html`
 
 EtD overview : GRADEpro
 

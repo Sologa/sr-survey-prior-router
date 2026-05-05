@@ -1,7 +1,7 @@
 # computational_linguistics (official_style_file_cls)
 
 Source URL: https://submissions.cljournal.org/stylefiles/clv2025.cls
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/computational_linguistics/official_style_file_cls_clv2025.cls.cls`
+Local raw file: `references/canonical_sources/raw/computational_linguistics/official_style_file_cls_clv2025.cls.cls`
 
 ```cls
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

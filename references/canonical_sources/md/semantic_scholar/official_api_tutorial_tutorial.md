@@ -1,7 +1,7 @@
 # semantic_scholar (official_api_tutorial)
 
 Source URL: https://www.semanticscholar.org/product/api/tutorial
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/semantic_scholar/official_api_tutorial_tutorial.html`
+Local raw file: `references/canonical_sources/raw/semantic_scholar/official_api_tutorial_tutorial.html`
 
 Tutorial | Semantic Scholar Academic Graph API
 

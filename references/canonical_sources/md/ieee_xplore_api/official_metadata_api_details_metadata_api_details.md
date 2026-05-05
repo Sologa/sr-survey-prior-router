@@ -1,7 +1,7 @@
 # ieee_xplore_api (official_metadata_api_details)
 
 Source URL: https://developer.ieee.org/docs/read/Metadata_API_details
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/ieee_xplore_api/official_metadata_api_details_metadata_api_details.html`
+Local raw file: `references/canonical_sources/raw/ieee_xplore_api/official_metadata_api_details_metadata_api_details.html`
 
 IEEE Xplore - Search Parameters
 

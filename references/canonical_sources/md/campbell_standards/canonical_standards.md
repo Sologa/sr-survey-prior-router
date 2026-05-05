@@ -1,7 +1,7 @@
 # Campbell Standards for reviews
 
 Source URL: https://www.campbellcollaboration.org/methods/standards/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/campbell_standards/canonical_standards.html`
+Local raw file: `references/canonical_sources/raw/campbell_standards/canonical_standards.html`
 
 Standards for reviews – Campbell Collaboration
 

@@ -1,7 +1,7 @@
 # Synthesis without meta-analysis (SWiM) reporting guideline
 
 Source URL: https://www.equator-network.org/reporting-guidelines/synthesis-without-meta-analysis-swim-in-systematic-reviews-reporting-guideline/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/swim/canonical_synthesis-without-meta-analysis-swim-in-systematic-reviews-reporting-guideline.html`
+Local raw file: `references/canonical_sources/raw/swim/canonical_synthesis-without-meta-analysis-swim-in-systematic-reviews-reporting-guideline.html`
 
 Synthesis without meta-analysis (SWiM) in systematic reviews: reporting guideline | EQUATOR Network
 skip to main content

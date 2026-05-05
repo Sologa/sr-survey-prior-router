@@ -1,7 +1,7 @@
 # INTERSPEECH policy
 
 Source URL: https://www.isca-speech.org/Interspeech-Policy
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/interspeech_policy/canonical_interspeech-policy.html`
+Local raw file: `references/canonical_sources/raw/interspeech_policy/canonical_interspeech-policy.html`
 
 ISCA - Interspeech Policy
 

@@ -1,7 +1,7 @@
 # computational_linguistics (official_ojs_journal_home)
 
 Source URL: https://submissions.cljournal.org/index.php/cljournal
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/computational_linguistics/official_ojs_journal_home_cljournal.html`
+Local raw file: `references/canonical_sources/raw/computational_linguistics/official_ojs_journal_home_cljournal.html`
 
 Computational Linguistics
 

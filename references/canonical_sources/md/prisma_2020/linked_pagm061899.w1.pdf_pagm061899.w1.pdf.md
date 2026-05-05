@@ -2,7 +2,7 @@
 
 Source URL: https://pmc.ncbi.nlm.nih.gov/articles/instance/8005924/bin/pagm061899.w1.pdf
 Captured from: https://pmc-oa-opendata.s3.amazonaws.com/PMC8005924.1/pagm061899.w1.pdf
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/linked_pagm061899.w1.pdf_pagm061899.w1.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/prisma_2020/linked_pagm061899.w1.pdf_pagm061899.w1.pdf.pdf`
 
 ## Page 1
 

@@ -1,7 +1,7 @@
 # tacl_submission (official_transacl_template_tex)
 
 Source URL: https://transacl.org/tacl-submission-templates/tacl2021v1-template.tex
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/tacl_submission/official_transacl_template_tex_tacl2021v1-template.tex.tex`
+Local raw file: `references/canonical_sources/raw/tacl_submission/official_transacl_template_tex_tacl2021v1-template.tex.tex`
 
 ```tex
 % File tacl2021v1.tex

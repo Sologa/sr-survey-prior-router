@@ -1,7 +1,7 @@
 # PRISMA extensions (linked_1)
 
 Source URL: https://static1.squarespace.com/static/65b880e13b6ca75573dfe217/t/67624c229afd434b38e90fbc/1734495266384/PRISMA_register_extension_form.docx
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_extensions/linked_1_prisma_register_extension_form.docx.docx`
+Local raw file: `references/canonical_sources/raw/prisma_extensions/linked_1_prisma_register_extension_form.docx.docx`
 
 Registering a PRISMA extension
 

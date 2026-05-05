@@ -1,7 +1,7 @@
 # dimensions_api (official_dsl_docs_home)
 
 Source URL: https://docs.dimensions.ai/dsl/
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/dimensions_api/official_dsl_docs_home_dsl.html`
+Local raw file: `references/canonical_sources/raw/dimensions_api/official_dsl_docs_home_dsl.html`
 
 The Dimensions Search Language — DSL 2.14 documentation
 

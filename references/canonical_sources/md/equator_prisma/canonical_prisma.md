@@ -1,7 +1,7 @@
 # EQUATOR PRISMA record
 
 Source URL: https://www.equator-network.org/reporting-guidelines/prisma/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/equator_prisma/canonical_prisma.html`
+Local raw file: `references/canonical_sources/raw/equator_prisma/canonical_prisma.html`
 
 The PRISMA 2020 statement: An updated guideline for reporting systematic reviews | EQUATOR Network
 skip to main content

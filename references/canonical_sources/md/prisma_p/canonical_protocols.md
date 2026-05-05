@@ -1,7 +1,7 @@
 # PRISMA-P: preferred reporting items for systematic review and meta-analysis protocols
 
 Source URL: https://www.prisma-statement.org/protocols
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_p/canonical_protocols.html`
+Local raw file: `references/canonical_sources/raw/prisma_p/canonical_protocols.html`
 
 Protocols — PRISMA statement
 

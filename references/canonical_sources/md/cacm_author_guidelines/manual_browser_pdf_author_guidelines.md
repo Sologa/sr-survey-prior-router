@@ -3,7 +3,7 @@
 Source URL: https://cacm.acm.org/author-guidelines
 Captured: 2026-05-05
 Capture method: manual browser PDF download supplied by user.
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cacm_author_guidelines/manual_browser_pdf_author_guidelines.pdf`
+Local raw file: `references/canonical_sources/raw/cacm_author_guidelines/manual_browser_pdf_author_guidelines.pdf`
 Original downloaded filename: `Author Guidelines – Communications of the ACM.pdf`
 PDF pages: 8
 Evidence use: venue_guidance_with_scope

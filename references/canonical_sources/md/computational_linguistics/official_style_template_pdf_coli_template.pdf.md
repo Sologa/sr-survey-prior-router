@@ -1,7 +1,7 @@
 # computational_linguistics (official_style_template_pdf)
 
 Source URL: https://submissions.cljournal.org/stylefiles/COLI_template.pdf
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/computational_linguistics/official_style_template_pdf_coli_template.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/computational_linguistics/official_style_template_pdf_coli_template.pdf.pdf`
 
 ## Page 1
 

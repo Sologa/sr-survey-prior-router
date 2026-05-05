@@ -1,7 +1,7 @@
 # ieee_xplore_api (canonical_docs_home)
 
 Source URL: https://developer.ieee.org/docs
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/ieee_xplore_api/canonical_docs_home_docs.html`
+Local raw file: `references/canonical_sources/raw/ieee_xplore_api/canonical_docs_home_docs.html`
 
 IEEE Xplore - Currently Available APIs
 

@@ -1,7 +1,7 @@
 # WHO ICTRP Search Portal (linked_1)
 
 Source URL: https://trialsearch.who.int/ICTRP_Revisions_document.pdf?ua=1
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/who_ictrp/linked_1_ictrp_revisions_document.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/who_ictrp/linked_1_ictrp_revisions_document.pdf.pdf`
 
 
 

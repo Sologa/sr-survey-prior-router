@@ -1,7 +1,7 @@
 # tacl_submission (official_transacl_style_file)
 
 Source URL: https://transacl.org/tacl-submission-templates/tacl2021v1.sty
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/tacl_submission/official_transacl_style_file_tacl2021v1.sty.sty`
+Local raw file: `references/canonical_sources/raw/tacl_submission/official_transacl_style_file_tacl2021v1.sty.sty`
 
 ```sty
 \NeedsTeXFormat{LaTeX2e}

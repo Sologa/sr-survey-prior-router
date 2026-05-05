@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (chapter_13)
 
 Source URL: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-13
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/chapter_13_chapter-13.html`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/chapter_13_chapter-13.html`
 
 Chapter 13: Assessing risk of bias due to missing evidence in a meta-analysis | Cochrane
 Skip to main content

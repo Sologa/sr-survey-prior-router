@@ -1,7 +1,7 @@
 # semantic_scholar (canonical_product_api)
 
 Source URL: https://www.semanticscholar.org/product/api
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/semantic_scholar/canonical_product_api_api.html`
+Local raw file: `references/canonical_sources/raw/semantic_scholar/canonical_product_api_api.html`
 
 Semantic Scholar Academic Graph API | Semantic Scholar
 

@@ -1,7 +1,7 @@
 # PRISMA Extension for Scoping Reviews (PRISMA-ScR)
 
 Source URL: https://www.prisma-statement.org/scoping
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_scr/canonical_scoping.html`
+Local raw file: `references/canonical_sources/raw/prisma_scr/canonical_scoping.html`
 
 Scoping — PRISMA statement
 

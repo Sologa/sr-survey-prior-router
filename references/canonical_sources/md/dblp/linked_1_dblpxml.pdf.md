@@ -1,7 +1,7 @@
 # DBLP computer science bibliography (linked_1)
 
 Source URL: https://dblp.org/xml/docu/dblpxml.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/dblp/linked_1_dblpxml.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/dblp/linked_1_dblpxml.pdf.pdf`
 
 
 

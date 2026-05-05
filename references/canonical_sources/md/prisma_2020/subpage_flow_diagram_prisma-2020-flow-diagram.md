@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (subpage_flow_diagram)
 
 Source URL: https://www.prisma-statement.org/prisma-2020-flow-diagram
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/subpage_flow_diagram_prisma-2020-flow-diagram.html`
+Local raw file: `references/canonical_sources/raw/prisma_2020/subpage_flow_diagram_prisma-2020-flow-diagram.html`
 
 PRISMA 2020 flow diagram — PRISMA statement
 

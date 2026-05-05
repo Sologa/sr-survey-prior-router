@@ -3,7 +3,7 @@
 Source URL: https://www.acm.org/publications/authors/submissions
 Captured: 2026-05-05
 Capture method: manual browser PDF download supplied by user.
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cacm_author_guidelines/manual_browser_pdf_acm_submissions.pdf`
+Local raw file: `references/canonical_sources/raw/cacm_author_guidelines/manual_browser_pdf_acm_submissions.pdf`
 Original downloaded filename: `Submissions.pdf`
 PDF pages: 9
 Evidence use: publisher_author_workflow_guidance

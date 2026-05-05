@@ -1,7 +1,7 @@
 # opencitations (official_index_api_v2)
 
 Source URL: https://api.opencitations.net/index/v2
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/opencitations/official_index_api_v2_v2.html`
+Local raw file: `references/canonical_sources/raw/opencitations/official_index_api_v2_v2.html`
 
 The REST API for OpenCitations Index
 

@@ -1,7 +1,7 @@
 # ACL Anthology GitHub repository
 
 Source URL: https://github.com/acl-org/acl-anthology
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/acl_anthology_github/canonical_acl-anthology.html`
+Local raw file: `references/canonical_sources/raw/acl_anthology_github/canonical_acl-anthology.html`
 
 GitHub - acl-org/acl-anthology: Data and software for building the ACL Anthology. · GitHub
 

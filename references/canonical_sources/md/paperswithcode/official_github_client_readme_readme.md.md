@@ -1,7 +1,7 @@
 # paperswithcode (official_github_client_readme)
 
 Source URL: https://raw.githubusercontent.com/paperswithcode/paperswithcode-client/master/README.md
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/paperswithcode/official_github_client_readme_readme.md.md`
+Local raw file: `references/canonical_sources/raw/paperswithcode/official_github_client_readme_readme.md.md`
 
 # paperswithcode.com API client
 

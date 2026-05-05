@@ -1,7 +1,7 @@
 # ieee_xplore_api (official_metadata_api_responses)
 
 Source URL: https://developer.ieee.org/docs/read/Metadata_API_responses
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/ieee_xplore_api/official_metadata_api_responses_metadata_api_responses.html`
+Local raw file: `references/canonical_sources/raw/ieee_xplore_api/official_metadata_api_responses_metadata_api_responses.html`
 
 IEEE Xplore - Data Fields Returned
 

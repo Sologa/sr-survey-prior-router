@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (subpage_explanation_elaboration)
 
 Source URL: https://www.prisma-statement.org/prisma-2020-explanation-elaboration
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/subpage_explanation_elaboration_prisma-2020-explanation-elaboration.html`
+Local raw file: `references/canonical_sources/raw/prisma_2020/subpage_explanation_elaboration_prisma-2020-explanation-elaboration.html`
 
 PRISMA 2020 Explanation & Elaboration — PRISMA statement
 

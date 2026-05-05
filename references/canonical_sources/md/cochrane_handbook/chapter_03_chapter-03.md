@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (chapter_03)
 
 Source URL: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-03
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/chapter_03_chapter-03.html`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/chapter_03_chapter-03.html`
 
 Chapter 3: Defining the criteria for including studies and how they will be grouped for the synthesis | Cochrane
 Skip to main content

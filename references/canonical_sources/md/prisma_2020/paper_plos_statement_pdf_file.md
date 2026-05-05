@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (paper_plos_statement_pdf)
 
 Source URL: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003583&type=printable
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/paper_plos_statement_pdf_file.pdf`
+Local raw file: `references/canonical_sources/raw/prisma_2020/paper_plos_statement_pdf_file.pdf`
 
 ## Page 1
 

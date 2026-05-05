@@ -1,7 +1,7 @@
 # EQUATOR PRISMA record (linked_2)
 
 Source URL: https://static1.squarespace.com/static/65b880e13b6ca75573dfe217/t/65d81881d8a48075f1fa7a3a/1708660865607/PRISMA_2020_checklist.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/equator_prisma/linked_2_prisma_2020_checklist.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/equator_prisma/linked_2_prisma_2020_checklist.pdf.pdf`
 
 
 

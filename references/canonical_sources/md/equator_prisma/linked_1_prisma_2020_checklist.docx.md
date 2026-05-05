@@ -1,7 +1,7 @@
 # EQUATOR PRISMA record (linked_1)
 
 Source URL: https://static1.squarespace.com/static/65b880e13b6ca75573dfe217/t/65d8188e9394a8243acd9e96/1708660878265/PRISMA_2020_checklist.docx
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/equator_prisma/linked_1_prisma_2020_checklist.docx.docx`
+Local raw file: `references/canonical_sources/raw/equator_prisma/linked_1_prisma_2020_checklist.docx.docx`
 
 From: Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ 2021;372:n71. doi: 10.1136/bmj.n71
 

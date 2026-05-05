@@ -1,7 +1,7 @@
 # lens_api (official_scholarly_request_schema)
 
 Source URL: https://docs.api.lens.org/request-scholar.html
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/lens_api/official_scholarly_request_schema_request-scholar.html.html`
+Local raw file: `references/canonical_sources/raw/lens_api/official_scholarly_request_schema_request-scholar.html.html`
 
 Scholar Request
 

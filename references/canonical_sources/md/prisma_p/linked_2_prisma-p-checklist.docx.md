@@ -1,7 +1,7 @@
 # PRISMA-P: preferred reporting items for systematic review and meta-analysis protocols (linked_2)
 
 Source URL: https://static1.squarespace.com/static/65b880e13b6ca75573dfe217/t/65b9e420e49d7a4b0a5fd936/1706681376976/PRISMA-P-checklist.docx
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_p/linked_2_prisma-p-checklist.docx.docx`
+Local raw file: `references/canonical_sources/raw/prisma_p/linked_2_prisma-p-checklist.docx.docx`
 
 PRISMA-P (Preferred Reporting Items for Systematic review and Meta-Analysis Protocols) 2015 checklist: recommended items to address in a systematic review protocol*
 

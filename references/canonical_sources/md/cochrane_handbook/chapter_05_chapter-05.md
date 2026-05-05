@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (chapter_05)
 
 Source URL: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-05
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/chapter_05_chapter-05.html`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/chapter_05_chapter-05.html`
 
 Chapter 5: Collecting data | Cochrane
 Skip to main content

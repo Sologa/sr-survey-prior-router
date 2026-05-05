@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (linked_4)
 
 Source URL: https://methods.cochrane.org:443/sites/methods.cochrane.org.irmg/files/uploads/Annotatedbibliographtifyingunpublishedstudies.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/linked_4_annotatedbibliographtifyingunpublishedstudies.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/linked_4_annotatedbibliographtifyingunpublishedstudies.pdf.pdf`
 
 
 

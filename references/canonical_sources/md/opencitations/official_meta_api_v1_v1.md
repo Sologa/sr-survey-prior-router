@@ -1,7 +1,7 @@
 # opencitations (official_meta_api_v1)
 
 Source URL: https://api.opencitations.net/meta/v1
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/opencitations/official_meta_api_v1_v1.html`
+Local raw file: `references/canonical_sources/raw/opencitations/official_meta_api_v1_v1.html`
 
 The REST API for OpenCitations Meta
 

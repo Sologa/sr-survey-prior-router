@@ -1,7 +1,7 @@
 # A Method for Taxonomy Development and its Application in Information Systems (publisher_pdf)
 
 Source URL: https://link.springer.com/content/pdf/10.1057/ejis.2012.26.pdf
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/nickerson_taxonomy_2013/publisher_pdf_ejis.2012.26.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/nickerson_taxonomy_2013/publisher_pdf_ejis.2012.26.pdf.pdf`
 
 ## Page 1
 

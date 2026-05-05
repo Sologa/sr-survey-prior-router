@@ -1,7 +1,7 @@
 # Europe PMC REST and bulk services (linked_1)
 
 Source URL: https://europepmc.org/docs/Europe_PMC_RESTful_Release_Notes.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/europe_pmc/linked_1_europe_pmc_restful_release_notes.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/europe_pmc/linked_1_europe_pmc_restful_release_notes.pdf.pdf`
 
 
 

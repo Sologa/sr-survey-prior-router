@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (chapter_09)
 
 Source URL: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-09
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/chapter_09_chapter-09.html`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/chapter_09_chapter-09.html`
 
 Chapter 9: Summarizing study characteristics and preparing for synthesis | Cochrane
 Skip to main content

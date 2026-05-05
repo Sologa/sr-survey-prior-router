@@ -1,7 +1,7 @@
 # DBLP computer science bibliography
 
 Source URL: https://dblp.org/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/dblp/canonical.html`
+Local raw file: `references/canonical_sources/raw/dblp/canonical.html`
 
 dblp: computer science bibliography
 

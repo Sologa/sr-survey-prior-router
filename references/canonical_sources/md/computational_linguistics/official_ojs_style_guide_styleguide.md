@@ -1,7 +1,7 @@
 # computational_linguistics (official_ojs_style_guide)
 
 Source URL: https://submissions.cljournal.org/index.php/cljournal/StyleGuide
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/computational_linguistics/official_ojs_style_guide_styleguide.html`
+Local raw file: `references/canonical_sources/raw/computational_linguistics/official_ojs_style_guide_styleguide.html`
 
 Style Files and Guidelines | Computational Linguistics
 

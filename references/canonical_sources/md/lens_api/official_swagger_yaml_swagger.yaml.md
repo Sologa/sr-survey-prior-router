@@ -1,7 +1,7 @@
 # lens_api (official_swagger_yaml)
 
 Source URL: https://api.lens.org/swagger.yaml
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/lens_api/official_swagger_yaml_swagger.yaml.yaml`
+Local raw file: `references/canonical_sources/raw/lens_api/official_swagger_yaml_swagger.yaml.yaml`
 
 ```yaml
 swagger: '2.0'

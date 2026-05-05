@@ -1,7 +1,7 @@
 # Agent Skills
 
 Source URL: https://developers.openai.com/codex/skills
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/openai_codex_skills/canonical_skills.html`
+Local raw file: `references/canonical_sources/raw/openai_codex_skills/canonical_skills.html`
 
 Agent Skills – Codex | OpenAI Developers
 

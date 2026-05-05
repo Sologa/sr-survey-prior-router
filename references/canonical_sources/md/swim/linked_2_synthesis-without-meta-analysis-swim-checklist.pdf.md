@@ -1,7 +1,7 @@
 # Synthesis without meta-analysis (SWiM) reporting guideline (linked_2)
 
 Source URL: https://www.equator-network.org/wp-content/uploads/2020/01/Synthesis-without-Meta-analysis-SWiM-Checklist.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/swim/linked_2_synthesis-without-meta-analysis-swim-checklist.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/swim/linked_2_synthesis-without-meta-analysis-swim-checklist.pdf.pdf`
 
 
 

@@ -1,7 +1,7 @@
 # opencitations (canonical_home)
 
 Source URL: https://opencitations.net/
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/opencitations/canonical_home_canonical_home.html`
+Local raw file: `references/canonical_sources/raw/opencitations/canonical_home_canonical_home.html`
 
 OpenCitations - Open Science Research Infrastructure
 

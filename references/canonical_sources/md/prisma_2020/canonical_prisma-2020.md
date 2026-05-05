@@ -1,7 +1,7 @@
 # PRISMA 2020 statement
 
 Source URL: https://www.prisma-statement.org/prisma-2020
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/canonical_prisma-2020.html`
+Local raw file: `references/canonical_sources/raw/prisma_2020/canonical_prisma-2020.html`
 
 PRISMA 2020 statement — PRISMA statement
 

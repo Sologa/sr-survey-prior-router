@@ -1,7 +1,7 @@
 # dimensions_api (canonical_product_api)
 
 Source URL: https://www.dimensions.ai/products/all-products/dimensions-api/
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/dimensions_api/canonical_product_api_dimensions-api.html`
+Local raw file: `references/canonical_sources/raw/dimensions_api/canonical_product_api_dimensions-api.html`
 
 Dimensions API for data extraction | Dimensions
 

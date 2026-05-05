@@ -1,7 +1,7 @@
 # openalex_snapshot (official_snapshot_overview)
 
 Source URL: https://developers.openalex.org/download/snapshot-format
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/openalex_snapshot/official_snapshot_overview_snapshot-format.html`
+Local raw file: `references/canonical_sources/raw/openalex_snapshot/official_snapshot_overview_snapshot-format.html`
 
 Snapshot data format - OpenAlex Developers
 

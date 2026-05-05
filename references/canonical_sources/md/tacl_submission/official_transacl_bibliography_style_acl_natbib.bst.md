@@ -1,7 +1,7 @@
 # tacl_submission (official_transacl_bibliography_style)
 
 Source URL: https://transacl.org/tacl-submission-templates/acl_natbib.bst
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/tacl_submission/official_transacl_bibliography_style_acl_natbib.bst.bst`
+Local raw file: `references/canonical_sources/raw/tacl_submission/official_transacl_bibliography_style_acl_natbib.bst.bst`
 
 ```bst
 %%% Modification of BibTeX style file acl_natbib_nourl.bst

@@ -1,7 +1,7 @@
 # paperswithcode (canonical_about)
 
 Source URL: https://huggingface.co/papers/trending
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/paperswithcode/canonical_about_trending_33783fc6.html`
+Local raw file: `references/canonical_sources/raw/paperswithcode/canonical_about_trending_33783fc6.html`
 
 Trending Papers - Hugging Face
 

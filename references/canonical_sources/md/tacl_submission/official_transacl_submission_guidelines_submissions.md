@@ -1,7 +1,7 @@
 # tacl_submission (official_transacl_submission_guidelines)
 
 Source URL: https://transacl.org/index.php/tacl/about/submissions
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/tacl_submission/official_transacl_submission_guidelines_submissions.html`
+Local raw file: `references/canonical_sources/raw/tacl_submission/official_transacl_submission_guidelines_submissions.html`
 
 Submissions | Transactions of the Association for Computational Linguistics
 

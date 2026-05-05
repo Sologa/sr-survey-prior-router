@@ -1,7 +1,7 @@
 # Europe PMC REST and bulk services (linked_2)
 
 Source URL: https://europepmc.org/docs/EBI_Europe_PMC_Web_Service_Reference.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/europe_pmc/linked_2_ebi_europe_pmc_web_service_reference.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/europe_pmc/linked_2_ebi_europe_pmc_web_service_reference.pdf.pdf`
 
 
 

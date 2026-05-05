@@ -1,7 +1,7 @@
 # Writing a narrative biomedical review
 
 Source URL: https://ease.org.uk/wp-content/uploads/2016/05/writing-reviews.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/narrative_review_writing_2011/canonical_writing-reviews.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/narrative_review_writing_2011/canonical_writing-reviews.pdf.pdf`
 
 
 

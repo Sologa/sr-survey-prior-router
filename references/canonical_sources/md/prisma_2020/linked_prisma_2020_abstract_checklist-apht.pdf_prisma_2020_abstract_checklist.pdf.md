@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (linked_prisma_2020_abstract_checklist-apht.pdf)
 
 Source URL: https://static1.squarespace.com/static/65b880e13b6ca75573dfe217/t/67cf8716b80e8a5ce07e63e9/1741653783026/PRISMA_2020_abstract_checklist.pdf
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/linked_prisma_2020_abstract_checklist-apht.pdf_prisma_2020_abstract_checklist.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/prisma_2020/linked_prisma_2020_abstract_checklist-apht.pdf_prisma_2020_abstract_checklist.pdf.pdf`
 
 ## Page 1
 

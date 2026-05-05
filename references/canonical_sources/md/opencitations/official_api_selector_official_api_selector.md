@@ -1,7 +1,7 @@
 # opencitations (official_api_selector)
 
 Source URL: https://api.opencitations.net/
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/opencitations/official_api_selector_official_api_selector.html`
+Local raw file: `references/canonical_sources/raw/opencitations/official_api_selector_official_api_selector.html`
 
 OpenCitations - API
 

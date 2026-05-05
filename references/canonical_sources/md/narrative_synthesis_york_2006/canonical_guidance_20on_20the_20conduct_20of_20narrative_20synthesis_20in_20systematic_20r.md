@@ -1,7 +1,7 @@
 # Guidance on the conduct of narrative synthesis in systematic reviews
 
 Source URL: https://www.york.ac.uk/media/crd/Guidance%20on%20the%20conduct%20of%20narrative%20synthesis%20in%20systematic%20review.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/narrative_synthesis_york_2006/canonical_guidance_20on_20the_20conduct_20of_20narrative_20synthesis_20in_20systematic_20r.pdf`
+Local raw file: `references/canonical_sources/raw/narrative_synthesis_york_2006/canonical_guidance_20on_20the_20conduct_20of_20narrative_20synthesis_20in_20systematic_20r.pdf`
 
 
 

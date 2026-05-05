@@ -3,7 +3,7 @@
 Source URL: https://www.acm.org/publications/authors/information-for-authors
 Captured: 2026-05-05
 Capture method: manual browser PDF download supplied by user.
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cacm_author_guidelines/manual_browser_pdf_acm_information_for_authors.pdf`
+Local raw file: `references/canonical_sources/raw/cacm_author_guidelines/manual_browser_pdf_acm_information_for_authors.pdf`
 Original downloaded filename: `Information for Authors.pdf`
 PDF pages: 2
 Evidence use: publisher_author_policy_locator

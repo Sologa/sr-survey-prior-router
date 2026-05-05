@@ -1,7 +1,7 @@
 # JBI Manual for Evidence Synthesis
 
 Source URL: https://jbi-global.atlassian.net/wiki/spaces/MANUAL/overview?homepageId=4685837
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/jbi_manual_2024/canonical_overview.html`
+Local raw file: `references/canonical_sources/raw/jbi_manual_2024/canonical_overview.html`
 
 JBI Manual for Evidence Synthesis - JBI Manual for Evidence Synthesis - Confluence
 

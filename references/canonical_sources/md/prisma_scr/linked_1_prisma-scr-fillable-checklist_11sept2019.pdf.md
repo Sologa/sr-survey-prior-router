@@ -1,7 +1,7 @@
 # PRISMA Extension for Scoping Reviews (PRISMA-ScR) (linked_1)
 
 Source URL: https://static1.squarespace.com/static/65b880e13b6ca75573dfe217/t/65b9e60d891cf662fa5f7c13/1706681870986/PRISMA-ScR-Fillable-Checklist_11Sept2019.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_scr/linked_1_prisma-scr-fillable-checklist_11sept2019.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/prisma_scr/linked_1_prisma-scr-fillable-checklist_11sept2019.pdf.pdf`
 
 
 

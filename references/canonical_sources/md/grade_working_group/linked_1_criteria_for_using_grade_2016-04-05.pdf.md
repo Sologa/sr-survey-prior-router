@@ -1,7 +1,7 @@
 # GRADE Working Group (linked_1)
 
 Source URL: https://www.gradeworkinggroup.org/docs/Criteria_for_using_GRADE_2016-04-05.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/grade_working_group/linked_1_criteria_for_using_grade_2016-04-05.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/grade_working_group/linked_1_criteria_for_using_grade_2016-04-05.pdf.pdf`
 
 
 

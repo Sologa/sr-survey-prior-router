@@ -1,7 +1,7 @@
 # paperswithcode (official_github_data_readme)
 
 Source URL: https://raw.githubusercontent.com/paperswithcode/paperswithcode-data/master/README.md
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/paperswithcode/official_github_data_readme_readme.md.md`
+Local raw file: `references/canonical_sources/raw/paperswithcode/official_github_data_readme_readme.md.md`
 
 # Papers with code datasets
 

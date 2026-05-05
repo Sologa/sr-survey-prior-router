@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (linked_1)
 
 Source URL: https://gh.bmj.com/content/bmjgh/4/Suppl_1/e001107/DC1/embed/inline-supplementary-material-1.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/linked_1_inline-supplementary-material-1.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/linked_1_inline-supplementary-material-1.pdf.pdf`
 
 
 

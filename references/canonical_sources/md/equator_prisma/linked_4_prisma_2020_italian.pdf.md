@@ -1,7 +1,7 @@
 # EQUATOR PRISMA record (linked_4)
 
 Source URL: https://static1.squarespace.com/static/65b880e13b6ca75573dfe217/t/65bad45bf8b68a18398f867f/1706742879812/PRISMA+2020+Italian.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/equator_prisma/linked_4_prisma_2020_italian.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/equator_prisma/linked_4_prisma_2020_italian.pdf.pdf`
 
 
 

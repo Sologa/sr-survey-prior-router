@@ -1,7 +1,7 @@
 # PRISMA 2020 statement (pmc_bmj_statement_printable_html)
 
 Source URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC8005924/?report=printable
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_2020/pmc_bmj_statement_printable_html_pmc8005924.html`
+Local raw file: `references/canonical_sources/raw/prisma_2020/pmc_bmj_statement_printable_html_pmc8005924.html`
 
 The PRISMA 2020 statement: an updated guideline for reporting systematic reviews - PMC
 Skip to main content

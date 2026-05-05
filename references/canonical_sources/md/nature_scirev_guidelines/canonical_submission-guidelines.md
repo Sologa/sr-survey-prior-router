@@ -1,7 +1,7 @@
 # Scientific Reviews submission guidelines
 
 Source URL: https://www.nature.com/scirev/author-instructions/submission-guidelines
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/nature_scirev_guidelines/canonical_submission-guidelines.html`
+Local raw file: `references/canonical_sources/raw/nature_scirev_guidelines/canonical_submission-guidelines.html`
 
 Submission guidelines | Scientific Reviews
 

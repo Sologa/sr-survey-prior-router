@@ -1,7 +1,7 @@
 # paperswithcode (official_github_data_repo)
 
 Source URL: https://github.com/paperswithcode/paperswithcode-data
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/paperswithcode/official_github_data_repo_paperswithcode-data.html`
+Local raw file: `references/canonical_sources/raw/paperswithcode/official_github_data_repo_paperswithcode-data.html`
 
 GitHub - paperswithcode/paperswithcode-data: The full dataset behind paperswithcode.com · GitHub
 

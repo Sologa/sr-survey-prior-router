@@ -1,7 +1,7 @@
 # Nature Reviews preparing your submission (linked_4)
 
 Source URL: https://www.nature.com/documents/natrev-articleformatguide-news.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/nature_reviews_submission/linked_4_natrev-articleformatguide-news.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/nature_reviews_submission/linked_4_natrev-articleformatguide-news.pdf.pdf`
 
 
 

@@ -1,7 +1,7 @@
 # WHO ICTRP Search Portal
 
 Source URL: https://www.who.int/tools/clinical-trials-registry-platform/the-ictrp-search-portal
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/who_ictrp/canonical_the-ictrp-search-portal.html`
+Local raw file: `references/canonical_sources/raw/who_ictrp/canonical_the-ictrp-search-portal.html`
 
 ICTRP search portal
 Skip to main content

@@ -1,7 +1,7 @@
 # AMSTAR 2 (linked_2)
 
 Source URL: https://www.amstar.ca/docs/AMSTAR-2.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/amstar2/linked_2_amstar-2.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/amstar2/linked_2_amstar-2.pdf.pdf`
 
 
 

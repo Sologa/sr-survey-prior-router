@@ -1,7 +1,7 @@
 # PRISMA-S: extension for reporting literature searches in systematic reviews
 
 Source URL: https://www.equator-network.org/reporting-guidelines/prisma-s/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_s/canonical_prisma-s.html`
+Local raw file: `references/canonical_sources/raw/prisma_s/canonical_prisma-s.html`
 
 PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews | EQUATOR Network
 skip to main content

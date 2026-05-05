@@ -1,7 +1,7 @@
 # AMSTAR 2
 
 Source URL: https://www.amstar.ca/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/amstar2/canonical.html`
+Local raw file: `references/canonical_sources/raw/amstar2/canonical.html`
 
 AMSTAR - Assessing the Methodological Quality of Systematic Reviews
 

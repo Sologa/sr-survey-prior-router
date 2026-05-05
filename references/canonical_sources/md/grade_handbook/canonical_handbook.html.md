@@ -1,7 +1,7 @@
 # GRADE handbook
 
 Source URL: https://gdt.gradepro.org/app/handbook/handbook.html
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/grade_handbook/canonical_handbook.html.html`
+Local raw file: `references/canonical_sources/raw/grade_handbook/canonical_handbook.html.html`
 
 GRADE handbook
 

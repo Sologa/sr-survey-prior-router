@@ -1,7 +1,7 @@
 # Custom instructions with AGENTS.md
 
 Source URL: https://developers.openai.com/codex/guides/agents-md
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/openai_codex_agents_md/canonical_agents-md.html`
+Local raw file: `references/canonical_sources/raw/openai_codex_agents_md/canonical_agents-md.html`
 
 Custom instructions with AGENTS.md – Codex | OpenAI Developers
 

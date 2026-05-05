@@ -1,7 +1,7 @@
 # PRISMA Extension for Scoping Reviews (PRISMA-ScR) (linked_3)
 
 Source URL: https://knowledgetranslation.net/wp-content/uploads/2019/05/PRISMA-ScR_TipSheet_Item1-1.pdf
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/prisma_scr/linked_3_prisma-scr_tipsheet_item1-1.pdf.pdf`
+Local raw file: `references/canonical_sources/raw/prisma_scr/linked_3_prisma-scr_tipsheet_item1-1.pdf.pdf`
 
 
 

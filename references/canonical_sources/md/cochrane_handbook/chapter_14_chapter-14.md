@@ -1,7 +1,7 @@
 # Cochrane Handbook for Systematic Reviews of Interventions (chapter_14)
 
 Source URL: https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/cochrane_handbook/chapter_14_chapter-14.html`
+Local raw file: `references/canonical_sources/raw/cochrane_handbook/chapter_14_chapter-14.html`
 
 Chapter 14: Completing ‘Summary of findings’ tables and grading the certainty of the evidence | Cochrane
 Skip to main content

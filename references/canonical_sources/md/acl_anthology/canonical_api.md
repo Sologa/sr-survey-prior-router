@@ -1,7 +1,7 @@
 # ACL Anthology programmatic access
 
 Source URL: https://aclanthology.org/faq/api/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/acl_anthology/canonical_api.html`
+Local raw file: `references/canonical_sources/raw/acl_anthology/canonical_api.html`
 
 How can I programmatically access the Anthology's data? - ACL Anthology
 

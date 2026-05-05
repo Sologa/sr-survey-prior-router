@@ -1,7 +1,7 @@
 # ieee_xplore_api (official_metadata_api_overview)
 
 Source URL: https://developer.ieee.org/docs/read/IEEE_Xplore_Metadata_API_Overview
-Local raw file: `docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/ieee_xplore_api/official_metadata_api_overview_ieee_xplore_metadata_api_overview.html`
+Local raw file: `references/canonical_sources/raw/ieee_xplore_api/official_metadata_api_overview_ieee_xplore_metadata_api_overview.html`
 
 IEEE Xplore - API Use Cases
 

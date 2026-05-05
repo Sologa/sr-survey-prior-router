@@ -1,7 +1,7 @@
 # GRADE Working Group
 
 Source URL: https://www.gradeworkinggroup.org/
-Local raw file: `/Volumes/My Book/NLP_PRISMA_Reviews/docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/raw/grade_working_group/canonical.html`
+Local raw file: `references/canonical_sources/raw/grade_working_group/canonical.html`
 
 ﻿ GRADE home
 
