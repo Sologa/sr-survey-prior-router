@@ -64,12 +64,15 @@ routes:
       - rameses_meta_narrative
       - rameses_realist
       - sanra
+      - state_of_art_review_2022
       - narrative_synthesis_york_2006
+      - narrative_review_writing_2011
       - nickerson_taxonomy_2013
       - kundisch_taxonomy_update_2021
       - ieee_comst_guidelines
       - nature_reviews_submission
       - nature_scirev_guidelines
+      - cacm_author_guidelines
       - acl_anthology
       - isca_archive
       - dblp
@@ -79,8 +82,11 @@ routes:
       - source_inventory/source_cards/survey-writing-methods.md
       - source_inventory/source_cards/nlp-speech-cs-exemplars.md
       - source_inventory/source_cards/scholarly-databases.md
-    blocked_or_partial_source_ids:
+    refresh_sensitive_source_ids:
       - cacm_author_guidelines
+      - ieee_comst_guidelines
+      - nature_reviews_submission
+      - nature_scirev_guidelines
     evidence_gate: separate review-method authorities from venue guidance and database/discovery sources.
 
   sr_writing_prior:
@@ -104,6 +110,7 @@ routes:
       - robis
       - rob2
       - robins_i
+      - press
       - prospero
       - pubmed_eutilities
       - clinicaltrials_api
@@ -111,8 +118,9 @@ routes:
     default_source_cards:
       - source_inventory/source_cards/sr-method-authorities.md
       - source_inventory/source_cards/scholarly-databases.md
-    blocked_or_partial_source_ids:
+    refresh_sensitive_source_ids:
       - press
+      - clinicaltrials_api
     evidence_gate: cite versioned guideline/conduct/manual sources for method claims; registries and databases are not methodology authorities.
 
   evidence_grounding:
