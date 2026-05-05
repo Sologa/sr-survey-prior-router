@@ -53,7 +53,7 @@ last_reviewed: "2026-05-04"
   support_type: direct
   verification_note: Check the target categories before applying ROBIS outside its intended review types.
   quote_or_locator: canonical_robisjclinepi.pdf.md:28-30,155-167,199-208; section_ids=robis__canonical_robisjclinepi_pdf__s0002_page_1, robis__canonical_robisjclinepi_pdf__s0003_page_2
-- claim: ROBIS is completed in three phases: optional relevance assessment, identifying concerns with the review process, and judging risk of bias in the review.
+- claim: "ROBIS is completed in three phases: optional relevance assessment, identifying concerns with the review process, and judging risk of bias in the review."
   supporting_canonical_paths:
     - references/canonical_sources/md/robis/canonical_robisjclinepi.pdf.md
   support_type: direct

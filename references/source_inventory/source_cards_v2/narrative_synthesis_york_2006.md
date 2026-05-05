@@ -45,7 +45,7 @@ last_reviewed: "2026-05-05"
   support_type: direct
   verification_note: Use this for the example study design in the local capture, not as evidence that all narrative syntheses must use RCTs.
   quote_or_locator: references/canonical_sources/md/narrative_synthesis_york_2006/canonical_guidance_20on_20the_20conduct_20of_20narrative_20synthesis_20in_20systematic_20r.md:18-35; section_id=narrative_synthesis_york_2006__canonical_guidance_20on_20the_20conduct_20of_20narrative_20synthesis_20in_20systematic_20r__s0002_page_1
-- claim: The captured Box 1 describes four main elements of the narrative synthesis framework: theory of how the intervention works, preliminary synthesis, relationships within and between studies, and robustness of the synthesis product.
+- claim: "The captured Box 1 describes four main elements of the narrative synthesis framework: theory of how the intervention works, preliminary synthesis, relationships within and between studies, and robustness of the synthesis product."
   supporting_canonical_paths:
     - references/canonical_sources/md/narrative_synthesis_york_2006/canonical_guidance_20on_20the_20conduct_20of_20narrative_20synthesis_20in_20systematic_20r.md
   support_type: direct

@@ -1,5 +1,9 @@
 # Deep Review of `Sologa/sr-survey-prior-router`
 
+> Supersession note: this is an imported dated review snapshot from 2026-05-04.
+> For current source-integrity and publication-readiness status, use
+> `../source_integrity_tracker.md` and `../README.md`.
+
 Suggested repo path: `validation/chatgpt_deep_review_2026-05-04.md`  
 Review date: 2026-05-04  
 Reviewer stance: external reviewer of a draft-stage, knowledge-heavy agent skill / capability pack  

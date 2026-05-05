@@ -42,9 +42,15 @@ Status vocabulary:
 | `current_omx_native_audit_2026_05_05` | Fresh native-subagent plus isolated-OMX audit found no current source-content blocker in the tracked pack. Derivative cards/indexes align with checked canonical Markdown at draft-router scope. | `SKILL.md`; `agents/openai.yaml`; `references/source_inventory/source_cards_v2/`; `references/canonical_sources/md/`; `references/corpus_index/`; `validation/source_integrity_tracker.md` | `validated` | 2026-05-05 | No source-content repair required from this audit. Keep draft/seed-corpus limitations visible and do not claim final knowledge-heavy coverage. | `validation/source_integrity_tracker.md` |
 | `validation_snapshot_supersession_headers` | Fresh tracker audit found older validation snapshot files still contain stale blocked/bad-capture/not-ready conclusions without in-file supersession headers. The tracker is current, but a reviewer opening old notes directly can be misled. | `validation/agent_qa_validation_2026-05-04.md`; `validation/source_alignment_audit_2026-05-04.md`; `validation/source_alignment_fix_validation_2026-05-04.md`; `validation/live_recapture_2026-05-05.md`; `validation/README.md` | `validated` | 2026-05-05 | Supersession banners were added to the four stale snapshots, and `validation/README.md` now points reviewers to the current tracker before dated notes. | `validation/source_integrity_tracker.md` |
 | `omx_validation_environment` | Isolated OMX worker used an environment with `networkx 3.3`, below this pack's `networkx>=3.4,<4` requirement, so graphify validation failed only in that OMX environment. Pack-local Python had `networkx 3.6.1` and passed graphify validation. | `requirements.txt`; `validation/validate_graphify_navigation.py`; `validation/source_integrity_tracker.md` | `deferred` | 2026-05-05 | Install this pack's requirements in the OMX lab before treating OMX as a green validation environment, or make the graphify validator compatible with `networkx 3.3` if that environment must be supported. | `validation/source_integrity_tracker.md` |
-| `remote_publish_state` | Before this publication-prep update, the nested pack repo was clean but local `main` was ahead of `origin/main` by three commits, so content was locally ready but not confirmed remote-published. | `.git/`; `git status --branch --short`; `git branch -vv` | `todo` | 2026-05-05 | Push the nested repo when the goal is actual GitHub publication rather than local readiness review. | `validation/source_integrity_tracker.md` |
-| `archive_publish_sidecars` | Native publish-readiness audit found AppleDouble files inside nested `.git` (`.git/._index`, `.git/gk/._config`). They are not Git-push blockers, but would matter if the whole directory is zipped or handed off. | `.git/._index`; `.git/gk/._config` | `deferred` | 2026-05-05 | For archive-based handoff, exclude `.git/` or remove sidecars before packaging. Not needed for normal Git publication. | `validation/source_integrity_tracker.md` |
+| `remote_publish_state` | Fresh publish audit found the nested pack repo clean but local `main` is ahead of `origin/main` by four commits, so content is local-only until pushed. | `.git/`; `git status --branch --short`; `git branch -vv` | `todo` | 2026-05-05 | Push the nested repo when the goal is actual GitHub publication rather than local readiness review. | `validation/source_integrity_tracker.md` |
+| `archive_publish_sidecars` | Native publish-readiness audit found 15 AppleDouble files inside nested `.git`. They are not Git-push blockers, but would matter if the whole directory is zipped or handed off. | `.git/._index`; `.git/gk/._config`; `.git/objects/*/._*`; `.git/refs/heads/._main` | `deferred` | 2026-05-05 | For archive-based handoff, exclude `.git/` or remove sidecars before packaging. Not needed for normal Git publication. | `validation/source_integrity_tracker.md` |
 | `validation_publication_entrypoint` | Publication-surface audit recommended a tracked validation entry point so reviewers see current status before historical snapshots. | `validation/README.md`; `validation/source_integrity_tracker.md` | `validated` | 2026-05-05 | `validation/README.md` is the publication-facing entry point; `source_integrity_tracker.md` remains the live source of truth. | `validation/README.md` |
+| `canonical_md_metadata_drift` | First-round blocker repair recomputed all existing Markdown `md_sha256` values and refreshed current `bytes` metadata in document and section indexes. Rows without `md_sha256` were intentionally left unchanged under a present-field-only checksum policy. | `references/source_inventory/source_manifest.jsonl`; `references/canonical_sources/download_manifest.jsonl`; `references/corpus_index/document_index.jsonl`; `references/corpus_index/section_index_manifest.jsonl`; `references/canonical_sources/md/` | `validated` | 2026-05-06 | No current md_sha256/bytes drift remains for fields updated in this round. Preserve the present-field-only checksum policy unless a later schema migration is requested. | `validation/source_integrity_tracker.md` |
+| `route_refresh_sensitive_coverage` | `route-source-index.yaml` now surfaces the four audited high freshness-risk source IDs: `core_api` and `paperswithcode` under `general_domain_prior`, and `tacl_submission` and `computational_linguistics` under `survey_writing_prior`. | `references/route-source-index.yaml`; `references/source_inventory/source_cards_v2/*.md` | `validated` | 2026-05-06 | Keep these route entries as freshness-visible locator/venue/API sources, not methodology authorities. | `validation/source_integrity_tracker.md` |
+| `cacm_manifest_browser_verified_url` | Added the CACM-specific canonical URL to `cacm_author_guidelines.browser_verified_urls` while preserving the existing ACM fallback URLs. | `references/source_inventory/source_manifest.jsonl` | `validated` | 2026-05-06 | No live refresh was performed; the URL records the existing manual browser-capture provenance. | `validation/source_integrity_tracker.md` |
+| `chatgpt_deep_review_bundle_supersession` | Added an in-file supersession banner near the top of the imported ChatGPT deep-review snapshot pointing direct readers to `../source_integrity_tracker.md` and `../README.md` for current status. | `validation/chatgpt_deep_review_2026-05-04/review.md`; `validation/README.md`; `validation/source_integrity_tracker.md` | `validated` | 2026-05-06 | Preserve this review as a dated imported snapshot, not current publication truth. | `validation/source_integrity_tracker.md` |
+| `source_card_keypoint_yaml_parseability` | Quoted the three colon-bearing `claim` scalars that blocked strict PyYAML parsing in `narrative_synthesis_york_2006.md`, `prisma_2020.md`, and `robis.md`; factual wording was unchanged. | `references/source_inventory/source_cards_v2/narrative_synthesis_york_2006.md`; `references/source_inventory/source_cards_v2/prisma_2020.md`; `references/source_inventory/source_cards_v2/robis.md`; `references/source_inventory/source_cards_v2/README.md`; `validation/validate_source_cards_v2.py` | `validated` | 2026-05-06 | All 65 source-card-v2 key-point YAML blocks now parse under strict PyYAML. | `validation/source_integrity_tracker.md` |
+| `non_git_appledouble_sidecars` | Required validators initially failed after external-drive edits created non-`.git` AppleDouble files, plus one pre-existing validation sidecar. These non-`.git` sidecars were removed; nested `.git` sidecars were not touched. | `find . -path './.git' -prune -o -name '._*' -type f -print`; `validation/validate_source_cards_v2.py`; `validation/validate_graphify_navigation.py` | `validated` | 2026-05-06 | Continue running `COPYFILE_DISABLE=1` and the non-`.git` sidecar scan before publish/archive handoff. | `validation/source_integrity_tracker.md` |
 
 ## 2026-05-05 First-round native subagent audit
 
@@ -456,3 +462,514 @@ Archive caveat:
   graphify output, and `.git` sidecars. Whole-folder zip/archive handoff should
   explicitly exclude `.git/`, `references/canonical_sources/raw/`,
   `references/corpus_index/sections/`, and `graphify-out/`.
+
+## 2026-05-05 Seventh-round OMX/native source-integrity audit
+
+Task: answer the user's two current questions after inspecting this tracker and
+the full staged pack:
+
+1. Do the derivative Markdown/source-card/index contents align with the canonical
+   Markdown corpus under `references/canonical_sources/md/`?
+2. Is the staged skill ready to publish, aside from necessary operational steps,
+   and are there content errors or missing pieces?
+
+This round used three native read-only subagents, one isolated read-only OMX
+worker, and controller-side checks. The only intended write is this tracker
+update.
+
+Direct answers:
+
+1. Content alignment: qualified yes for the substantive claims checked. Native
+   and OMX audits found no high-risk source-card or route claim that directly
+   contradicted the current canonical Markdown. The cards and indexes correctly
+   preserve the known boundaries for `press`, `cacm_author_guidelines`,
+   `clinicaltrials_api`, `state_of_art_review_2022`, `paperswithcode`,
+   `prisma_2020`, `tacl_submission`, `computational_linguistics`,
+   `grade_working_group`, `core_api`, and `equator_prisma`.
+2. Ready-to-publish: not yet if the publication claim is
+   "canonical-content aligned and provenance-clean." The pack is structurally
+   close and still conditionally suitable for draft review from the nested Git
+   repo surface, but this audit found unfixed metadata/provenance drift and a
+   few publication-evidence omissions. It should not be published as clean until
+   the open live items from this round are repaired or explicitly scoped out.
+
+Controller verification:
+
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_source_cards_v2.py`:
+  pass; 65 cards for 65 manifest sources.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py`:
+  pass in the pack-local environment; generated graph present.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py --require-generated`:
+  pass in the pack-local environment.
+- `git status --branch --short`: clean tracked working tree before this tracker
+  update; `main...origin/main [ahead 4]`.
+- `git diff --check`: pass before this tracker update.
+- Non-`.git` AppleDouble scan: pass; no `._*` files outside `.git`.
+- Path portability check: pass; 597 top-level rows, 1125 top-level path values,
+  65 split-section files, 4647 split-section path values, 0 parent-prefixed
+  paths, 0 absolute local paths, 0 missing pack-root paths, and 0 source/file
+  mismatches.
+- Source-set consistency: pass; 65 manifest IDs, 65 local corpus IDs, 65 source
+  cards, 65 document-index source IDs, and 65 section-manifest source IDs.
+- Canonical Markdown raw-header check: pass; 212 Markdown files, 212
+  `Local raw file:` headers, 0 bad prefixes, and 0 missing raw files.
+- Source-card locator/support check: pass; 308 claim blocks, 338 locator
+  document references, 0 unmatched locator documents, 0 missing support paths.
+- Source-card locator line-range check: pass; 446 referenced line ranges, 0
+  out-of-range references.
+- Metadata drift check: fail for provenance-clean publication; 16 checked
+  `md_sha256` entries mismatch 8 unique current Markdown files, 405 local
+  document/download rows have no `md_sha256`, `document_index.jsonl` has 209
+  stale `bytes` values while all line counts still match, and
+  `section_index_manifest.jsonl` has 65 stale `bytes` values while all section
+  counts still match.
+
+Native subagent synthesis:
+
+- Canonical-alignment worker: no direct contradiction was found between checked
+  high-risk source-card claims and canonical Markdown. It found the blocking
+  issue for a provenance-clean claim: stale `md_sha256` in `source_manifest` and
+  `download_manifest`, plus stale `bytes` metadata in the document and section
+  indexes.
+- Publish-readiness worker: the tracked nested repo surface is conditionally
+  ready for draft Git review, not final knowledge-heavy publication. The repo is
+  clean but ahead of `origin/main` by 4 commits; archive/zip handoff must exclude
+  `.git/`, ignored raw corpus, split section dumps, and graphify output.
+- Validation-history worker: `validation/README.md` and this tracker are the
+  right current entry points, and the four earlier stale snapshots have
+  supersession banners. The imported
+  `validation/chatgpt_deep_review_2026-05-04/review.md` still lacks an in-file
+  supersession banner despite containing old blocked/bad-capture/201-document
+  statements.
+
+OMX worker synthesis:
+
+- The isolated OMX worker agreed that substantive checked content is aligned and
+  that the remaining issues are operational/metadata rather than new source-card
+  contradictions.
+- OMX graphify validation failed in that isolated environment with
+  `node_link_graph() got an unexpected keyword argument 'edges'` because the OMX
+  environment had `networkx 3.3`, below this pack's `networkx>=3.4,<4`
+  requirement. The pack-local environment used by the controller passed graphify
+  validation, so this remains an OMX environment caveat, not a pack-content
+  failure.
+
+Open issues from this round:
+
+1. `canonical_md_metadata_drift`: update stale `md_sha256` values for the 8
+   affected Markdown files, decide whether missing checksums should be filled or
+   intentionally omitted, and regenerate/update stale `bytes` metadata in
+   `document_index.jsonl` and `section_index_manifest.jsonl`.
+2. `route_refresh_sensitive_coverage`: surface or justify route-level freshness
+   sensitivity for high-risk sources already flagged in cards, especially
+   `paperswithcode`, `tacl_submission`, `computational_linguistics`, and
+   `core_api`.
+3. `cacm_manifest_browser_verified_url`: add the CACM-specific canonical URL to
+   `browser_verified_urls` or document why it is excluded.
+4. `chatgpt_deep_review_bundle_supersession`: add a supersession banner to the
+   imported ChatGPT deep-review bundle before treating validation as a standalone
+   public evidence package.
+5. `remote_publish_state`: push the four local commits when the goal is actual
+   GitHub publication.
+6. `archive_publish_sidecars`: exclude `.git/` or remove the 15 `.git` AppleDouble
+   files before any whole-folder zip/archive handoff.
+
+Remaining limitations:
+
+- No live web refresh or browser recapture was performed.
+- No full semantic re-review of all 308 source-card claims was performed; the
+  semantic review focused on high-risk/manual/partial sources plus structural
+  validators.
+- No clean fresh-clone rebuild was performed.
+- Remote GitHub publication was not performed.
+
+Verdict: derivative content is substantively aligned with canonical Markdown
+within the checked draft-router scope, but the pack is not ready for a
+provenance-clean publish claim until metadata drift and the listed publication
+evidence omissions are repaired. It remains usable for local draft review if the
+limitations above are stated explicitly.
+
+## 2026-05-06 First-level delegated read-only audit
+
+Task: as a first-level subagent, inspect this tracker plus the full staged
+`sr-survey-prior-router` pack and answer whether derivative Markdown, source
+cards, indexes, and validation notes align with canonical Markdown under
+`references/canonical_sources/md/`, and whether the pack is ready to publish/use.
+
+Delegation model:
+
+- Main agent -> native first-level subagent -> foreground `codex exec` worker.
+- No native subagent was spawned by this first-level subagent.
+- No OMX wrapper was executed; the requested OMX/subagent review was represented
+  by this native subagent plus one foreground read-only `codex exec` worker.
+- The only file written by this first-level subagent in this round is this
+  tracker.
+
+Second-level worker command:
+
+```sh
+codex exec --ephemeral --cd "/Volumes/My Book/NLP_PRISMA_Reviews" --sandbox read-only --skip-git-repo-check -
+```
+
+The prompt was passed on stdin and explicitly prohibited writes, native
+subagents, `codex exec`, OMX/omx-lab/codex-omx-exec, live web refresh, package
+installation, and environment mutation. It required reporting task, commands,
+exit codes, output summary, findings, publish-readiness conclusion, limitations,
+and whether files were written.
+
+Worker exit code: 0.
+
+Worker output summary:
+
+- Source-card and graphify validators passed:
+  `validate_source_cards_v2.py`, `validate_graphify_navigation.py`, and
+  `validate_graphify_navigation.py --require-generated`.
+- Corpus/index sets align structurally: 65 source IDs, 212 canonical Markdown
+  files, 212 document-index rows, 254 download rows, 65 section-manifest rows,
+  and 65 split by-source section files; no source-ID set gaps were reported.
+- Path portability checks passed: no parent-prefixed pack paths, no local
+  `/Volumes` or `/Users` absolute paths, and no missing pack-root paths in the
+  checked locator surfaces.
+- Targeted high-risk content checks found no direct contradiction between
+  checked source-card claims and canonical Markdown for `press`,
+  `cacm_author_guidelines`, `paperswithcode`, `core_api`,
+  `clinicaltrials_api`, `state_of_art_review_2022`, `tacl_submission`, and
+  `computational_linguistics`.
+- The worker wrote no files.
+
+Controller verification:
+
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_source_cards_v2.py`:
+  pass; 65 cards for 65 manifest sources.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py`:
+  pass.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py --require-generated`:
+  pass.
+- `GIT_OPTIONAL_LOCKS=0 git status --branch --short`: `main...origin/main
+  [ahead 4]` and `M validation/source_integrity_tracker.md`.
+- `GIT_OPTIONAL_LOCKS=0 git diff --check`: pass.
+- Non-`.git` AppleDouble scan: pass; no `._*` files printed.
+- Metadata drift check reproduced the prior blocker: 19 `md_sha256` fields
+  checked, 16 mismatched, 405 counted local document/download rows without
+  `md_sha256`, 209 stale `document_index.jsonl` `bytes` values, 0 stale
+  document line counts, and 65 stale `section_index_manifest.jsonl` `bytes`
+  values.
+- Strict source-card key-point YAML parse check: 62 cards parse, 3 fail:
+  `narrative_synthesis_york_2006.md`, `prisma_2020.md`, and `robis.md`.
+- `cacm_author_guidelines` manifest check: canonical URL is
+  `https://cacm.acm.org/author-guidelines`, while `browser_verified_urls`
+  lists only ACM fallback URLs.
+- Imported ChatGPT deep-review bundle check: `review.md` still contains stale
+  blocked/bad-capture/201-document statements without an in-file supersession
+  banner.
+
+Direct answers:
+
+1. Content alignment: qualified yes for the checked draft-router scope. The
+   derivative cards, route/index docs, and validation entrypoint preserve the
+   current canonical-source boundaries for the high-risk sources checked. No
+   direct canonical Markdown contradiction was found in this round.
+2. Ready-to-publish/use: conditional for local draft use, not ready for a
+   provenance-clean or zero-known-issues public publish claim. The pack can be
+   used as a staged, explicit-only, lazy-load router if the seed-corpus and
+   no-live-refresh limitations are stated. It should not be published as clean
+   until the open blockers below are repaired or explicitly scoped out.
+
+Open issues requiring the next repair round:
+
+1. `canonical_md_metadata_drift`: recompute or intentionally standardize
+   Markdown checksum policy, then update stale `bytes` metadata in document and
+   section indexes.
+2. `source_card_keypoint_yaml_parseability`: make the three failing source-card
+   key-point YAML blocks parseable or change the schema/validator contract.
+3. `chatgpt_deep_review_bundle_supersession`: add an in-file supersession banner
+   to the imported ChatGPT deep-review bundle before treating it as standalone
+   public evidence.
+4. `route_refresh_sensitive_coverage`: add or explicitly justify route-level
+   freshness visibility for high-risk sources already flagged in cards.
+5. `cacm_manifest_browser_verified_url`: add the CACM-specific canonical URL to
+   `browser_verified_urls` or document why only ACM fallback pages were
+   browser-verified.
+6. `remote_publish_state`: push the nested repo branch when actual GitHub
+   publication is requested.
+7. `archive_publish_sidecars`: exclude `.git/` or remove `.git` AppleDouble
+   files before whole-folder archive handoff.
+
+Remaining limitations:
+
+- No live web refresh or browser recapture was performed.
+- No full semantic re-review of all 308 source-card claims was performed.
+- No clean fresh-clone rebuild was performed.
+- Remote GitHub publication was not performed.
+
+Verdict: conditionally usable as a local staged router, but not ready for a
+clean publish claim. The next linear step should repair metadata drift,
+source-card YAML parseability, and stale validation-bundle supersession, then
+rerun the same read-only audit.
+
+## 2026-05-06 First-round blocker repair
+
+Task: repair the first-round review blockers for provenance-clean draft
+publish/use readiness while staying inside the requested write scope.
+
+Files changed:
+
+- `references/source_inventory/source_manifest.jsonl`
+- `references/canonical_sources/download_manifest.jsonl`
+- `references/corpus_index/document_index.jsonl`
+- `references/corpus_index/section_index_manifest.jsonl`
+- `references/source_inventory/source_cards_v2/narrative_synthesis_york_2006.md`
+- `references/source_inventory/source_cards_v2/prisma_2020.md`
+- `references/source_inventory/source_cards_v2/robis.md`
+- `references/route-source-index.yaml`
+- `validation/chatgpt_deep_review_2026-05-04/review.md`
+- `validation/source_integrity_tracker.md`
+
+Non-`.git` AppleDouble metadata sidecars created by external-drive edits, plus
+the pre-existing `validation/._source_integrity_tracker.md`, were removed so the
+required validators could run. Nested `.git` sidecars were not touched.
+
+Second-level worker:
+
+Initial command without `--skip-git-repo-check` failed because the storage root
+is outside a trusted Git repository:
+
+```sh
+codex exec --ephemeral --cd "/Volumes/My Book/NLP_PRISMA_Reviews" --sandbox read-only "<plan review prompt>"
+```
+
+Exit code: 1.
+
+Successful foreground read-only worker command:
+
+```sh
+codex exec --ephemeral --skip-git-repo-check --cd "/Volumes/My Book/NLP_PRISMA_Reviews" --sandbox read-only "<plan review prompt>"
+```
+
+Exit code: 0.
+
+Worker task: review the proposed repair plan before edits. The prompt explicitly
+prohibited writes, native subagents, nested `codex exec`, live web refresh, and
+package/environment mutation.
+
+Worker output summary:
+
+- Confirmed the plan matched the blocker set and allowed future write-file
+  scope.
+- Confirmed recursive `source_manifest.jsonl` handling was required because the
+  relevant `md_sha256` fields live under `local_documents`.
+- Reproduced 8 mismatched nested `source_manifest` `md_sha256` fields, 8
+  mismatched `download_manifest` `md_sha256` fields, 209 stale
+  `document_index.jsonl` `bytes` values, 65 stale
+  `section_index_manifest.jsonl` `bytes` values, 3 strict PyYAML key-point
+  failures, 0 route occurrences for the four high-risk IDs, and the missing CACM
+  canonical URL in `browser_verified_urls`.
+- Flagged non-`.git` AppleDouble sidecars as validator blockers if left in
+  place.
+- Limitations: read-only local inspection only; no live web refresh, browser
+  recapture, full semantic review of all source-card claims, or clean fresh-clone
+  test.
+- Files written by worker: none.
+
+Repair commands/results:
+
+- JSONL metadata repair script: exit 0; updated 8 nested
+  `source_manifest.jsonl` `md_sha256` values, 8 `download_manifest.jsonl`
+  `md_sha256` values, 209 `document_index.jsonl` `bytes` values, 65
+  `section_index_manifest.jsonl` `bytes` values, and inserted
+  `https://cacm.acm.org/author-guidelines` into the CACM
+  `browser_verified_urls` list.
+- Source-card YAML patch: quoted the three colon-bearing `claim` strings only.
+- Route patch: added route-visible freshness coverage for `core_api`,
+  `paperswithcode`, `tacl_submission`, and `computational_linguistics`.
+- ChatGPT deep-review patch: added an imported-snapshot supersession banner.
+- Non-`.git` AppleDouble scan before cleanup listed 10 sidecars; cleanup removed
+  those 10 sidecars and left `.git/` sidecars alone.
+
+Validation results:
+
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_source_cards_v2.py`:
+  pass; 65 cards for 65 manifest sources.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py`:
+  pass; generated graph present.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py --require-generated`:
+  pass; generated graph present.
+- `GIT_OPTIONAL_LOCKS=0 git diff --check`: pass.
+- `find . -path './.git' -prune -o -name '._*' -type f -print`: pass; no
+  non-`.git` sidecars printed after cleanup.
+- Targeted metadata/YAML/route/CACM check: pass. Current state is
+  `source_manifest_md_sha256=(8 present, 0 mismatched, 0 missing, 204 md_path
+  objects without md_sha256 by existing policy)`,
+  `download_manifest_md_sha256=(11 present, 0 mismatched, 0 missing, 201 md_path
+  rows without md_sha256 by existing policy)`, `document_index_bytes=(212 rows,
+  0 mismatched, 0 missing)`, `section_index_manifest_bytes=(65 rows, 0
+  mismatched, 0 missing)`, `keypoint_yaml=(65 ok, 0 failures)`, and each of
+  `paperswithcode`, `tacl_submission`, `computational_linguistics`, and
+  `core_api` appears twice in `route-source-index.yaml`.
+
+Notable failed/diagnostic attempts:
+
+- The first post-repair validator run failed because external-drive sidecars were
+  present; this was resolved by removing non-`.git` `._*` files.
+- One combined targeted check failed after scanning a binary AppleDouble file;
+  the corrected check excluded `._*` and passed.
+- One targeted check rerun failed due to a path-join bug in the checker script;
+  the corrected checker passed.
+
+Remaining limitations:
+
+- No live web refresh or browser recapture was performed.
+- No full semantic re-review of all source-card claims was performed in this
+  repair round.
+- Remote publish remains a separate operational step.
+- `.git` AppleDouble sidecars remain intentionally untouched; they matter for
+  whole-folder archive handoff, not normal Git publication.
+- `omx_validation_environment` remains deferred because the isolated OMX
+  environment previously used an older `networkx` than this pack requires.
+
+Readiness conclusion: the five first-round blockers repaired in this round are
+validated for the local nested-pack surface. The pack is closer to
+provenance-clean draft publish/use readiness. Another content-repair loop is not
+needed for these blockers, but a separate publish loop is still needed for
+remote push and any archive-specific `.git` sidecar policy.
+
+## Independent first-level validation - 2026-05-06
+
+Scope: independent validation of the repaired pack state for provenance-clean
+draft Git publication/use. This pass used one required foreground read-only
+second-level `codex exec` worker, then reran local validators and targeted
+checks from the pack root. No live web refresh, browser recapture, package
+install, OMX, native subagent, nested worker, commit, or push was performed.
+
+Second-level worker:
+
+```sh
+codex exec --ephemeral --skip-git-repo-check --cd "/Volumes/My Book/NLP_PRISMA_Reviews" --sandbox read-only "<independent read-only audit prompt>"
+```
+
+Exit code: 0.
+
+Worker task: independently audit
+`docs/agent_capability_packs/sr-survey-prior-router/` for provenance-clean draft
+Git publication/use, with explicit prohibitions on file writes, native
+subagents, nested `codex exec`, OMX, live web refresh, package installs, and
+background jobs.
+
+Worker output summary:
+
+- Required validators passed: `validate_source_cards_v2.py` reported 65 cards
+  for 65 manifest sources; both graphify navigation commands passed with the
+  generated graph present; `git diff --check` passed; the non-`.git`
+  AppleDouble scan printed no files.
+- Targeted worker audit passed: 65 manifest source-card files were checked with
+  `source_cards_v2/README.md` excluded; 308 key-point YAML items parsed under
+  strict PyYAML; present metadata checks found no `md_sha256`, byte, or section
+  count drift; route refresh-sensitive coverage and the CACM browser-verified
+  URL were present; imported ChatGPT deep-review supersession pointers were
+  present.
+- Git surface reported by worker: `main...origin/main [ahead 4]`, 10 modified
+  tracked files, no staged changes, and no untracked publish-surface files.
+- Worker limitations: read-only local audit only; no live web refresh, no OMX,
+  no packages, no commit/push, no full semantic review of all claims. One
+  heredoc-style inline audit attempt failed in the read-only sandbox with exit
+  code 1 because zsh could not create a temporary heredoc file; it wrote no
+  files, and the worker reran the same audit via `python3 -c` successfully.
+- Files written by worker: none.
+
+First-level command results:
+
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_source_cards_v2.py`:
+  exit 0; pass; 65 cards for 65 manifest sources.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py`:
+  exit 0; pass; generated graph present.
+- `COPYFILE_DISABLE=1 PYTHONDONTWRITEBYTECODE=1 python3 validation/validate_graphify_navigation.py --require-generated`:
+  exit 0; pass; generated graph present.
+- `GIT_OPTIONAL_LOCKS=0 git diff --check`: exit 0; no output.
+- `find . -path './.git' -prune -o -name '._*' -type f -print`: exit 0; no
+  non-`.git` sidecars printed.
+- Targeted metadata/YAML/CACM/route audit: exit 0; pass. It checked 65 source
+  cards excluding `README.md`, 308 strict PyYAML key-point items, 11
+  `download_manifest` `md_sha256` fields, 8 `source_manifest` `md_sha256`
+  fields, 204 existing-policy `md_path` objects without `md_sha256`, 212
+  `document_index` byte and line-count rows, and 65 `section_index_manifest`
+  byte and section-count rows.
+- `GIT_OPTIONAL_LOCKS=0 git status --short --branch`: exit 0; `main` is ahead
+  of `origin/main` by 4 commits and has 10 modified tracked files.
+- `GIT_OPTIONAL_LOCKS=0 git diff --name-status`: exit 0; modified tracked files
+  are `references/canonical_sources/download_manifest.jsonl`,
+  `references/corpus_index/document_index.jsonl`,
+  `references/corpus_index/section_index_manifest.jsonl`,
+  `references/route-source-index.yaml`,
+  `references/source_inventory/source_cards_v2/narrative_synthesis_york_2006.md`,
+  `references/source_inventory/source_cards_v2/prisma_2020.md`,
+  `references/source_inventory/source_cards_v2/robis.md`,
+  `references/source_inventory/source_manifest.jsonl`,
+  `validation/chatgpt_deep_review_2026-05-04/review.md`, and
+  `validation/source_integrity_tracker.md`.
+- `GIT_OPTIONAL_LOCKS=0 git diff --stat`: exit 0; 10 files changed, 679
+  insertions and 290 deletions before this validation append.
+- `GIT_OPTIONAL_LOCKS=0 git diff --cached --name-status`: exit 0; no staged
+  changes.
+- `GIT_OPTIONAL_LOCKS=0 git ls-files --others --exclude-standard`: exit 0; no
+  untracked files.
+
+First-round blocker closure:
+
+- `canonical_md_metadata_drift`: closed for the present-field policy. Current
+  checks found no drift in present `md_sha256`, document byte/line-count, or
+  section byte/count fields.
+- `source_card_keypoint_yaml_parseability`: closed. Strict PyYAML parsed the 65
+  manifest source-card files and did not treat `source_cards_v2/README.md` as a
+  source card.
+- `chatgpt_deep_review_bundle_supersession`: closed. The imported dated review
+  snapshot has top-of-file supersession pointers to the current tracker and
+  validation README.
+- `route_refresh_sensitive_coverage`: closed. Route-level
+  `refresh_sensitive_source_ids` include `core_api`, `paperswithcode`,
+  `tacl_submission`, `computational_linguistics`, `cacm_author_guidelines`,
+  `press`, and `clinicaltrials_api` in the expected route buckets.
+- `cacm_manifest_browser_verified_url`: closed.
+  `https://cacm.acm.org/author-guidelines` is present in
+  `cacm_author_guidelines.browser_verified_urls`.
+- Non-`.git` AppleDouble sidecars: closed. The current scan found none.
+
+Git publication surface:
+
+The tracked changes are coherent with the repair set: metadata hash/byte/count
+refresh, route freshness visibility, three source-card YAML quoting fixes, CACM
+browser-verified URL provenance, imported-review supersession, and validation
+tracking. I found no content blocker in this local validation scope.
+
+Remaining limitations:
+
+- No live web refresh or browser recapture was performed.
+- No full semantic review of every source-card claim was performed.
+- No clean remote clone checkout was tested.
+- Actual remote publication remains an operational step: current changes still
+  need staging/commit, and the branch also needs push because `main` is ahead of
+  `origin/main`.
+
+Verdict: ready for provenance-clean draft Git publication/use from the local
+content and provenance-validation perspective. Not yet remotely published;
+commit and push are still required.
+
+## Main-controller final sanity check - 2026-05-06
+
+Scope: final controller-side check after the independent validation append.
+
+Result:
+
+- A fresh post-append validator run initially failed because the external drive
+  generated `validation/._source_integrity_tracker.md`.
+- The controller removed that non-`.git` AppleDouble sidecar only. Nested `.git`
+  sidecars were not touched.
+- After cleanup, the required checks passed again:
+  `validate_source_cards_v2.py`, `validate_graphify_navigation.py
+  --require-generated`, `git diff --check`, and the non-`.git` AppleDouble scan.
+- The dirty tracked surface remains the intended 10-file repair set: metadata
+  checksum/byte updates, route freshness visibility, three YAML quoting fixes,
+  CACM URL provenance, imported-review supersession, and this tracker.
+
+Readiness conclusion: local content/provenance validation is clean for draft Git
+publication/use. The remaining step for actual remote publication is to commit
+and push the nested repository.

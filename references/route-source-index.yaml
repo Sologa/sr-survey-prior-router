@@ -43,7 +43,12 @@ routes:
       - crossref_api
       - pubmed_eutilities
       - semantic_scholar
+      - core_api
+      - paperswithcode
       - acl_anthology
+    refresh_sensitive_source_ids:
+      - core_api
+      - paperswithcode
     default_source_cards:
       - source_inventory/source_cards/codex-skill-packaging.md
       - source_inventory/source_cards/scholarly-databases.md
@@ -73,6 +78,8 @@ routes:
       - nature_reviews_submission
       - nature_scirev_guidelines
       - cacm_author_guidelines
+      - tacl_submission
+      - computational_linguistics
       - acl_anthology
       - isca_archive
       - dblp
@@ -87,6 +94,8 @@ routes:
       - ieee_comst_guidelines
       - nature_reviews_submission
       - nature_scirev_guidelines
+      - tacl_submission
+      - computational_linguistics
     evidence_gate: separate review-method authorities from venue guidance and database/discovery sources.
 
   sr_writing_prior:

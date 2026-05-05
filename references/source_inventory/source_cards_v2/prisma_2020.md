@@ -68,7 +68,7 @@ last_reviewed: "2026-05-05"
   support_type: direct
   verification_note: Verify license/reuse text in the specific checklist file used.
   quote_or_locator: checklist PDF lines 225-226; checklist subpage line 58
-- claim: The previously missing/bad PRISMA PDF labels are now backed by local PDF captures: BMJ statement PDF, BMJ explanation/elaboration PDF, and three PMC supplementary PDFs.
+- claim: "The previously missing/bad PRISMA PDF labels are now backed by local PDF captures: BMJ statement PDF, BMJ explanation/elaboration PDF, and three PMC supplementary PDFs."
   supporting_canonical_paths:
     - references/canonical_sources/md/prisma_2020/paper_bmj_statement_pdf_bmj.n71.full.pdf.md
     - references/canonical_sources/md/prisma_2020/paper_bmj_explanation_elaboration_pdf_bmj.n160.full.pdf.md
