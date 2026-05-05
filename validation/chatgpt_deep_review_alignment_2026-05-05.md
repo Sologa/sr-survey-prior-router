@@ -71,7 +71,7 @@ Observed current counts:
 ```text
 source_manifest.jsonl: 65 rows
 download_manifest.jsonl: 254 rows
-document_index.jsonl: 210 rows
+document_index.jsonl: 212 rows
 section_index_manifest.jsonl: 65 rows
 source_cards_v2 cards: 65
 ```

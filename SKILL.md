@@ -5,7 +5,7 @@ description: Staged knowledge-resource router for prepared research resources, d
 
 # SR/Survey Prior Router
 
-This is a staged draft knowledge-resource router. It is not installed or active until it is copied into an agent skill root by a separate, explicit action.
+This copy is a staged draft knowledge-resource router while it remains under `docs/agent_capability_packs/`. It is not installed or active until it is copied into an agent skill root by a separate, explicit action; once installed, `agents/openai.yaml` controls whether Codex may also invoke it implicitly from the skill description.
 
 Its job is navigation: point the agent to the smallest relevant reference knowledge and keep source/provenance boundaries visible. It is not an execution workflow, automation harness, or multi-step prompt pack.
 

@@ -15,8 +15,10 @@ canonical_paths:
 canonical_urls:
   - https://submissions.cljournal.org/index.php/cljournal
   - https://submissions.cljournal.org/index.php/cljournal/about/submissions
+blocked_primary_urls:
+  - https://direct.mit.edu/coli
 authority_level: canonical_venue_policy
-version_or_access_date: "checked 2026-05-04; style-file references updated 2025-01-01 in local capture"
+version_or_access_date: "checked 2026-05-04; MIT Press primary locator 403 and official CL Journal OJS fallback verified 2026-05-05"
 applies_to:
   - Computational Linguistics journal scope and submission categories
   - CL/NLP survey article venue expectations
@@ -33,7 +35,7 @@ route_relevance:
   - synthesis_writing
 freshness_risk: high because journal policy, editor information, deadlines, style files, and article categories can change.
 reuse_or_license_risk: local pages describe open access and ACL copyright in some places, but reuse must be checked against the specific article and current journal terms.
-qa_status: seed_verified_by_subagent_with_local_canonical_markdown
+qa_status: primary_locator_blocked_403_official_fallback_captured
 last_reviewed: "2026-05-05"
 ```
 
@@ -94,13 +96,14 @@ last_reviewed: "2026-05-05"
 
 ## Evidence limits
 
-The local capture contains journal pages, checklists, style files, and converted PDFs. It does not include a complete set of accepted survey examples or a current live policy check beyond the captured date.
+Primary MIT Press locator: https://direct.mit.edu/coli; local scripted capture returned HTTP 403. Evidence-bearing local Markdown was captured from the official CL Journal OJS fallback at https://submissions.cljournal.org/index.php/cljournal and linked CL style files. Use the fallback Markdown/final_url rows for direct source claims; keep the MIT Press URL only as a blocked publisher locator and future live-check target. The local capture does not include a complete set of accepted survey examples or a current live policy check beyond the captured date.
 
 ## Verification paths
 
 - Source row: `references/source_inventory/source_manifest.jsonl` with `source_id=computational_linguistics`.
 - Canonical Markdown directory: `references/canonical_sources/md/computational_linguistics/`.
 - Download row: `references/canonical_sources/download_manifest.jsonl` with `source_id=computational_linguistics`.
+- Blocked primary locator row: `canonical_mit_journal_home` in `references/canonical_sources/download_manifest.jsonl`.
 - Optional local section locators: `references/corpus_index/sections/by_source/computational_linguistics.jsonl`.
 
 ## Unresolved gaps

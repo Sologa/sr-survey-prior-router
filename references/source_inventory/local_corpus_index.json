@@ -165,12 +165,13 @@
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_acm_information_for_authors.md"
     ],
     "conversion_types": [
-      "manual_browser_pdf_to_markdown"
+      "manual_browser_pdf_to_page_markdown"
     ],
-    "status": "partial",
+    "status": "available",
     "content_quality": "manual_browser_pdf_capture_with_navigation_noise",
     "evidence_use": "venue_guidance_with_scope",
-    "notes": "Manual browser PDF captures exist for CACM author guidelines, CACM overview, ACM submissions, and ACM information-for-authors pages; scripted fetch attempts remain 403-blocked. Use only for venue/publisher guidance."
+    "notes": "Manual browser PDF captures exist for CACM author guidelines, CACM overview, ACM submissions, and ACM information-for-authors pages; scripted fetch attempts remain 403-blocked. Use only for venue/publisher guidance. All manual PDF captures now have page-level Markdown headings and section locators as of 2026-05-05.",
+    "local_content_status": "page_addressable_manual_browser_pdf_captures_available"
   },
   "campbell_standards": {
     "family": "sr_reporting_and_conduct",
@@ -358,20 +359,20 @@
     "family": "nlp_speech_cs_exemplar_sources",
     "title": "Computational Linguistics journal page",
     "authority_class": "venue_guidance",
-    "canonical_url": "https://direct.mit.edu/coli",
+    "canonical_url": "https://submissions.cljournal.org/index.php/cljournal",
     "local_docs_count": 8,
     "md_docs_count": 8,
     "raw_docs_count": 8,
     "blocked_attempts_count": 2,
     "primary_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_submission_guidelines_submissions.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_journal_home_cljournal.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_original_submission_checklist_originalsubmissionchecklist.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_revision_final_checklist_resubmissionsandfinalaccepts.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_style_guide_styleguide.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_submission_guidelines_submissions.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_file_cls_clv2025.cls.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_manual_pdf_coli_manual.pdf.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_template_pdf_coli_template.pdf.md"
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_template_pdf_coli_template.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_style_file_cls_clv2025.cls.md"
     ],
     "all_md_paths": [
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_journal_home_cljournal.md",
@@ -388,7 +389,13 @@
       "pdf_to_markdown",
       "text_to_markdown"
     ],
-    "status": "partial"
+    "status": "partial",
+    "blocked_primary_url": "https://direct.mit.edu/coli",
+    "blocked_primary_url_status": "failed_403_in_download_manifest",
+    "capture_provenance": "official_fallback_after_direct_mit_403",
+    "notes": "Direct MIT Press locator failed with 403; primary local evidence is the official fallback at https://submissions.cljournal.org/index.php/cljournal.",
+    "local_content_status": "partial",
+    "evidence_use": "venue_guidance_with_scope"
   },
   "core_api": {
     "family": "scholarly_databases_and_apis",
@@ -652,7 +659,8 @@
       "html_to_markdown",
       "pdf_to_markdown"
     ],
-    "status": "available"
+    "status": "available",
+    "notes": "The linked 2024 Dropbox newsletter was recaptured through dl=1 as a real PDF and converted to page-level Markdown on 2026-05-05."
   },
   "ieee_comst_guidelines": {
     "family": "survey_writing_methods",
@@ -1072,12 +1080,10 @@
     "raw_docs_count": 6,
     "blocked_attempts_count": 3,
     "primary_md_paths": [
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_about_trending_33783fc6.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_sota_trending_87d86935.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_client_readme_readme.md.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_client_repo_paperswithcode-client.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_data_readme_readme.md.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_data_repo_paperswithcode-data.md"
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_client_readme_readme.md.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_data_repo_paperswithcode-data.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_client_repo_paperswithcode-client.md"
     ],
     "all_md_paths": [
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_about_trending_33783fc6.md",
@@ -1091,7 +1097,17 @@
       "html_to_markdown",
       "text_to_markdown"
     ],
-    "status": "partial"
+    "status": "partial",
+    "bad_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_about_trending_33783fc6.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_sota_trending_87d86935.md"
+    ],
+    "usable_md_docs_count": 4,
+    "notes": "Local about/SOTA captures redirect to Hugging Face Trending and are retained only as bad-capture provenance; primary local evidence is the official GitHub data/client docs.",
+    "redirect_bad_capture_md_paths": [
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_about_trending_33783fc6.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_sota_trending_87d86935.md"
+    ]
   },
   "press": {
     "family": "sr_certainty_appraisal_bias_search",
@@ -1111,31 +1127,32 @@
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/press/manual_browser_pdf_ee_detail_page.md"
     ],
     "conversion_types": [
-      "manual_browser_pdf_to_markdown"
+      "manual_browser_pdf_to_page_markdown"
     ],
-    "status": "partial",
+    "status": "available",
     "evidence_use": "search_strategy_qa_method_evidence_with_scope",
-    "notes": "Manual browser PDF captures exist for the official PRESS hub, E&E detail page, and 79-page E&E PDF; scripted fetch attempts remain 403-blocked. Use the E&E PDF for search-strategy peer-review evidence with scope.",
-    "content_quality": "manual_browser_pdf_capture_with_navigation_noise"
+    "notes": "Manual browser PDF captures exist for the official PRESS hub, E&E detail page, and 79-page E&E PDF; scripted fetch attempts remain 403-blocked. Use the E&E PDF for search-strategy peer-review evidence with scope. All manual PDF captures now have page-level Markdown headings and section locators as of 2026-05-05.",
+    "content_quality": "manual_browser_pdf_capture_with_navigation_noise",
+    "local_content_status": "page_addressable_manual_browser_pdf_captures_available"
   },
   "prisma_2020": {
     "family": "sr_reporting_and_conduct",
     "title": "PRISMA 2020 statement",
     "authority_class": "methodology_guideline",
     "canonical_url": "https://www.prisma-statement.org/prisma-2020",
-    "local_docs_count": 24,
-    "md_docs_count": 24,
-    "raw_docs_count": 24,
-    "blocked_attempts_count": 2,
+    "local_docs_count": 26,
+    "md_docs_count": 26,
+    "raw_docs_count": 26,
+    "blocked_attempts_count": 0,
     "primary_md_paths": [
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/canonical_prisma-2020.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_plos_statement_html_article.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_plos_statement_pdf_file.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/pmc_bmj_explanation_elaboration_printable_html_pmc8005925.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_bmj_statement_pdf_bmj.n71.full.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_bmj_explanation_elaboration_pdf_bmj.n160.full.pdf.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/pmc_bmj_statement_printable_html_pmc8005924.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_abstracts_abstracts.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_checklist_prisma-2020-checklist.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/subpage_citing_citing-prisma-2020.md"
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/pmc_bmj_explanation_elaboration_printable_html_pmc8005925.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_pagm061899.w1.pdf_pagm061899.w1.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_pagm061899.w2.pdf_pagm061899.w2.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_pagm061901.w1.pdf_pagm061901.w1.pdf.md"
     ],
     "all_md_paths": [
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/canonical_prisma-2020.md",
@@ -1152,6 +1169,8 @@
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_flow_diagram_new_srs_v2-t3jp.docx_prisma_2020_flow_diagram_new_srs_v2.docx.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_flow_diagram_updated_srs_v1-f8ly.docx_prisma_2020_flow_diagram_updated_srs_v1.docx.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/linked_prisma_2020_flow_diagram_updated_srs_v2-dbrh.docx_prisma_2020_flow_diagram_updated_srs_v2.docx.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_bmj_explanation_elaboration_pdf_bmj.n160.full.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_bmj_statement_pdf_bmj.n71.full.pdf.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_plos_statement_html_article.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/paper_plos_statement_pdf_file.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/pmc_bmj_explanation_elaboration_printable_html_pmc8005925.md",
@@ -1168,7 +1187,9 @@
       "html_to_markdown",
       "pdf_to_markdown"
     ],
-    "status": "partial"
+    "status": "available",
+    "usable_md_docs_count": 26,
+    "notes": "All 26 PRISMA 2020 manifest document labels now have local raw and Markdown captures. BMJ direct PDF endpoints returned HTTP 403 in live probes and were captured from White Rose repository copies; PMC supplementary instance/bin links returned HTML stubs and were recaptured from official PMC OA Cloud objects."
   },
   "prisma_extensions": {
     "family": "sr_reporting_and_conduct",
@@ -1554,18 +1575,18 @@
     "family": "nlp_speech_cs_exemplar_sources",
     "title": "TACL submission guidelines",
     "authority_class": "venue_guidance",
-    "canonical_url": "https://direct.mit.edu/tacl/pages/submission-guidelines",
+    "canonical_url": "https://transacl.org/index.php/tacl/about/submissions",
     "local_docs_count": 6,
     "md_docs_count": 6,
     "raw_docs_count": 6,
     "blocked_attempts_count": 2,
     "primary_md_paths": [
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_bibliography_style_acl_natbib.bst.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_finalversion_formatting_pdf_tacl2021v1-finalversion-formatting-instructions.pdf.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_style_file_tacl2021v1.sty.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_submission_formatting_pdf_tacl2021v1-submission-formatting-instructions.pdf.md",
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_submission_guidelines_submissions.md",
-      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_template_tex_tacl2021v1-template.tex.md"
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_submission_formatting_pdf_tacl2021v1-submission-formatting-instructions.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_finalversion_formatting_pdf_tacl2021v1-finalversion-formatting-instructions.pdf.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_template_tex_tacl2021v1-template.tex.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_style_file_tacl2021v1.sty.md",
+      "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_bibliography_style_acl_natbib.bst.md"
     ],
     "all_md_paths": [
       "docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_bibliography_style_acl_natbib.bst.md",
@@ -1580,7 +1601,13 @@
       "pdf_to_markdown",
       "text_to_markdown"
     ],
-    "status": "partial"
+    "status": "partial",
+    "blocked_primary_url": "https://direct.mit.edu/tacl/pages/submission-guidelines",
+    "blocked_primary_url_status": "failed_403_in_download_manifest",
+    "capture_provenance": "official_fallback_after_direct_mit_403",
+    "notes": "Direct MIT Press locator failed with 403; primary local evidence is the official fallback at https://transacl.org/index.php/tacl/about/submissions.",
+    "local_content_status": "partial",
+    "evidence_use": "venue_guidance_with_scope"
   },
   "who_ictrp": {
     "family": "scholarly_databases_and_apis",

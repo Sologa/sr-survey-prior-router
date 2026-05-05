@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -15,6 +16,9 @@ REQUIRED_FILES = [
     "references/graphify-navigation.md",
     ".graphifyignore",
     "scripts/build_graphify_index_graph.py",
+]
+
+GENERATED_GRAPH_FILES = [
     "graphify-out/graph.json",
     "graphify-out/GRAPH_REPORT.md",
     "graphify-out/manifest.json",
@@ -80,6 +84,9 @@ REQUIRED_PHRASES = {
         "/graphify-out/",
         "/.graphify_*",
     ],
+}
+
+GENERATED_REQUIRED_PHRASES = {
     "graphify-out/GRAPH_REPORT.md": [
         "Graphify Index Graph Report",
         "It intentionally does not read or embed canonical fulltext Markdown/raw files.",
@@ -93,7 +100,18 @@ def should_ignore_generated_metadata(path: Path) -> bool:
     return bool(IGNORED_METADATA_DIRS & set(rel_parts)) or path.name in IGNORED_METADATA_FILES
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--require-generated",
+        action="store_true",
+        help="fail if ignored rebuildable graphify-out artifacts are absent",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
+    args = parse_args()
     errors: list[str] = []
 
     for rel in REQUIRED_FILES:
@@ -110,6 +128,28 @@ def main() -> int:
             if phrase not in text:
                 errors.append(f"{rel}: missing phrase {phrase!r}")
 
+    generated_paths = [ROOT / rel for rel in GENERATED_GRAPH_FILES]
+    generated_present = [path for path in generated_paths if path.exists()]
+    generated_missing = [
+        rel for rel, path in zip(GENERATED_GRAPH_FILES, generated_paths, strict=True) if not path.exists()
+    ]
+    generated_complete = len(generated_present) == len(generated_paths)
+
+    if args.require_generated and generated_missing:
+        for rel in generated_missing:
+            errors.append(f"missing generated graphify artifact: {rel}")
+    elif generated_present and not generated_complete:
+        for rel in generated_missing:
+            errors.append(f"incomplete generated graphify artifact set; missing: {rel}")
+
+    if generated_complete:
+        for rel, phrases in GENERATED_REQUIRED_PHRASES.items():
+            path = ROOT / rel
+            text = path.read_text(encoding="utf-8")
+            for phrase in phrases:
+                if phrase not in text:
+                    errors.append(f"{rel}: missing phrase {phrase!r}")
+
     generated_metadata = sorted(
         str(path.relative_to(ROOT))
         for path in ROOT.rglob("._*")
@@ -118,7 +158,7 @@ def main() -> int:
     if generated_metadata:
         errors.append(f"pack contains macOS metadata files: {generated_metadata}")
 
-    for rel in ["graphify-out/graph.json", "graphify-out/GRAPH_REPORT.md", "graphify-out/manifest.json"]:
+    for rel in GENERATED_GRAPH_FILES:
         path = ROOT / rel
         if not path.exists():
             continue
@@ -129,7 +169,7 @@ def main() -> int:
 
     graph_path = ROOT / "graphify-out/graph.json"
     manifest_path = ROOT / "graphify-out/manifest.json"
-    if graph_path.exists():
+    if generated_complete and graph_path.exists():
         try:
             graph_data = json.loads(graph_path.read_text(encoding="utf-8"))
             graph = json_graph.node_link_graph(graph_data, edges="links")
@@ -145,7 +185,7 @@ def main() -> int:
         except Exception as exc:
             errors.append(f"graphify-out/graph.json: could not load graph: {exc}")
 
-    if manifest_path.exists():
+    if generated_complete and manifest_path.exists():
         try:
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
             if manifest.get("scope") != "router_index_graph":
@@ -165,6 +205,10 @@ def main() -> int:
 
     print("graphify navigation validation: PASS")
     print(f"checked_root: {ROOT}")
+    if generated_complete:
+        print("generated_graph: present")
+    else:
+        print("generated_graph: absent_optional_rebuildable")
     return 0
 
 

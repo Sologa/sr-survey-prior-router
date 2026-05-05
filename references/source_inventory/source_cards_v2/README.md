@@ -94,7 +94,11 @@ Recommended values:
 - `canonical_certainty_framework`
 - `canonical_database_api_doc`
 - `canonical_venue_policy`
+- `canonical_publisher_corpus_doc`
 - `canonical_skill_packaging_doc`
+- `methodology_guideline`
+- `peer_reviewed_method_paper`
+- `venue_guidance`
 - `locator_only`
 - `blocked_inventory_target`
 - `bad_capture_do_not_use`

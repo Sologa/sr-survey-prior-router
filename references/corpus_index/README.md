@@ -1,25 +1,26 @@
 # Corpus Index
 
-Generated: 2026-05-03T19:11:29+00:00
+Generated: 2026-05-05T07:48:39+00:00
 
 These indexes are locator artifacts for the local canonical source corpus.
 They do not replace canonical sources and should not be treated as claim evidence by themselves.
+Rows with `load_class=do_not_load` and `status=bad_capture` are provenance records only and are intentionally excluded from section locators.
 
 - `document_index.jsonl`: one row per local Markdown document.
 - `section_index_manifest.jsonl`: one row per source-level section index.
 - `sections/by_source/<source_id>.jsonl`: one row per Markdown heading or page-style section for that source only.
 
-Document rows: 201
-Section rows: 4578
+Document rows: 212
+Section rows: 4647
 
 ## Documents By Family
 
 - `codex_skill_packaging`: 2
 - `nlp_speech_cs_exemplar_sources`: 32
-- `scholarly_databases_and_apis`: 47
-- `sr_certainty_appraisal_bias_search`: 20
-- `sr_reporting_and_conduct`: 65
-- `survey_writing_methods`: 35
+- `scholarly_databases_and_apis`: 54
+- `sr_certainty_appraisal_bias_search`: 18
+- `sr_reporting_and_conduct`: 67
+- `survey_writing_methods`: 39
 
 ## Use
 

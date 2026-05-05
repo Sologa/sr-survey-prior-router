@@ -17,16 +17,16 @@ Local corpus path: `docs/agent_capability_packs/sr-survey-prior-router/reference
 - `raw/`: downloaded HTML, PDF, DOCX, and other raw files.
 - `md/`: Markdown conversions for downloaded readable documents.
 - `download_manifest.jsonl`: source ID, URL, final URL, checksum, local raw path, Markdown path, conversion status, and failures.
-- `source_inventory/local_corpus_index.md` and `.json`: source-level lazy-load index; 65 source IDs, 210 Markdown paths, with primary entry points capped for initial selection. The former `state_of_art_review_2022` bad capture was repaired on 2026-05-05, and `clinicaltrials_api` now includes an official OpenAPI v2 snapshot plus a live version endpoint capture.
-- `corpus_index/document_index.jsonl`: 210 document locator rows.
+- `source_inventory/local_corpus_index.md` and `.json`: source-level lazy-load index; 65 source IDs, 212 Markdown paths, with primary entry points capped for initial selection. The former `state_of_art_review_2022` bad capture was repaired on 2026-05-05, `clinicaltrials_api` now includes an official OpenAPI v2 snapshot plus a live version endpoint capture, and the 2026-05-05 source-integrity repair pass recaptured PRISMA PDFs while keeping Papers with Code redirect captures downgraded.
+- `corpus_index/document_index.jsonl`: 212 document locator rows.
 - `corpus_index/section_index_manifest.jsonl` plus `corpus_index/sections/by_source/<source_id>.jsonl`: split section/page locator indexes for selected sources only. The split by-source files are local/rebuildable backing locators and may be absent from a public GitHub checkout.
 - `source_inventory/source_cards_v2/`: per-source derivative cards with canonical paths, support types, and fallback locators for public review. There is now one v2 card for each of the 65 `source_manifest.jsonl` source IDs.
-- Current verified count after the 2026-05-04 augmentation, 2026-05-05 live recapture pass, and 2026-05-05 manual browser capture pass: 210 raw files and 210 Markdown files.
+- Current verified count after the 2026-05-04 augmentation, 2026-05-05 live recapture pass, and 2026-05-05 manual browser capture pass: 212 raw files and 212 Markdown files.
 - `source_manifest.jsonl` now has local raw/Markdown documents for all 65 source rows. `press` and `cacm_author_guidelines` still have retained scripted-fetch 403 failures, but user-assisted manual browser PDF captures now provide local Markdown for their official pages.
-- PRISMA 2020 now includes the PRISMA site pages, checklist PDFs/DOCX, expanded checklist PDF, abstract checklist PDF/DOCX, flow diagram DOCX files, PLOS statement PDF, PLOS statement HTML, and PMC/BMJ printable full-text HTML for the statement and explanation/elaboration papers.
+- PRISMA 2020 now includes the PRISMA site pages, checklist PDFs/DOCX, expanded checklist PDF, abstract checklist PDF/DOCX, flow diagram DOCX files, PLOS statement PDF, PLOS statement HTML, BMJ statement and explanation/elaboration PDFs captured through White Rose repository copies after BMJ direct 403s, PMC/BMJ printable full-text HTML for both papers, and the three original PMC supplementary PDFs recaptured through official PMC OA Cloud objects.
 - Nickerson taxonomy method now has a publisher PDF from Springer converted to Markdown because the OPUS Augsburg mirror timed out from this environment.
 - Previously skipped API/database rows now have official documentation snapshots where practical, including OpenAlex snapshot docs, Semantic Scholar API docs/OpenAPI JSON, CORE API docs, Lens API docs/swagger YAML, Dimensions DSL/API docs, Scite API docs/OpenAPI JSON, OpenCitations docs, and IEEE Xplore API docs. Bulk datasets and commercial data products were not mirrored.
-- Venue/exemplar gaps were reduced by local official alternatives: ACM DL user guide, TransACL submission/formatting files, Computational Linguistics OJS/style files, Papers with Code GitHub data/client docs, IEEE ComSoc author kit, and ISCA Interspeech booklet.
+- Venue/exemplar gaps were reduced by local official alternatives: ACM DL user guide, TransACL submission/formatting files, Computational Linguistics OJS/style files, Papers with Code GitHub data/client docs, IEEE ComSoc author kit, and ISCA Interspeech booklet. Papers with Code website about/SOTA captures redirect to Hugging Face Trending Papers and are not local Papers with Code evidence.
 
 ## Current Coverage
 
@@ -50,8 +50,8 @@ Local corpus path: `docs/agent_capability_packs/sr-survey-prior-router/reference
 - Exhaustive local mirrors of broad APIs, commercial databases, or bulk snapshots.
 - Script-blocked but manually captured official pages, especially CDA-AMC PRESS and CACM/ACM author guidance. Future refreshes may still require browser/manual capture because simple scripted fetches returned 403-style blocks.
 - ClinicalTrials.gov human docs remain SPA-rendered/partial in simple captures; use the local OpenAPI v2 and version endpoint snapshots for API-schema/currentness locators, with live verification before automation.
-- MIT Press canonical pages for TACL and Computational Linguistics returned 403, but official TransACL and Computational Linguistics OJS/style-file alternatives are locally captured.
-- Direct BMJ PDF endpoints for PRISMA 2020 statement and explanation/elaboration returned 403 after repeated attempts; equivalent/open full-text local fallbacks are captured from PRISMA/PLOS/PMC where available.
+- MIT Press canonical pages for TACL and Computational Linguistics returned 403. Official TransACL and Computational Linguistics OJS/style-file alternatives are locally captured and should be used as evidence-bearing fallback Markdown; keep the MIT Press URLs only as blocked publisher locators and future live-check targets.
+- Direct BMJ PDF endpoints for PRISMA 2020 statement and explanation/elaboration returned 403 after repeated attempts; local BMJ PDF captures now use White Rose repository copies with this provenance recorded in the download manifest.
 - Domain-specific NLP/speech taxonomy exemplars and worked paper-to-taxonomy ledgers.
 - Bibliometric-review-specific methods as a full workflow.
 - Automatic survey generation pipelines.

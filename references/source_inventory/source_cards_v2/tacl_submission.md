@@ -12,8 +12,10 @@ canonical_paths:
   - references/canonical_sources/md/tacl_submission/official_transacl_bibliography_style_acl_natbib.bst.md
 canonical_urls:
   - https://transacl.org/index.php/tacl/about/submissions
+blocked_primary_urls:
+  - https://direct.mit.edu/tacl/pages/submission-guidelines
 authority_level: canonical_venue_policy
-version_or_access_date: "checked 2026-05-04; TACL style files dated 2021-12-15 in local capture"
+version_or_access_date: "checked 2026-05-04; MIT Press primary locator 403 and official TransACL fallback verified 2026-05-05"
 applies_to:
   - TACL submission policies
   - TACL formatting and final-version preparation
@@ -31,7 +33,7 @@ route_relevance:
   - synthesis_writing
 freshness_risk: high because submission deadlines, policies, templates, and eligibility rules can change.
 reuse_or_license_risk: TACL papers are described as ACL copyright with CC-BY distribution, but older volumes have caveats; verify the specific paper and page before reuse.
-qa_status: seed_verified_by_subagent_with_local_canonical_markdown
+qa_status: primary_locator_blocked_403_official_fallback_captured
 last_reviewed: "2026-05-05"
 ```
 
@@ -93,13 +95,14 @@ last_reviewed: "2026-05-05"
 
 ## Evidence limits
 
-The local capture includes TACL guidelines, formatting PDFs, style files, template, and bibliography style. It does not guarantee current monthly deadlines or current live policy text.
+Primary MIT Press locator: https://direct.mit.edu/tacl/pages/submission-guidelines; local scripted capture returned HTTP 403. Evidence-bearing local Markdown was captured from the official TransACL fallback at https://transacl.org/index.php/tacl/about/submissions and linked TransACL template files. Use the fallback Markdown/final_url rows for direct source claims; keep the MIT Press URL only as a blocked publisher locator and future live-check target. The local capture does not guarantee current monthly deadlines or current live policy text.
 
 ## Verification paths
 
 - Source row: `references/source_inventory/source_manifest.jsonl` with `source_id=tacl_submission`.
 - Canonical Markdown directory: `references/canonical_sources/md/tacl_submission/`.
 - Download row: `references/canonical_sources/download_manifest.jsonl` with `source_id=tacl_submission`.
+- Blocked primary locator row: `canonical_mit_submission_guidelines` in `references/canonical_sources/download_manifest.jsonl`.
 - Optional local section locators: `references/corpus_index/sections/by_source/tacl_submission.jsonl`.
 
 ## Unresolved gaps

@@ -7,6 +7,12 @@ This file lists local Markdown entry points only; it intentionally does not incl
 
 Status rules: available = local Markdown/raw with no blocked attempts; partial = some local docs plus blocked attempts, missing Markdown for raw files, or stub/entry-point documents that need follow-up; blocked = blocked attempts and no local docs; bad_capture = local file exists but is a browser-check or otherwise not evidence-usable; no_local_docs = no local docs and no blocked attempts.
 
+Integrity repair notes as of 2026-05-05:
+
+- `prisma_2020` has all 26 manifest document labels captured as local raw/Markdown files. Two BMJ direct PDF endpoints returned HTTP 403 and were captured from White Rose repository PDF copies; three PMC supplementary instance/bin links returned HTML stubs and were recaptured from official PMC OA Cloud PDF objects.
+- `paperswithcode` has two local website captures that redirect to Hugging Face Trending Papers. They are retained only as redirect provenance; use the official GitHub data/client README and repository captures for local Papers with Code evidence.
+- `tacl_submission` and `computational_linguistics` have blocked MIT Press primary locators. Evidence-bearing local Markdown was captured from official TransACL and CL Journal OJS fallback URLs; keep MIT Press only as a blocked publisher locator and future live-check target.
+
 ## codex_skill_packaging
 
 | source_id | status | docs md/raw | blocked | primary md path |
@@ -23,12 +29,12 @@ Status rules: available = local Markdown/raw with no blocked attempts; partial =
 | acl_arr_authors | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acl_arr_authors/canonical_authors.md |
 | aclpub_formatting | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/aclpub_formatting/canonical_formatting.html.md |
 | arxiv | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/arxiv/canonical_index.html.md |
-| computational_linguistics | partial | 8 (8/8) | 2 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_journal_home_cljournal.md |
+| computational_linguistics | partial | 8 (8/8) | 2 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/computational_linguistics/official_ojs_submission_guidelines_submissions.md |
 | dblp | available | 3 (3/3) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/dblp/canonical.md |
 | interspeech_policy | available | 2 (2/2) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/interspeech_policy/canonical_interspeech-policy.md |
 | isca_archive | partial | 2 (2/2) | 1 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/isca_archive/canonical.md |
-| paperswithcode | partial | 6 (6/6) | 3 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/canonical_about_trending_33783fc6.md |
-| tacl_submission | partial | 6 (6/6) | 2 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_bibliography_style_acl_natbib.bst.md |
+| paperswithcode | partial | 6 (4 usable + 2 bad_capture) | 3 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/paperswithcode/official_github_data_readme_readme.md.md |
+| tacl_submission | partial | 6 (6/6) | 2 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/tacl_submission/official_transacl_submission_guidelines_submissions.md |
 
 ## scholarly_databases_and_apis
 
@@ -61,7 +67,7 @@ Status rules: available = local Markdown/raw with no blocked attempts; partial =
 | grade_cerqual | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_cerqual/canonical.md |
 | grade_handbook | partial | 3 (3/3) | 2 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_handbook/canonical_handbook.html.md |
 | grade_working_group | available | 3 (3/3) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/grade_working_group/canonical.md |
-| press | partial | 3 (3/3) | 6 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md |
+| press | available | 3 (3/3) | 6 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md |
 | rob2 | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/rob2/canonical_rob-2-0-tool.md |
 | robins_i | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robins_i/canonical_home.md |
 | robis | available | 2 (2/2) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/robis/canonical_robisjclinepi.pdf.md |
@@ -74,7 +80,7 @@ Status rules: available = local Markdown/raw with no blocked attempts; partial =
 | cochrane_handbook | partial | 27 (27/27) | 2 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_handbook/canonical_current.md |
 | cochrane_mecir | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_mecir/canonical_mecir-manual.md |
 | jbi_manual_2024 | available | 2 (2/2) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/jbi_manual_2024/canonical_overview.md |
-| prisma_2020 | partial | 24 (24/24) | 2 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/canonical_prisma-2020.md |
+| prisma_2020 | available | 26 (26/26) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_2020/canonical_prisma-2020.md |
 | prisma_extensions | available | 2 (2/2) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_extensions/canonical_extensions.md |
 | prisma_p | available | 4 (4/4) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_p/canonical_protocols.md |
 | prisma_s | available | 4 (4/4) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/prisma_s/canonical_prisma-s.md |
@@ -84,7 +90,7 @@ Status rules: available = local Markdown/raw with no blocked attempts; partial =
 | source_id | status | docs md/raw | blocked | primary md path |
 | --- | --- | ---: | ---: | --- |
 | acm_dl | partial | 1 (1/1) | 5 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/acm_dl/official_dl_user_guide_pdf_new_acm-digital-library-user-guide.pdf.md |
-| cacm_author_guidelines | partial | 4 (4/4) | 5 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md |
+| cacm_author_guidelines | available | 4 (4/4) | 5 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md |
 | cochrane_ch09 | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_ch09/canonical_chapter-09.md |
 | cochrane_ch12 | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/cochrane_ch12/canonical_chapter-12.md |
 | entreq | available | 1 (1/1) | 0 | docs/agent_capability_packs/sr-survey-prior-router/references/canonical_sources/md/entreq/canonical_entreq.md |

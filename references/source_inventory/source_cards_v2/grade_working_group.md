@@ -11,7 +11,7 @@ canonical_urls:
   - https://www.gradeworkinggroup.org/
   - https://www.gradeworkinggroup.org/docs/Criteria_for_using_GRADE_2016-04-05.pdf
 authority_level: canonical_certainty_framework
-version_or_access_date: "minimal requirements updated 2023-05; local corpus fetched 2026-05-04"
+version_or_access_date: "minimal requirements updated 2023-05; local corpus fetched 2026-05-05"
 applies_to:
   - GRADE certainty or quality of evidence
   - GRADE evidence profiles and summary of findings routing
@@ -29,8 +29,8 @@ route_relevance:
   - synthesis_writing
 freshness_risk: moderate; the working group page includes minimal requirements updated 2023-05, while linked resources and GRADE Book/handbook materials may update separately.
 reuse_or_license_risk: Official site and linked resource terms apply; verify terms before redistributing substantial excerpts or mirrored files.
-qa_status: seed_verified_by_worker_c_with_local_locators
-last_reviewed: "2026-05-04"
+qa_status: seed_verified_with_local_locators_and_dropbox_pdf_repair
+last_reviewed: "2026-05-05"
 ```
 
 ## Key points
@@ -101,8 +101,8 @@ This card is a router aid. Final claims about the GRADE approach must cite the o
 - Download rows: `references/canonical_sources/download_manifest.jsonl` with `source_id=grade_working_group`.
 - Document locators: `references/corpus_index/document_index.jsonl` with `source_id=grade_working_group`.
 - Optional local section locators: `references/corpus_index/sections/by_source/grade_working_group.jsonl`.
+- Linked newsletter capture: `linked_2_grade-working-group-newsletter-202409.pdf.md` was recaptured from the Dropbox `dl=1` route after the original `dl=0` local capture was found to be an HTML preview, not a PDF.
 
 ## Unresolved gaps
 
-- The local `linked_2_grade-working-group-newsletter-202409.pdf.md` conversion appears minimal and should not be used as core methodological evidence without checking the raw file.
 - The official site points to GRADE Book and GRADEpro resources that may be newer than the captured handbook material.

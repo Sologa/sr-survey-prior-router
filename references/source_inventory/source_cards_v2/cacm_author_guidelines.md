@@ -29,7 +29,7 @@ route_relevance:
   - source_audit
 freshness_risk: high; CACM/ACM author pages can change and simple scripted capture still fails with Cloudflare/403.
 reuse_or_license_risk: ACM/CACM publisher materials; no open license observed for guidance pages. Prefer short quotations and verify rights before public reuse.
-qa_status: manual_browser_pdf_capture_available_scripted_fetch_blocked
+qa_status: manual_browser_pdf_capture_page_addressable_scripted_fetch_blocked
 last_reviewed: "2026-05-05"
 ```
 
@@ -65,6 +65,7 @@ last_reviewed: "2026-05-05"
 - Use ACM submissions and information-for-authors captures only for publisher-level workflow or policy context.
 - Do not treat CACM/ACM author pages as cross-domain survey-methodology standards.
 - Live-verify current official pages before exact venue-submission advice because these pages can change.
+- Use the page-level section locators in `references/corpus_index/sections/by_source/cacm_author_guidelines.jsonl` before opening the full Markdown capture.
 
 ## Common misuses
 
@@ -83,6 +84,7 @@ The local captures are browser print PDFs and include navigation/cookie artifact
 - Download rows: `references/canonical_sources/download_manifest.jsonl` with `source_id=cacm_author_guidelines` and `capture_method=manual_browser_pdf_download`.
 - Canonical Markdown: `references/canonical_sources/md/cacm_author_guidelines/`.
 - Document locators: `references/corpus_index/document_index.jsonl` with `source_id=cacm_author_guidelines`.
+- Page-level section locators: `references/corpus_index/sections/by_source/cacm_author_guidelines.jsonl`.
 - Manual capture note: `validation/manual_browser_capture_2026-05-05.md`.
 
 ## Unresolved gaps

@@ -29,7 +29,7 @@ route_relevance:
   - source_audit
 freshness_risk: medium; the E&E PDF is a stable 2016 guideline, but hub/detail pages and access conditions can change and scripted fetch still returns 403.
 reuse_or_license_risk: CDA-AMC terms apply; the E&E PDF allows non-commercial reproduction if unmodified and credited, but verify terms before public redistribution or translation.
-qa_status: manual_browser_pdf_capture_available_scripted_fetch_blocked
+qa_status: manual_browser_pdf_capture_page_addressable_scripted_fetch_blocked
 last_reviewed: "2026-05-05"
 ```
 
@@ -64,6 +64,7 @@ last_reviewed: "2026-05-05"
 - Use the hub/detail page captures for official locator, version, and access context.
 - Keep scripted-fetch 403 rows in mind for refresh planning; recapture may require browser/manual access again.
 - Treat PRESS as search-strategy QA, not whole-review conduct guidance.
+- Use the page-level section locators in `references/corpus_index/sections/by_source/press.jsonl` before opening the full Markdown capture.
 
 ## Common misuses
 
@@ -82,6 +83,7 @@ The local hub/detail captures are browser print PDFs and include navigation/foot
 - Download rows: `references/canonical_sources/download_manifest.jsonl` with `source_id=press` and `capture_method=manual_browser_pdf_download`.
 - Canonical Markdown: `references/canonical_sources/md/press/`.
 - Document locators: `references/corpus_index/document_index.jsonl` with `source_id=press`.
+- Page-level section locators: `references/corpus_index/sections/by_source/press.jsonl`.
 - Manual capture note: `validation/manual_browser_capture_2026-05-05.md`.
 
 ## Unresolved gaps

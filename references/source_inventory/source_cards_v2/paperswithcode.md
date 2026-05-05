@@ -8,17 +8,19 @@ canonical_paths:
   - references/canonical_sources/md/paperswithcode/official_github_data_repo_paperswithcode-data.md
   - references/canonical_sources/md/paperswithcode/official_github_client_readme_readme.md.md
   - references/canonical_sources/md/paperswithcode/official_github_client_repo_paperswithcode-client.md
-  - references/canonical_sources/md/paperswithcode/canonical_about_trending_33783fc6.md
-  - references/canonical_sources/md/paperswithcode/canonical_sota_trending_87d86935.md
 canonical_urls:
-  - https://paperswithcode.com/about
-  - https://paperswithcode.com/sota
   - https://raw.githubusercontent.com/paperswithcode/paperswithcode-data/master/README.md
   - https://github.com/paperswithcode/paperswithcode-data
   - https://raw.githubusercontent.com/paperswithcode/paperswithcode-client/master/README.md
   - https://github.com/paperswithcode/paperswithcode-client
+bad_capture_paths:
+  - references/canonical_sources/md/paperswithcode/canonical_about_trending_33783fc6.md
+  - references/canonical_sources/md/paperswithcode/canonical_sota_trending_87d86935.md
+redirected_website_urls:
+  - https://paperswithcode.com/about
+  - https://paperswithcode.com/sota
 authority_level: derivative_not_canonical
-version_or_access_date: "official GitHub docs and redirected website captures fetched 2026-05-04"
+version_or_access_date: "official GitHub docs fetched 2026-05-04; website redirects rechecked 2026-05-05"
 applies_to:
   - ML/NLP/CS exemplar and benchmark enrichment
   - task, dataset, code-link, method, and evaluation-table discovery
@@ -34,7 +36,7 @@ route_relevance:
   - source_audit
 freshness_risk: very high for website pages, daily data regeneration, API status, leaderboard content, and repository maintenance; verify live before use.
 reuse_or_license_risk: captured data README states CC-BY-SA for data; client code is separately licensed; website captures and third-party linked papers/code have separate rights.
-qa_status: partial_official_github_docs_with_redirected_website_captures
+qa_status: redirected_website_captures_invalid_official_github_docs_usable
 last_reviewed: "2026-05-05"
 ```
 
@@ -91,7 +93,7 @@ last_reviewed: "2026-05-05"
 
 ## Evidence limits
 
-The strongest local evidence is from official GitHub README captures for data and client behavior. The website captures are redirected snapshots and should be treated as weak exemplar/locator material. This source is not a methodology authority.
+The strongest local evidence is from official GitHub README captures for data and client behavior. The `canonical_about` and `canonical_sota` local website captures redirect to Hugging Face Trending Papers and are bad captures, not Papers with Code evidence. This source is not a methodology authority.
 
 ## Verification paths
 
@@ -103,5 +105,5 @@ The strongest local evidence is from official GitHub README captures for data an
 ## Unresolved gaps
 
 - Verify current Papers with Code API and data-dump availability live before use.
-- Decide whether redirected Hugging Face trending captures should be replaced by a clean Papers with Code website capture.
+- Replace the redirected Hugging Face trending captures only if a clean Papers with Code website capture becomes available.
 - Pin data snapshots if the pack starts relying on Papers with Code enrichment reproducibly.

@@ -5,14 +5,22 @@ source_id: prisma_2020
 source_family: sr_reporting_and_conduct
 canonical_paths:
   - references/canonical_sources/md/prisma_2020/canonical_prisma-2020.md
+  - references/canonical_sources/md/prisma_2020/paper_bmj_statement_pdf_bmj.n71.full.pdf.md
+  - references/canonical_sources/md/prisma_2020/paper_bmj_explanation_elaboration_pdf_bmj.n160.full.pdf.md
   - references/canonical_sources/md/prisma_2020/pmc_bmj_statement_printable_html_pmc8005924.md
+  - references/canonical_sources/md/prisma_2020/pmc_bmj_explanation_elaboration_printable_html_pmc8005925.md
+  - references/canonical_sources/md/prisma_2020/linked_pagm061899.w1.pdf_pagm061899.w1.pdf.md
+  - references/canonical_sources/md/prisma_2020/linked_pagm061899.w2.pdf_pagm061899.w2.pdf.md
+  - references/canonical_sources/md/prisma_2020/linked_pagm061901.w1.pdf_pagm061901.w1.pdf.md
   - references/canonical_sources/md/prisma_2020/linked_prisma_2020_checklist-ab3g.pdf_prisma_2020_checklist.pdf.md
   - references/canonical_sources/md/prisma_2020/subpage_checklist_prisma-2020-checklist.md
 canonical_urls:
   - https://www.prisma-statement.org/prisma-2020
+  - https://www.bmj.com/content/372/bmj.n71.full.pdf
+  - https://www.bmj.com/content/372/bmj.n160.full.pdf
   - https://pmc.ncbi.nlm.nih.gov/articles/PMC8005924/?report=printable
 authority_level: canonical_reporting_guideline
-version_or_access_date: "PRISMA 2020; local corpus fetched 2026-05-04"
+version_or_access_date: "PRISMA 2020; local corpus fetched 2026-05-04; PRISMA PDF recapture validated 2026-05-05"
 applies_to:
   - systematic review reporting
   - PRISMA 2020 checklist and flow-diagram routing
@@ -28,8 +36,8 @@ route_relevance:
   - synthesis_writing
 freshness_risk: low for PRISMA 2020 core reporting guidance; verify newer extensions or updated templates for specialized review types.
 reuse_or_license_risk: PRISMA and publisher/open-access terms apply; verify source-specific license text before redistributing large excerpts or raw files.
-qa_status: seed_verified_by_subagent_with_local_locators
-last_reviewed: "2026-05-04"
+qa_status: seed_verified_with_prisma_pdf_recapture_complete
+last_reviewed: "2026-05-05"
 ```
 
 ## Key points
@@ -60,6 +68,16 @@ last_reviewed: "2026-05-04"
   support_type: direct
   verification_note: Verify license/reuse text in the specific checklist file used.
   quote_or_locator: checklist PDF lines 225-226; checklist subpage line 58
+- claim: The previously missing/bad PRISMA PDF labels are now backed by local PDF captures: BMJ statement PDF, BMJ explanation/elaboration PDF, and three PMC supplementary PDFs.
+  supporting_canonical_paths:
+    - references/canonical_sources/md/prisma_2020/paper_bmj_statement_pdf_bmj.n71.full.pdf.md
+    - references/canonical_sources/md/prisma_2020/paper_bmj_explanation_elaboration_pdf_bmj.n160.full.pdf.md
+    - references/canonical_sources/md/prisma_2020/linked_pagm061899.w1.pdf_pagm061899.w1.pdf.md
+    - references/canonical_sources/md/prisma_2020/linked_pagm061899.w2.pdf_pagm061899.w2.pdf.md
+    - references/canonical_sources/md/prisma_2020/linked_pagm061901.w1.pdf_pagm061901.w1.pdf.md
+  support_type: direct
+  verification_note: BMJ direct PDF endpoints returned HTTP 403 from this environment and were captured from White Rose repository copies; PMC instance/bin links returned HTML stubs and were recaptured from official PMC OA Cloud objects.
+  quote_or_locator: BMJ statement lines 3-20 and 32-60; BMJ E&E lines 3-20 and 32-60; PMC checklist lines 3-21; PMC expanded checklist lines 3-14; PMC examples lines 3-19
 ```
 
 ## Operational rules
@@ -77,7 +95,7 @@ last_reviewed: "2026-05-04"
 
 ## Evidence limits
 
-This card is a router aid. Final answers must cite canonical PRISMA paths or the official source URL. Split section indexes are locator-only and may not be present in the GitHub review surface.
+This card is a router aid. Final answers must cite canonical PRISMA paths or the official source URL. Split section indexes are locator-only and may not be present in the GitHub review surface. For provenance-sensitive claims, distinguish BMJ direct URLs from the White Rose repository copies used for local capture, and distinguish PMC instance/bin URLs from the official PMC OA Cloud objects used for local capture.
 
 ## Verification paths
 
@@ -85,6 +103,7 @@ This card is a router aid. Final answers must cite canonical PRISMA paths or the
 - Download rows: `references/canonical_sources/download_manifest.jsonl` with `source_id=prisma_2020`.
 - Document locators: `references/corpus_index/document_index.jsonl` with `source_id=prisma_2020`.
 - Optional local section locators: `references/corpus_index/sections/by_source/prisma_2020.jsonl`.
+- PDF recapture provenance: `paper_bmj_statement_pdf`, `paper_bmj_explanation_elaboration_pdf`, `linked_pagm061899.w1.pdf`, `linked_pagm061899.w2.pdf`, and `linked_pagm061901.w1.pdf` rows in `references/canonical_sources/download_manifest.jsonl`.
 
 ## Unresolved gaps
 

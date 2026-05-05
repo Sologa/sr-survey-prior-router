@@ -8,14 +8,22 @@ This directory stores local raw and Markdown copies of official/source-inventory
 
 Do not use this directory as the first route entrypoint. Start with `../route-source-index.yaml`, `../source_inventory/local_corpus_index.*`, and `../corpus_index/` to choose source IDs, documents, and line/page locators. Open `md/<source_id>/...` or `raw/<source_id>/...` only after that selection.
 
-- raw files present: 210
-- PDF raw files present: 63
+- raw files present: 212
+- PDF raw files present: 65
 - DOCX raw files present: 13
-- Markdown files present: 210
+- Markdown files present: 212
 - download/skip/failure/manual-capture attempt records: 254
 - skipped records retained for non-mirrored bulk/commercial sources: 10
 
 See `download_manifest.jsonl` for row-level paths, checksums, conversions, remaining failures, and manual-browser capture provenance.
+
+## Source Integrity Repairs
+
+The 2026-05-05 source-integrity repair pass downgraded known bad captures and then recaptured every missing PRISMA 2020 PDF row:
+
+- `prisma_2020`: `paper_bmj_statement_pdf` and `paper_bmj_explanation_elaboration_pdf` are captured as White Rose repository copies of the published BMJ PDFs because BMJ direct PDF endpoints returned HTTP 403. `linked_pagm061899.w1.pdf`, `linked_pagm061899.w2.pdf`, and `linked_pagm061901.w1.pdf` are captured from official PMC OA Cloud objects because the PMC instance/bin links returned HTML "Preparing to download" stubs.
+- `paperswithcode`: `canonical_about` and `canonical_sota` redirect to Hugging Face Trending Papers and are not Papers with Code evidence. Use the official GitHub data/client README and repository captures for local evidence.
+- `tacl_submission` and `computational_linguistics`: direct MIT Press primary locators returned HTTP 403. Evidence-bearing local Markdown comes from official TransACL and CL Journal OJS fallbacks; the MIT Press URLs remain blocked publisher locators and future live-check targets.
 
 ## Script-Blocked URLs With Manual Browser Captures
 
