@@ -268,3 +268,8 @@ Remaining limitations:
 - `press` and `cacm_author_guidelines` remain refresh-sensitive manual captures for future current-wording checks, but this is no longer a local publish-readiness blocker.
 
 Verdict before commit: no known issues within the fourth-round local publish-readiness audit scope except the expected dirty tracked state, to be closed by committing the nested pack repair.
+
+Post-commit addendum:
+
+- Fourth-round repair commit: `2801500c04ffd824c7136c76f50514e1f7c2edca` (`Fix sr-survey prior publish readiness`).
+- The commit hash could not be known until after the tracker section itself was committed, so this addendum records the repair commit in a tracker-only follow-up commit.
