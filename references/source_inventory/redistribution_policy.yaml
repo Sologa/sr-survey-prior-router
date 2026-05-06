@@ -1,0 +1,266 @@
+schema_version: "0.1"
+last_updated: "2026-05-06"
+policy_status: conservative_metadata_not_legal_clearance
+purpose: >
+  Machine-readable publication and redistribution boundary for the
+  sr-survey-prior-router draft skill. This policy separates project-authored
+  router material from third-party source captures and converted Markdown.
+
+source_manifest: references/source_inventory/source_manifest.jsonl
+download_manifest: references/canonical_sources/download_manifest.jsonl
+
+default_policy:
+  project_authored_material:
+    license: MIT
+    license_file: LICENSE
+    applies_to_original_project_content_only: true
+    examples:
+      - SKILL.md
+      - README.md
+      - NOTICE.md
+      - THIRD_PARTY_SOURCES.md
+      - references/source_inventory/redistribution_policy.yaml
+      - route files, source cards, indexes, validation scaffolding, and scripts
+    caveat: >
+      The project license covers original selection, organization, commentary,
+      code, and metadata only. It does not relicense embedded or referenced
+      third-party source content.
+
+  third_party_source_material:
+    license: upstream_terms_only
+    default_redistribution: do_not_redistribute_without_source_specific_clearance
+    applies_to_paths:
+      - references/canonical_sources/md/
+      - references/canonical_sources/raw/
+    applies_to_manifested_source_captures: true
+    manifested_in:
+      - references/source_inventory/source_manifest.jsonl
+      - references/canonical_sources/download_manifest.jsonl
+    allowed_local_uses:
+      - local_review
+      - evidence_locator
+      - source_grounding_with_attribution
+      - short_quotation_when_upstream_terms_allow
+    disallowed_without_clearance:
+      - bulk_redistribution
+      - commercial_reuse
+      - model_training_corpus_release
+      - treating_converted_markdown_as_project_authored
+      - removing attribution_or_source_provenance
+
+  converted_markdown_caveat:
+    applies_to_paths:
+      - references/canonical_sources/md/
+    status: third_party_conversion_not_project_authored
+    known_risks:
+      - conversion_artifacts
+      - navigation_or_cookie_text
+      - stale_source_snapshot
+      - missing_dynamic_content
+      - upstream_license_not_preserved_in_machine_readable_form
+    reviewer_instruction: verify upstream source and terms before public reuse
+
+category_definitions:
+  manual_browser_capture:
+    default_redistribution: hold_for_manual_rights_review
+    required_checks:
+      - verify current upstream page
+      - verify capture provenance
+      - verify publisher or source terms
+      - prefer short quotations and locators
+    notes: >
+      These captures exist because scripted fetches were blocked or incomplete.
+      Browser capture does not create a redistribution right.
+
+  publisher_or_venue_controlled:
+    default_redistribution: verify_publisher_terms_first
+    required_checks:
+      - check current publisher or venue terms
+      - distinguish author guidance from paper corpus rights
+      - do not assume open web access allows bulk mirroring
+
+  commercial_or_licensed:
+    default_redistribution: no_public_redistribution_without_explicit_license
+    required_checks:
+      - confirm subscription or API license
+      - confirm allowed storage and redistribution
+      - confirm commercial and non-commercial boundaries
+
+  cc_or_open_data_claimed:
+    default_redistribution: conditional_allow_after_item_level_verification
+    required_checks:
+      - verify exact license on the specific item
+      - preserve attribution
+      - check third-party figures, tables, abstracts, and linked content
+      - check API rate limits and database terms
+
+  mixed_or_unknown_terms:
+    default_redistribution: do_not_redistribute_without_review
+    required_checks:
+      - inspect source_manifest row
+      - inspect download_manifest row
+      - verify upstream license and access terms
+
+source_categories:
+  manual_browser_capture:
+    source_ids:
+      - press
+      - cacm_author_guidelines
+
+  blocked_or_alternate_capture_provenance:
+    source_ids:
+      - press
+      - cacm_author_guidelines
+      - prisma_2020
+      - tacl_submission
+      - computational_linguistics
+      - state_of_art_review_2022
+
+  publisher_or_venue_controlled:
+    source_ids:
+      - prisma_2020
+      - prisma_extensions
+      - prisma_s
+      - prisma_p
+      - prisma_scr
+      - swim
+      - entreq
+      - sanra
+      - narrative_review_writing_2011
+      - nickerson_taxonomy_2013
+      - kundisch_taxonomy_update_2021
+      - nature_scirev_guidelines
+      - nature_reviews_submission
+      - ieee_comst_guidelines
+      - cacm_author_guidelines
+      - acl_anthology
+      - acl_anthology_github
+      - acl_arr_authors
+      - aclpub_formatting
+      - tacl_submission
+      - computational_linguistics
+      - isca_archive
+      - interspeech_policy
+      - acm_dl
+      - ieee_xplore_api
+      - arxiv
+
+  commercial_or_licensed:
+    source_ids:
+      - cochrane_library
+      - dimensions_api
+      - scite_api
+      - lens_api
+      - ieee_xplore_api
+      - acm_dl
+      - core_api
+      - semantic_scholar
+
+  cc_or_open_data_claimed:
+    source_ids:
+      - state_of_art_review_2022
+      - kundisch_taxonomy_update_2021
+      - opencitations
+      - dblp
+      - paperswithcode
+      - openalex
+      - crossref_api
+      - tacl_submission
+
+  mixed_or_unknown_terms:
+    source_ids:
+      - openai_codex_skills
+      - openai_codex_agents_md
+      - cochrane_handbook
+      - cochrane_mecir
+      - jbi_manual_2024
+      - campbell_standards
+      - grade_working_group
+      - grade_handbook
+      - grade_cerqual
+      - amstar2
+      - robis
+      - rob2
+      - robins_i
+      - equator_prisma
+      - prospero
+      - epistemonikos
+      - pubmed_eutilities
+      - europe_pmc
+      - clinicaltrials_api
+      - who_ictrp
+      - rameses_meta_narrative
+      - rameses_realist
+      - cochrane_ch09
+      - cochrane_ch12
+      - narrative_synthesis_york_2006
+      - openalex_snapshot
+
+source_overrides:
+  press:
+    categories:
+      - manual_browser_capture
+      - publisher_or_venue_controlled
+    redistribution_decision: conditional_noncommercial_claim_requires_verification
+    notes: >
+      Manifest caveat says the E&E PDF permits non-commercial reproduction if
+      unmodified and credited, but public redistribution still needs current
+      source-term verification.
+
+  cacm_author_guidelines:
+    categories:
+      - manual_browser_capture
+      - publisher_or_venue_controlled
+    redistribution_decision: no_public_redistribution_without_publisher_review
+    notes: >
+      Manifest caveat reports no observed open license for ACM/CACM guidance
+      pages. Prefer locators and short quotations.
+
+  dimensions_api:
+    categories:
+      - commercial_or_licensed
+    redistribution_decision: no_public_redistribution_without_explicit_license
+
+  scite_api:
+    categories:
+      - commercial_or_licensed
+    redistribution_decision: no_public_redistribution_without_explicit_license
+
+  ieee_xplore_api:
+    categories:
+      - commercial_or_licensed
+      - publisher_or_venue_controlled
+    redistribution_decision: no_public_redistribution_without_api_or_publisher_terms
+
+  state_of_art_review_2022:
+    categories:
+      - cc_or_open_data_claimed
+      - blocked_or_alternate_capture_provenance
+    redistribution_decision: conditional_allow_after_cc_by_and_third_party_check
+
+  kundisch_taxonomy_update_2021:
+    categories:
+      - cc_or_open_data_claimed
+      - publisher_or_venue_controlled
+    redistribution_decision: conditional_allow_after_cc_by_and_third_party_check
+
+  opencitations:
+    categories:
+      - cc_or_open_data_claimed
+    redistribution_decision: conditional_allow_for_data_after_cc0_and_rate_limit_check
+
+  paperswithcode:
+    categories:
+      - cc_or_open_data_claimed
+    redistribution_decision: conditional_allow_after_cc_by_sa_and_third_party_check
+
+review_requirements_before_public_release:
+  required:
+    - keep LICENSE third-party exclusions visible
+    - keep NOTICE.md and THIRD_PARTY_SOURCES.md in the publication surface
+    - preserve source_manifest and download_manifest provenance
+    - avoid representing canonical_sources/md as project-authored material
+  recommended:
+    - remove or separately license any third-party captures that cannot be redistributed
+    - live-check refresh-sensitive sources before exact venue/API claims
+    - document any source-specific clearance decisions next to this policy

@@ -1,17 +1,17 @@
 ---
 name: sr-survey-prior-router
-description: Staged knowledge-resource router for prepared research resources, domain prior, literature corpora, survey/SR writing prior, evidence grounding, source audit, and source-grounded synthesis in this repo. Use to choose the smallest relevant reference knowledge; this staged draft does not execute workflows or mutate runtime state.
+description: Draft/staged knowledge-resource router for prepared research resources, domain prior, literature corpora, survey/SR writing prior, evidence grounding, source audit, and source-grounded synthesis. Use to choose the smallest relevant reference knowledge; this draft does not execute workflows or mutate runtime state.
 ---
 
 # SR/Survey Prior Router
 
-This copy is a staged draft knowledge-resource router while it remains under `docs/agent_capability_packs/`. It is not installed or active until it is copied into an agent skill root by a separate, explicit action; once installed, `agents/openai.yaml` controls whether Codex may also invoke it implicitly from the skill description.
+This is a draft/staged knowledge-resource router that can be read in place from a standalone checkout, staged inside another repository, or installed into an agent skill root. Interpret referenced paths relative to the directory containing this `SKILL.md`. Installation or runtime activation is a separate, explicit action; once installed, `agents/openai.yaml` controls whether Codex may also invoke it implicitly from the skill description.
 
 Its job is navigation: point the agent to the smallest relevant reference knowledge and keep source/provenance boundaries visible. It is not an execution workflow, automation harness, or multi-step prompt pack.
 
 ## Coverage Status
 
-This staged pack now includes a seed source inventory under `references/source_inventory/`, a first local full-document corpus under `references/canonical_sources/`, and lazy-load locator indexes under `references/corpus_index/`. Treat the corpus as the local read path for downloaded official/method sources, not as proof of exhaustive coverage: broad APIs, commercial sources, blocked URLs, and source-specific licensing still need route-by-route checks.
+This pack now includes a seed source inventory under `references/source_inventory/`, a first local full-document corpus under `references/canonical_sources/`, and lazy-load locator indexes under `references/corpus_index/`. Treat the corpus as the local read path for downloaded official/method sources, not as proof of exhaustive coverage: broad APIs, commercial sources, blocked URLs, and source-specific licensing still need route-by-route checks.
 
 Before claiming substantive survey-writing or SR-writing coverage, consult `references/source_inventory/coverage_report.md`, verify the relevant `source_manifest.jsonl` / `source_registry.yaml` rows, then use `references/route-source-index.yaml`, `references/source_inventory/local_corpus_index.*`, and `references/corpus_index/` to locate the smallest relevant local Markdown section. Prefer local `canonical_sources/md/<source_id>/` files only after this source/document/section selection is done. Split `corpus_index/sections/by_source/<source_id>.jsonl` files may exist locally as generated backing locators but are not part of the ordinary GitHub review surface; if absent, fall back to `corpus_index/document_index.jsonl`, source cards v2 locators, and targeted search inside the selected canonical Markdown file. If a graphify graph exists for this pack, use `references/graphify-navigation.md` only as an optional navigation adapter after route selection; graph output is never canonical evidence.
 

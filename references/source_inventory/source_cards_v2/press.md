@@ -36,19 +36,11 @@ last_reviewed: "2026-05-05"
 ## Key points
 
 ```yaml
-- claim: PRESS is now locally captured in this pack through manual browser PDF downloads.
-  supporting_canonical_paths:
-    - references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md
-    - references/canonical_sources/md/press/manual_browser_pdf_hub_page.md
-    - references/canonical_sources/md/press/manual_browser_pdf_ee_detail_page.md
-  support_type: direct
-  verification_note: These Markdown files were converted from user-downloaded browser/PDF captures on 2026-05-05; simple scripted fetches still failed with 403.
-  quote_or_locator: canonical Markdown headers and download_manifest rows with capture_method=manual_browser_pdf_download
-- claim: The PRESS E&E PDF is the primary local PRESS evidence for search-strategy peer-review guidance.
+- claim: The PRESS E&E PDF contains guideline explanation/elaboration text for peer review of electronic search strategies.
   supporting_canonical_paths:
     - references/canonical_sources/md/press/manual_browser_pdf_press_ee_2015.md
   support_type: direct
-  verification_note: The 79-page E&E capture contains the guideline explanation/elaboration text and is preferred over hub/detail print captures for substantive PRESS claims.
+  verification_note: Use the 79-page E&E capture for substantive PRESS source claims, and use provenance notes separately for local capture status.
   quote_or_locator: manual_browser_pdf_press_ee_2015.md:1-40
 - claim: PRESS should be used only for electronic-search-strategy peer review/search QA, not as a whole-review methodology source.
   supporting_canonical_paths:
@@ -76,6 +68,34 @@ last_reviewed: "2026-05-05"
 ## Evidence limits
 
 The local hub/detail captures are browser print PDFs and include navigation/footer artifacts. The E&E PDF is the primary clean guideline capture. Simple local HTTP fetch still fails for CDA-AMC URLs, so future refreshes should record whether capture was browser/manual or scripted.
+
+## Local bundle provenance
+
+```yaml
+- claim: PRESS is locally captured in this pack through three manual browser/PDF downloads added on 2026-05-05 after scripted HTTP fetches remained blocked.
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/manual_browser_capture_2026-05-05.md
+    - validation/source_integrity_tracker.md
+  support_type: capture_provenance
+  verification_note: This is repo-local capture provenance, not PRESS source content; cite canonical PRESS Markdown separately for search-strategy peer-review claims.
+  locator: download_manifest rows with source_id=press and capture_method=manual_browser_pdf_download; manual capture note PRESS section; source_integrity_tracker row press
+- claim: Local QA designates manual_browser_pdf_press_ee_2015 as the primary clean PRESS capture, while the hub and detail captures are locator/context PDFs with navigation artifacts.
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/manual_browser_capture_2026-05-05.md
+  support_type: repo_qa
+  verification_note: This priority is local bundle guidance about which capture to open first; it does not replace canonical source verification.
+  locator: manual capture note Captures Added and Quality Notes sections; download_manifest evidence_use and notes fields for source_id=press
+- claim: Future PRESS refreshes may require manual or browser-based capture because simple scripted fetches still return blocked responses for CDA-AMC URLs in this environment.
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/manual_browser_capture_2026-05-05.md
+    - validation/source_integrity_tracker.md
+  support_type: capture_provenance
+  verification_note: Treat this as refresh planning state for the local bundle.
+  locator: failed scripted PRESS rows in download_manifest; manual capture note Quality Notes; source_integrity_tracker row press
+```
 
 ## Verification paths
 

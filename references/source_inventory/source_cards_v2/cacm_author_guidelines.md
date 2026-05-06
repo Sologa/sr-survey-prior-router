@@ -36,12 +36,6 @@ last_reviewed: "2026-05-05"
 ## Key points
 
 ```yaml
-- claim: The CACM-specific author-guidelines page is now locally captured from a manual browser PDF download.
-  supporting_canonical_paths:
-    - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md
-  support_type: direct
-  verification_note: The capture contains the CACM author-guidelines text and should be preferred over ACM-wide fallback pages for CACM-specific venue guidance.
-  quote_or_locator: manual_browser_pdf_author_guidelines.md:1-45
 - claim: CACM/ACM author pages are venue or publisher guidance, not survey-methodology authority.
   supporting_canonical_paths:
     - references/canonical_sources/md/cacm_author_guidelines/manual_browser_pdf_author_guidelines.md
@@ -77,6 +71,42 @@ last_reviewed: "2026-05-05"
 ## Evidence limits
 
 The local captures are browser print PDFs and include navigation/cookie artifacts. They are usable for source grounding, but not clean publisher XML/HTML captures. ACM/CACM reuse rights remain more restrictive than open-access method papers, so prefer short excerpts and current official links in public-facing outputs.
+
+## Local bundle provenance
+
+```yaml
+- claim: The CACM-specific author-guidelines page is locally captured in this pack from a manual browser PDF download added on 2026-05-05 after scripted capture was blocked.
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/manual_browser_capture_2026-05-05.md
+    - validation/source_integrity_tracker.md
+  support_type: capture_provenance
+  verification_note: This is repo-local capture provenance, not CACM source content; cite canonical CACM Markdown separately for venue-guidance claims.
+  locator: download_manifest row manual_browser_pdf_author_guidelines; manual capture note CACM / ACM section; source_integrity_tracker row cacm_author_guidelines
+- claim: CACM/ACM local capture includes four manual browser/PDF files with page-level Markdown and section locators.
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/manual_browser_capture_2026-05-05.md
+    - validation/source_integrity_tracker.md
+  support_type: capture_provenance
+  verification_note: This local availability status does not make the venue pages methodology authorities.
+  locator: download_manifest rows with source_id=cacm_author_guidelines and capture_method=manual_browser_pdf_download; manual capture note CACM / ACM section; source_integrity_tracker row cacm_author_guidelines
+- claim: Local QA treats manual_browser_pdf_author_guidelines as the primary CACM-specific capture and the ACM-wide pages as publisher workflow or policy context.
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/manual_browser_capture_2026-05-05.md
+  support_type: repo_qa
+  verification_note: This priority is local bundle guidance about which capture to open first; it does not replace canonical source verification.
+  locator: manual capture note Captures Added and Quality Notes sections; download_manifest evidence_use and notes fields for source_id=cacm_author_guidelines
+- claim: Future CACM/ACM refreshes may require manual or browser-based capture because simple scripted fetches still return blocked responses in this environment.
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/manual_browser_capture_2026-05-05.md
+    - validation/source_integrity_tracker.md
+  support_type: capture_provenance
+  verification_note: Treat this as refresh planning state for the local bundle.
+  locator: failed scripted CACM/ACM rows in download_manifest; manual capture note Quality Notes; source_integrity_tracker row cacm_author_guidelines
+```
 
 ## Verification paths
 

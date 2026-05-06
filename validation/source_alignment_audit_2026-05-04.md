@@ -1,3 +1,15 @@
+---
+artifact_type: validation_snapshot
+snapshot_date: "2026-05-04"
+snapshot_status: superseded
+current_status_source: validation/source_integrity_tracker.md
+superseded_by:
+  - validation/source_integrity_tracker.md
+  - validation/README.md
+stale_status_notice: "Historical snapshot; do not treat dated audit findings, source states, or status text as current live state."
+frontmatter_added: "2026-05-06"
+---
+
 # Source Alignment Audit: Organized Pack vs Canonical Corpus
 
 Date: 2026-05-04

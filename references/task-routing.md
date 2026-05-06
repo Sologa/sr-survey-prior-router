@@ -9,13 +9,14 @@ Use routing to minimize loaded context. The router chooses the smallest knowledg
 - If two routes match, prefer the route with the narrowest useful reference set.
 - If the task asks for grounded writing but evidence support is missing, consult `evidence_grounding` before `synthesis_writing`.
 - If the task asks how a new knowledge layer should be organized, consult `general_domain_prior` before discussing retrieval or skill bundles.
+- Scoping-review route conflict rule: formal scoping-review reporting, conduct, checklist, JBI, or PRISMA-ScR tasks route to `sr_writing_prior`; broad literature mapping, taxonomy, or survey-organization tasks may route to `survey_writing_prior`.
 - Report missing context rather than silently widening scope.
 
 ## Route Boundaries
 
 - `general_domain_prior`: knowledge architecture for turning large resources into agent-usable prior.
-- `survey_writing_prior`: survey/related-work resources, taxonomy, source cards, and claim ledgers.
-- `sr_writing_prior`: systematic-review writing authority and methodology routing.
+- `survey_writing_prior`: survey/related-work resources, taxonomy, source cards, claim ledgers, and broad literature mapping or organization tasks that are not formal scoping-review reporting/conduct/checklist work.
+- `sr_writing_prior`: systematic-review and scoping-review writing authority, methodology, reporting, conduct, checklist, JBI, PRISMA, and PRISMA-ScR routing.
 - `evidence_grounding`: claim-to-source support and evidence packets.
 - `source_audit`: source role, provenance, authority, and freshness checks.
 - `synthesis_writing`: source-grounded writing knowledge after evidence support exists.

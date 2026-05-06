@@ -23,8 +23,8 @@ Each route should define: `route_id`, `trigger_terms`, `do_not_use_when`, `missi
 ### `survey_writing_prior`
 
 - `route_id`: `survey_writing_prior`
-- `trigger_terms`: survey writing resources, literature survey, related work, taxonomy, source cards, claim ledger.
-- `do_not_use_when`: the task is a formal systematic review methods question rather than survey writing.
+- `trigger_terms`: survey writing resources, literature survey, related work, taxonomy, source cards, claim ledger, broad literature mapping, survey organization.
+- `do_not_use_when`: the task is a formal systematic review or scoping review methods, conduct, reporting, checklist, JBI, PRISMA, or PRISMA-ScR question rather than broad survey organization.
 - `missing_context_signals`: target survey scope, source collection path, or desired artifact type is unclear.
 - `reference_files`: `task-routing.md`, `source-map.md`, `evidence-rules.md`, `source_inventory/coverage_report.md`, `route-source-index.yaml`.
 - `lookup_surfaces`: citation-management, openalex-database, file search/RAG, graphify when already available, `source_inventory/local_corpus_index.*`, `corpus_index/sections/by_source/<source_id>.jsonl`.
@@ -35,14 +35,14 @@ Each route should define: `route_id`, `trigger_terms`, `do_not_use_when`, `missi
 ### `sr_writing_prior`
 
 - `route_id`: `sr_writing_prior`
-- `trigger_terms`: systematic review writing, SR writing, PRISMA, PRISMA-S, Cochrane, JBI, GRADE, AMSTAR 2, ROBIS, PRESS, PROSPERO.
+- `trigger_terms`: systematic review writing, SR writing, scoping review writing, scoping review conduct, scoping review checklist, PRISMA, PRISMA-S, PRISMA-ScR, Cochrane, JBI, GRADE, AMSTAR 2, ROBIS, PRESS, PROSPERO.
 - `do_not_use_when`: the task asks only for a tool feature such as screening UI or project management.
 - `missing_context_signals`: review type, writing section, authority source, or corpus path is unclear.
 - `reference_files`: `task-routing.md`, `source-map.md`, `evidence-rules.md`, `source_inventory/coverage_report.md`, `route-source-index.yaml`.
 - `lookup_surfaces`: literature-review, citation-management, pubmed-database, clinicaltrials-database, openalex-database, `source_inventory/local_corpus_index.*`, `corpus_index/sections/by_source/<source_id>.jsonl`.
 - `answer_guidance`: identify authority class, source role, likely evidence need, and provenance boundary.
 - `risk_flags`: PROSPERO treated as methodology authority; workflow tools treated as methodology truth; guideline claims made without current authority evidence.
-- `optional_notes`: none.
+- `optional_notes`: Route formal scoping-review reporting/conduct/checklist/JBI/PRISMA-ScR tasks here. Route only broad literature mapping, taxonomy, or survey organization tasks to `survey_writing_prior`.
 
 ### `evidence_grounding`
 

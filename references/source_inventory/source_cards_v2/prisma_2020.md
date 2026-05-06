@@ -68,16 +68,6 @@ last_reviewed: "2026-05-05"
   support_type: direct
   verification_note: Verify license/reuse text in the specific checklist file used.
   quote_or_locator: checklist PDF lines 225-226; checklist subpage line 58
-- claim: "The previously missing/bad PRISMA PDF labels are now backed by local PDF captures: BMJ statement PDF, BMJ explanation/elaboration PDF, and three PMC supplementary PDFs."
-  supporting_canonical_paths:
-    - references/canonical_sources/md/prisma_2020/paper_bmj_statement_pdf_bmj.n71.full.pdf.md
-    - references/canonical_sources/md/prisma_2020/paper_bmj_explanation_elaboration_pdf_bmj.n160.full.pdf.md
-    - references/canonical_sources/md/prisma_2020/linked_pagm061899.w1.pdf_pagm061899.w1.pdf.md
-    - references/canonical_sources/md/prisma_2020/linked_pagm061899.w2.pdf_pagm061899.w2.pdf.md
-    - references/canonical_sources/md/prisma_2020/linked_pagm061901.w1.pdf_pagm061901.w1.pdf.md
-  support_type: direct
-  verification_note: BMJ direct PDF endpoints returned HTTP 403 from this environment and were captured from White Rose repository copies; PMC instance/bin links returned HTML stubs and were recaptured from official PMC OA Cloud objects.
-  quote_or_locator: BMJ statement lines 3-20 and 32-60; BMJ E&E lines 3-20 and 32-60; PMC checklist lines 3-21; PMC expanded checklist lines 3-14; PMC examples lines 3-19
 ```
 
 ## Operational rules
@@ -96,6 +86,40 @@ last_reviewed: "2026-05-05"
 ## Evidence limits
 
 This card is a router aid. Final answers must cite canonical PRISMA paths or the official source URL. Split section indexes are locator-only and may not be present in the GitHub review surface. For provenance-sensitive claims, distinguish BMJ direct URLs from the White Rose repository copies used for local capture, and distinguish PMC instance/bin URLs from the official PMC OA Cloud objects used for local capture.
+
+## Local bundle provenance
+
+```yaml
+- claim: "The local bundle recaptured the previously missing or bad PRISMA PDF rows: BMJ statement PDF, BMJ explanation/elaboration PDF, and three PMC supplementary PDFs."
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/source_integrity_tracker.md
+    - validation/prisma_2020_pdf_recapture_validation_2026-05-05.md
+  support_type: capture_provenance
+  verification_note: This is a repo-local capture and repair claim, not a PRISMA source claim; use the manifest and recapture validation to verify route, status, content type, and page count.
+  locator: download_manifest labels paper_bmj_statement_pdf, paper_bmj_explanation_elaboration_pdf, linked_pagm061899.w1.pdf, linked_pagm061899.w2.pdf, and linked_pagm061901.w1.pdf; tracker row prisma_2020; recapture validation Result and Local Updates sections.
+- claim: The two BMJ PDF rows were captured from White Rose repository copies because BMJ direct PDF endpoints returned HTTP 403 from this environment.
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/prisma_2020_pdf_recapture_validation_2026-05-05.md
+  support_type: capture_provenance
+  verification_note: Preserve this capture route when explaining local corpus provenance; cite BMJ/PRISMA source text separately for reporting claims.
+  locator: recapture validation rows paper_bmj_statement_pdf and paper_bmj_explanation_elaboration_pdf; download_manifest rows with capture_provenance=white_rose_repository_copy_after_bmj_403
+- claim: The three PMC supplementary PDF rows were captured from official PMC OA Cloud objects because the human-facing PMC instance/bin links returned HTML download stubs.
+  supporting_provenance_paths:
+    - references/canonical_sources/download_manifest.jsonl
+    - validation/prisma_2020_pdf_recapture_validation_2026-05-05.md
+  support_type: capture_provenance
+  verification_note: Preserve this capture route when explaining local corpus provenance; cite the supplementary Markdown files separately for source content.
+  locator: recapture validation rows linked_pagm061899.w1.pdf, linked_pagm061899.w2.pdf, and linked_pagm061901.w1.pdf; download_manifest rows with capture_provenance=pmc_oa_cloud_recapture_after_instance_html_stub
+- claim: The source-integrity tracker marks the PRISMA PDF repair as validated with no missing PRISMA manifest PDFs remaining, while keeping BMJ White Rose and PMC OA Cloud caveats visible.
+  supporting_provenance_paths:
+    - validation/source_integrity_tracker.md
+    - validation/prisma_2020_pdf_recapture_validation_2026-05-05.md
+  support_type: repo_qa
+  verification_note: This status is local QA state, not a PRISMA reporting-guideline claim.
+  locator: source_integrity_tracker row prisma_2020; recapture validation Result, Verification Commands, and Provenance Caveat sections
+```
 
 ## Verification paths
 
